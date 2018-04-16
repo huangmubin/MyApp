@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Ultralight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepCard" customModule="My" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StepCard" customModule="My" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ0-e3-jTH" userLabel="Navigation">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hP3-Wa-aGE" userLabel="NavigationLine">
+                            <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lt1-bB-4Bl"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡片名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdO-rv-SIx">
+                            <rect key="frame" x="135.5" y="12" width="104.5" height="36.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnT-ka-Jai">
+                            <rect key="frame" x="315" y="10" width="40" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eus-PS-rJW">
+                            <rect key="frame" x="20" y="10" width="40" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xnT-ka-Jai" secondAttribute="trailing" constant="20" id="8yp-k7-2gw"/>
+                        <constraint firstAttribute="trailing" secondItem="hP3-Wa-aGE" secondAttribute="trailing" id="Cje-yV-7NL"/>
+                        <constraint firstAttribute="height" constant="60" id="ENG-vE-amC"/>
+                        <constraint firstItem="vdO-rv-SIx" firstAttribute="centerX" secondItem="dQ0-e3-jTH" secondAttribute="centerX" id="GRm-gy-Kgk"/>
+                        <constraint firstItem="hP3-Wa-aGE" firstAttribute="leading" secondItem="dQ0-e3-jTH" secondAttribute="leading" id="PTQ-oB-0Jn"/>
+                        <constraint firstItem="vdO-rv-SIx" firstAttribute="centerY" secondItem="dQ0-e3-jTH" secondAttribute="centerY" id="PgH-HT-HGt"/>
+                        <constraint firstItem="xnT-ka-Jai" firstAttribute="centerY" secondItem="dQ0-e3-jTH" secondAttribute="centerY" id="VDo-L4-S1R"/>
+                        <constraint firstItem="eus-PS-rJW" firstAttribute="leading" secondItem="dQ0-e3-jTH" secondAttribute="leading" constant="20" id="lvB-QL-mwH"/>
+                        <constraint firstAttribute="bottom" secondItem="hP3-Wa-aGE" secondAttribute="bottom" id="mdF-T2-SwI"/>
+                        <constraint firstItem="eus-PS-rJW" firstAttribute="centerY" secondItem="dQ0-e3-jTH" secondAttribute="centerY" id="q1k-8P-a5a"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVg-PH-7JZ">
+                    <rect key="frame" x="0.0" y="60" width="375" height="273"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dQ0-e3-jTH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2qO-9s-ktc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TVg-PH-7JZ" secondAttribute="trailing" id="BQe-cW-mkh"/>
+                <constraint firstItem="dQ0-e3-jTH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GNq-Dn-MHm"/>
+                <constraint firstItem="dQ0-e3-jTH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Yvt-W6-umW"/>
+                <constraint firstItem="TVg-PH-7JZ" firstAttribute="top" secondItem="dQ0-e3-jTH" secondAttribute="bottom" id="aRk-3N-FIn"/>
+                <constraint firstItem="TVg-PH-7JZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iR9-LF-JHF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TVg-PH-7JZ" secondAttribute="bottom" id="nnc-iM-foV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="border_color">
+                    <color key="value" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cancel" destination="eus-PS-rJW" id="eQL-NM-QDD"/>
+                <outlet property="contrainer" destination="TVg-PH-7JZ" id="HoL-Iv-S8h"/>
+                <outlet property="navigation_height_layout" destination="ENG-vE-amC" id="kfS-1H-n6E"/>
+                <outlet property="save" destination="xnT-ka-Jai" id="ZeB-aL-gTC"/>
+                <outlet property="title" destination="vdO-rv-SIx" id="HZm-Z1-H29"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="223.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="OFe-gk-f5t" customClass="HabitFrequencyCard" customModule="My" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcw-zk-Kp4" userLabel="Navigation">
+                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ev-Rn-49X" userLabel="NavigationLine">
+                            <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="vrr-6D-POZ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间规划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9k-0w-rcb">
+                            <rect key="frame" x="135.5" y="12" width="105" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv3-2c-1pJ">
+                            <rect key="frame" x="315" y="10" width="40" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-gm-kN1">
+                            <rect key="frame" x="20" y="10" width="40" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2ev-Rn-49X" secondAttribute="trailing" id="3jW-g5-P3Q"/>
+                        <constraint firstAttribute="bottom" secondItem="2ev-Rn-49X" secondAttribute="bottom" id="KNk-eX-Jni"/>
+                        <constraint firstItem="2ev-Rn-49X" firstAttribute="leading" secondItem="Tcw-zk-Kp4" secondAttribute="leading" id="TKA-ZO-0Jw"/>
+                        <constraint firstAttribute="height" constant="60" id="Xib-ey-2AE"/>
+                        <constraint firstItem="eP9-gm-kN1" firstAttribute="leading" secondItem="Tcw-zk-Kp4" secondAttribute="leading" constant="20" id="bTU-ck-jyB"/>
+                        <constraint firstItem="eP9-gm-kN1" firstAttribute="centerY" secondItem="Tcw-zk-Kp4" secondAttribute="centerY" id="doL-2S-oQw"/>
+                        <constraint firstItem="nv3-2c-1pJ" firstAttribute="centerY" secondItem="Tcw-zk-Kp4" secondAttribute="centerY" id="g4P-Zf-uAH"/>
+                        <constraint firstItem="j9k-0w-rcb" firstAttribute="centerY" secondItem="Tcw-zk-Kp4" secondAttribute="centerY" id="pg0-XD-X4d"/>
+                        <constraint firstItem="j9k-0w-rcb" firstAttribute="centerX" secondItem="Tcw-zk-Kp4" secondAttribute="centerX" id="ppx-0u-VCf"/>
+                        <constraint firstAttribute="trailing" secondItem="nv3-2c-1pJ" secondAttribute="trailing" constant="20" id="wGP-j0-1pq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-sY-PD6">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qe-7s-bA3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择频率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t32-rC-4Kn">
+                                    <rect key="frame" x="20" y="20" width="120" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="8a5-ob-adS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="30"/>
+                                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-Bg-2SV" customClass="Button" customModule="My" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="69.5" width="375" height="57"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="每天">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="background_color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="button_state_value">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                            <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                            <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="date_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="CmJ-ro-q0b"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDZ-S4-9IN" customClass="Button" customModule="My" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="126.5" width="375" height="56.5"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="每周">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="background_color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                            <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                            <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="date_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="34x-9v-PbN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-yM-Vrk" customClass="Button" customModule="My" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="183" width="375" height="57"/>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="每月">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="background_color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                            <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                            <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="date_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="N8L-BG-343"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="cJc-Bg-2SV" firstAttribute="leading" secondItem="8Qe-7s-bA3" secondAttribute="leading" id="0rs-q6-DCe"/>
+                                <constraint firstItem="cJc-Bg-2SV" firstAttribute="top" secondItem="t32-rC-4Kn" secondAttribute="bottom" constant="8" id="3jZ-40-STS"/>
+                                <constraint firstItem="TDZ-S4-9IN" firstAttribute="height" secondItem="cJc-Bg-2SV" secondAttribute="height" id="7bW-qT-xbj"/>
+                                <constraint firstItem="EZg-yM-Vrk" firstAttribute="top" secondItem="TDZ-S4-9IN" secondAttribute="bottom" id="Cgb-lL-uVC"/>
+                                <constraint firstAttribute="trailing" secondItem="TDZ-S4-9IN" secondAttribute="trailing" id="Fak-IL-WHZ"/>
+                                <constraint firstItem="EZg-yM-Vrk" firstAttribute="leading" secondItem="8Qe-7s-bA3" secondAttribute="leading" id="Fg4-e2-RIP"/>
+                                <constraint firstItem="t32-rC-4Kn" firstAttribute="top" secondItem="8Qe-7s-bA3" secondAttribute="top" constant="20" id="JmO-k8-6I2"/>
+                                <constraint firstItem="t32-rC-4Kn" firstAttribute="leading" secondItem="8Qe-7s-bA3" secondAttribute="leading" constant="20" id="L47-Kw-nkL"/>
+                                <constraint firstItem="TDZ-S4-9IN" firstAttribute="leading" secondItem="8Qe-7s-bA3" secondAttribute="leading" id="ULD-Oj-8A3"/>
+                                <constraint firstAttribute="height" constant="240" id="awI-Ap-iTA"/>
+                                <constraint firstAttribute="bottom" secondItem="EZg-yM-Vrk" secondAttribute="bottom" id="fCI-b5-xHJ"/>
+                                <constraint firstAttribute="trailing" secondItem="EZg-yM-Vrk" secondAttribute="trailing" id="rRJ-GK-063"/>
+                                <constraint firstItem="TDZ-S4-9IN" firstAttribute="top" secondItem="cJc-Bg-2SV" secondAttribute="bottom" id="yOp-63-PC9"/>
+                                <constraint firstItem="EZg-yM-Vrk" firstAttribute="height" secondItem="TDZ-S4-9IN" secondAttribute="height" id="ziJ-Ck-gyL"/>
+                                <constraint firstAttribute="trailing" secondItem="cJc-Bg-2SV" secondAttribute="trailing" id="zwK-FW-f1k"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6w-dpK" userLabel="TimesViews">
+                            <rect key="frame" x="0.0" y="280" width="375" height="287"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGt-rq-dBq" userLabel="DayTimes">
+                                    <rect key="frame" x="-0.5" y="-0.5" width="375" height="287"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哪几天？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1o-M5-eFI">
+                                            <rect key="frame" x="20" y="20" width="104.5" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="hRO-hz-BJF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="26"/>
+                                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-fD-18K" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Fwd-Uc-XfQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="日">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="Ktk-cC-lU2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E5-Xb-Jgj" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="53.5" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="一">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="gaA-tc-yRA"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uv-xW-fIu" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="107" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="二">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="zV7-yR-zzZ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDv-eC-i5W" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="160.5" y="82" width="54" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="三">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="qSh-fQ-YnL"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66h-Te-5KH" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="214.5" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="四">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="Rca-1F-rd9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIi-i7-Eac" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="268" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="五">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="9W8-Hj-JMX"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG8-AI-F9C" customClass="Button" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="321.5" y="82" width="53.5" height="50"/>
+                                            <color key="backgroundColor" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="20"/>
+                                            <state key="normal" title="六">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="is_select" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="select_color">
+                                                    <color key="value" red="0.85882352939999995" green="1" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="day_action:" destination="OFe-gk-f5t" eventType="touchUpInside" id="zAZ-is-Jx8"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="FG8-AI-F9C" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="06n-WM-rtw"/>
+                                        <constraint firstItem="aDv-eC-i5W" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="2qD-0k-0Uv"/>
+                                        <constraint firstItem="dIi-i7-Eac" firstAttribute="top" secondItem="66h-Te-5KH" secondAttribute="top" id="4FG-ii-Drh"/>
+                                        <constraint firstItem="aDv-eC-i5W" firstAttribute="leading" secondItem="7uv-xW-fIu" secondAttribute="trailing" id="4L0-eL-Pyf"/>
+                                        <constraint firstItem="mbS-fD-18K" firstAttribute="leading" secondItem="fGt-rq-dBq" secondAttribute="leading" id="7PO-6Z-jRy"/>
+                                        <constraint firstItem="7uv-xW-fIu" firstAttribute="leading" secondItem="5E5-Xb-Jgj" secondAttribute="trailing" id="8MG-Qu-BZN"/>
+                                        <constraint firstItem="66h-Te-5KH" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="Abz-51-n15"/>
+                                        <constraint firstItem="dIi-i7-Eac" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="BQI-g3-Lu5"/>
+                                        <constraint firstItem="7uv-xW-fIu" firstAttribute="top" secondItem="5E5-Xb-Jgj" secondAttribute="top" id="CfT-p2-gtj"/>
+                                        <constraint firstItem="aDv-eC-i5W" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="EGp-Ha-fNr"/>
+                                        <constraint firstItem="66h-Te-5KH" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="EH4-AA-9yf"/>
+                                        <constraint firstItem="66h-Te-5KH" firstAttribute="leading" secondItem="aDv-eC-i5W" secondAttribute="trailing" id="FYF-5N-ORD"/>
+                                        <constraint firstItem="7uv-xW-fIu" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="JPy-KT-Caq"/>
+                                        <constraint firstItem="FG8-AI-F9C" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="N4X-zY-CYP"/>
+                                        <constraint firstItem="FG8-AI-F9C" firstAttribute="leading" secondItem="dIi-i7-Eac" secondAttribute="trailing" id="Q3Z-gJ-3Gq"/>
+                                        <constraint firstItem="5E5-Xb-Jgj" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="RWx-9h-zwf"/>
+                                        <constraint firstAttribute="trailing" secondItem="FG8-AI-F9C" secondAttribute="trailing" id="WKb-hG-RS0"/>
+                                        <constraint firstItem="aDv-eC-i5W" firstAttribute="top" secondItem="7uv-xW-fIu" secondAttribute="top" id="Wsc-Yq-TqA"/>
+                                        <constraint firstItem="7uv-xW-fIu" firstAttribute="height" secondItem="mbS-fD-18K" secondAttribute="height" id="XmB-xY-SNR"/>
+                                        <constraint firstItem="D1o-M5-eFI" firstAttribute="leading" secondItem="fGt-rq-dBq" secondAttribute="leading" constant="20" id="aes-vQ-jaH"/>
+                                        <constraint firstItem="dIi-i7-Eac" firstAttribute="leading" secondItem="66h-Te-5KH" secondAttribute="trailing" id="f38-IB-RmS"/>
+                                        <constraint firstItem="FG8-AI-F9C" firstAttribute="top" secondItem="dIi-i7-Eac" secondAttribute="top" id="gTh-E3-NJn"/>
+                                        <constraint firstItem="D1o-M5-eFI" firstAttribute="top" secondItem="fGt-rq-dBq" secondAttribute="top" constant="20" id="hf7-T9-2GN"/>
+                                        <constraint firstItem="dIi-i7-Eac" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="hwd-aJ-hjO"/>
+                                        <constraint firstItem="66h-Te-5KH" firstAttribute="top" secondItem="aDv-eC-i5W" secondAttribute="top" id="q3X-1x-Vce"/>
+                                        <constraint firstItem="5E5-Xb-Jgj" firstAttribute="width" secondItem="mbS-fD-18K" secondAttribute="width" id="sYW-qL-rIM"/>
+                                        <constraint firstItem="5E5-Xb-Jgj" firstAttribute="top" secondItem="mbS-fD-18K" secondAttribute="top" id="wHm-eP-co1"/>
+                                        <constraint firstItem="mbS-fD-18K" firstAttribute="top" secondItem="D1o-M5-eFI" secondAttribute="bottom" constant="20" id="wND-oe-Oda"/>
+                                        <constraint firstItem="mbS-fD-18K" firstAttribute="trailing" secondItem="5E5-Xb-Jgj" secondAttribute="leading" id="zZk-eG-sQM"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfx-Df-kG7" userLabel="WeekTimes">
+                                    <rect key="frame" x="0.0" y="300" width="375" height="287"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每周几次？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTb-Vy-1Dw">
+                                            <rect key="frame" x="20" y="20" width="131" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="YVV-m0-aL4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="26"/>
+                                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajS-2i-PKd" customClass="iSelector" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="82" width="335" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 - 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVx-1K-GKF">
+                                                    <rect key="frame" x="82" y="4" width="131" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="36"/>
+                                                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="CvE-CR-rui"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="default_data">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="i_direction" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="label" destination="NVx-1K-GKF" id="1tn-Yj-8jf"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="dTb-Vy-1Dw" firstAttribute="top" secondItem="Pfx-Df-kG7" secondAttribute="top" constant="20" id="1bX-yS-hOV"/>
+                                        <constraint firstAttribute="trailing" secondItem="ajS-2i-PKd" secondAttribute="trailing" constant="20" id="PiU-E9-oYW"/>
+                                        <constraint firstItem="ajS-2i-PKd" firstAttribute="top" secondItem="dTb-Vy-1Dw" secondAttribute="bottom" constant="20" id="RCh-P7-nCh"/>
+                                        <constraint firstItem="ajS-2i-PKd" firstAttribute="leading" secondItem="Pfx-Df-kG7" secondAttribute="leading" constant="20" id="cJE-FX-XG6"/>
+                                        <constraint firstItem="dTb-Vy-1Dw" firstAttribute="leading" secondItem="Pfx-Df-kG7" secondAttribute="leading" constant="20" id="yMN-d6-DiS"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-0r-83k" userLabel="MonthTimes">
+                                    <rect key="frame" x="0.0" y="300" width="375" height="287"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每月几次？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvO-bC-sGI">
+                                            <rect key="frame" x="20" y="20" width="131" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="Yhk-1C-wwJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="26"/>
+                                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-fF-KMU" customClass="iSelector" customModule="My" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="82" width="335" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 - 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-AH-PGW">
+                                                    <rect key="frame" x="82" y="4" width="131" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Ultralight" family="PingFang SC" pointSize="36"/>
+                                                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="k8s-xe-ITP"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="default_data">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="i_direction" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="label" destination="LBC-AH-PGW" id="FgG-dm-7gW"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zvO-bC-sGI" firstAttribute="top" secondItem="OQI-0r-83k" secondAttribute="top" constant="20" id="2ax-3Z-64t"/>
+                                        <constraint firstItem="zvO-bC-sGI" firstAttribute="leading" secondItem="OQI-0r-83k" secondAttribute="leading" constant="20" id="7Wc-rv-bfe"/>
+                                        <constraint firstAttribute="trailing" secondItem="pFu-fF-KMU" secondAttribute="trailing" constant="20" id="TCD-yY-fH6"/>
+                                        <constraint firstItem="pFu-fF-KMU" firstAttribute="leading" secondItem="OQI-0r-83k" secondAttribute="leading" constant="20" id="U3l-Wr-U7R"/>
+                                        <constraint firstItem="pFu-fF-KMU" firstAttribute="top" secondItem="zvO-bC-sGI" secondAttribute="bottom" constant="20" id="eVc-yu-7Ze"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fGt-rq-dBq" firstAttribute="height" secondItem="qDa-6w-dpK" secondAttribute="height" id="19E-XT-rjt"/>
+                                <constraint firstItem="Pfx-Df-kG7" firstAttribute="width" secondItem="qDa-6w-dpK" secondAttribute="width" id="5FJ-w6-2c9"/>
+                                <constraint firstItem="fGt-rq-dBq" firstAttribute="width" secondItem="qDa-6w-dpK" secondAttribute="width" id="HXw-Go-dTR"/>
+                                <constraint firstItem="OQI-0r-83k" firstAttribute="height" secondItem="qDa-6w-dpK" secondAttribute="height" id="Hxn-N3-Nx4"/>
+                                <constraint firstItem="fGt-rq-dBq" firstAttribute="centerX" secondItem="qDa-6w-dpK" secondAttribute="centerX" id="Pxl-hc-J2y"/>
+                                <constraint firstItem="OQI-0r-83k" firstAttribute="centerY" secondItem="qDa-6w-dpK" secondAttribute="centerY" constant="300" id="ShA-5W-sQN"/>
+                                <constraint firstItem="fGt-rq-dBq" firstAttribute="centerY" secondItem="qDa-6w-dpK" secondAttribute="centerY" id="Swo-c4-Jh0"/>
+                                <constraint firstItem="Pfx-Df-kG7" firstAttribute="centerY" secondItem="qDa-6w-dpK" secondAttribute="centerY" constant="300" id="Ti8-eE-8yu"/>
+                                <constraint firstItem="Pfx-Df-kG7" firstAttribute="height" secondItem="qDa-6w-dpK" secondAttribute="height" id="VLP-kV-OIM"/>
+                                <constraint firstItem="OQI-0r-83k" firstAttribute="centerX" secondItem="qDa-6w-dpK" secondAttribute="centerX" id="a3i-dE-Wzu"/>
+                                <constraint firstItem="OQI-0r-83k" firstAttribute="width" secondItem="qDa-6w-dpK" secondAttribute="width" id="mIb-Y8-SE5"/>
+                                <constraint firstItem="Pfx-Df-kG7" firstAttribute="centerX" secondItem="qDa-6w-dpK" secondAttribute="centerX" id="veV-d5-Zvg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8Qe-7s-bA3" secondAttribute="trailing" id="1HY-ZH-FnL"/>
+                        <constraint firstAttribute="trailing" secondItem="qDa-6w-dpK" secondAttribute="trailing" id="Bb7-Rc-kpH"/>
+                        <constraint firstAttribute="bottom" secondItem="qDa-6w-dpK" secondAttribute="bottom" constant="20" id="amg-vJ-DfQ"/>
+                        <constraint firstItem="8Qe-7s-bA3" firstAttribute="leading" secondItem="ECd-sY-PD6" secondAttribute="leading" id="f4z-y4-bVx"/>
+                        <constraint firstItem="qDa-6w-dpK" firstAttribute="top" secondItem="8Qe-7s-bA3" secondAttribute="bottom" constant="40" id="gwB-T6-Xff"/>
+                        <constraint firstItem="8Qe-7s-bA3" firstAttribute="top" secondItem="ECd-sY-PD6" secondAttribute="top" id="oZt-vN-e5X"/>
+                        <constraint firstItem="qDa-6w-dpK" firstAttribute="leading" secondItem="ECd-sY-PD6" secondAttribute="leading" id="ycB-Er-7mN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ECd-sY-PD6" firstAttribute="leading" secondItem="yTZ-mF-uRt" secondAttribute="leading" id="3Zh-Uf-6X5"/>
+                <constraint firstItem="ECd-sY-PD6" firstAttribute="top" secondItem="Tcw-zk-Kp4" secondAttribute="bottom" id="8Uq-He-K44"/>
+                <constraint firstItem="yTZ-mF-uRt" firstAttribute="trailing" secondItem="ECd-sY-PD6" secondAttribute="trailing" id="KJq-4O-D6T"/>
+                <constraint firstItem="yTZ-mF-uRt" firstAttribute="bottom" secondItem="ECd-sY-PD6" secondAttribute="bottom" id="iSd-fZ-rWZ"/>
+                <constraint firstItem="Tcw-zk-Kp4" firstAttribute="leading" secondItem="yTZ-mF-uRt" secondAttribute="leading" id="jec-OG-1Zt"/>
+                <constraint firstItem="Tcw-zk-Kp4" firstAttribute="top" secondItem="yTZ-mF-uRt" secondAttribute="top" id="sxy-PD-r6Z"/>
+                <constraint firstItem="Tcw-zk-Kp4" firstAttribute="trailing" secondItem="yTZ-mF-uRt" secondAttribute="trailing" id="xut-X1-k44"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="yTZ-mF-uRt"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="border_color">
+                    <color key="value" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cancel" destination="eP9-gm-kN1" id="ESn-mF-292"/>
+                <outlet property="contrainer" destination="ECd-sY-PD6" id="SFz-74-AOZ"/>
+                <outlet property="day" destination="cJc-Bg-2SV" id="0dr-LG-0iR"/>
+                <outlet property="month" destination="EZg-yM-Vrk" id="Nna-Rf-5iu"/>
+                <outlet property="month_layer" destination="ShA-5W-sQN" id="OxF-4m-d0R"/>
+                <outlet property="month_view" destination="pFu-fF-KMU" id="xXP-OO-3dQ"/>
+                <outlet property="navigation_height_layout" destination="Xib-ey-2AE" id="UFz-Ps-c2k"/>
+                <outlet property="save" destination="nv3-2c-1pJ" id="4hb-55-f4y"/>
+                <outlet property="title" destination="j9k-0w-rcb" id="2rg-e6-o03"/>
+                <outlet property="week" destination="TDZ-S4-9IN" id="DVE-HM-u3f"/>
+                <outlet property="week_layer" destination="Ti8-eE-8yu" id="8cq-4Q-Zfz"/>
+                <outlet property="week_view" destination="ajS-2i-PKd" id="KZK-RF-Ti4"/>
+                <outletCollection property="day_buttons" destination="mbS-fD-18K" collectionClass="NSMutableArray" id="jYN-ZE-rof"/>
+                <outletCollection property="day_buttons" destination="5E5-Xb-Jgj" collectionClass="NSMutableArray" id="30d-8b-CGg"/>
+                <outletCollection property="day_buttons" destination="7uv-xW-fIu" collectionClass="NSMutableArray" id="drw-zQ-b7l"/>
+                <outletCollection property="day_buttons" destination="aDv-eC-i5W" collectionClass="NSMutableArray" id="q7W-p9-4Na"/>
+                <outletCollection property="day_buttons" destination="66h-Te-5KH" collectionClass="NSMutableArray" id="yQl-7q-Hzj"/>
+                <outletCollection property="day_buttons" destination="dIi-i7-Eac" collectionClass="NSMutableArray" id="P5M-Tk-IBv"/>
+                <outletCollection property="day_buttons" destination="FG8-AI-F9C" collectionClass="NSMutableArray" id="fqr-AV-chL"/>
+            </connections>
+        </view>
+    </objects>
+</document>
