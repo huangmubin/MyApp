@@ -8,6 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		9C61B9392055148600336FD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B9382055148600336FD3 /* libsqlite3.tbd */; };
+		9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9720887EE100168ACA /* Animation.swift */; };
+		9C9EFCAE20887EE100168ACA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9920887EE100168ACA /* Button.swift */; };
+		9C9EFCAF20887EE100168ACA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9A20887EE100168ACA /* ImageView.swift */; };
+		9C9EFCB020887EE100168ACA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9B20887EE100168ACA /* TableViewCell.swift */; };
+		9C9EFCB120887EE100168ACA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9C20887EE100168ACA /* View.swift */; };
+		9C9EFCB220887EE100168ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9D20887EE100168ACA /* ViewController.swift */; };
+		9C9EFCB320887EE100168ACA /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9F20887EE100168ACA /* SQLite.swift */; };
+		9C9EFCB420887EE100168ACA /* Ex_Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA120887EE100168ACA /* Ex_Array.swift */; };
+		9C9EFCB520887EE100168ACA /* Ex_Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA220887EE100168ACA /* Ex_Calendar.swift */; };
+		9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA320887EE100168ACA /* Ex_Date.swift */; };
+		9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA420887EE100168ACA /* Ex_DateFormatter.swift */; };
+		9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA520887EE100168ACA /* Ex_IndexPath.swift */; };
+		9C9EFCB920887EE100168ACA /* Ex_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA620887EE100168ACA /* Ex_Int.swift */; };
+		9C9EFCBA20887EE100168ACA /* Ex_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */; };
+		9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */; };
+		9C9EFCBC20887EE100168ACA /* Ex_UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */; };
+		9C9EFCBD20887EE100168ACA /* NibLoable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCAB20887EE100168ACA /* NibLoable.swift */; };
+		9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCAC20887EE100168ACA /* Notifiable.swift */; };
+		9C9EFCC920887F8200168ACA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCC820887F8200168ACA /* Keys.swift */; };
+		9C9EFCCB2088904900168ACA /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCA2088904900168ACA /* Habit.swift */; };
+		9C9EFCCD2088916100168ACA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCC2088916100168ACA /* Model.swift */; };
+		9C9EFCCF2088991A00168ACA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCE2088991A00168ACA /* Log.swift */; };
 		9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE1762052CF240085DDA3 /* AppDelegate.swift */; };
 		9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE17A2052CF240085DDA3 /* Main.storyboard */; };
 		9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE17D2052CF240085DDA3 /* My.xcdatamodeld */; };
@@ -18,6 +40,28 @@
 
 /* Begin PBXFileReference section */
 		9C61B9382055148600336FD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9C9EFC9720887EE100168ACA /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		9C9EFC9920887EE100168ACA /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		9C9EFC9A20887EE100168ACA /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		9C9EFC9B20887EE100168ACA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9C9EFC9C20887EE100168ACA /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		9C9EFC9D20887EE100168ACA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C9EFC9F20887EE100168ACA /* SQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		9C9EFCA120887EE100168ACA /* Ex_Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Array.swift; sourceTree = "<group>"; };
+		9C9EFCA220887EE100168ACA /* Ex_Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Calendar.swift; sourceTree = "<group>"; };
+		9C9EFCA320887EE100168ACA /* Ex_Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Date.swift; sourceTree = "<group>"; };
+		9C9EFCA420887EE100168ACA /* Ex_DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_DateFormatter.swift; sourceTree = "<group>"; };
+		9C9EFCA520887EE100168ACA /* Ex_IndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_IndexPath.swift; sourceTree = "<group>"; };
+		9C9EFCA620887EE100168ACA /* Ex_Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Int.swift; sourceTree = "<group>"; };
+		9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_UIColor.swift; sourceTree = "<group>"; };
+		9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_UIDevice.swift; sourceTree = "<group>"; };
+		9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_UIScreen.swift; sourceTree = "<group>"; };
+		9C9EFCAB20887EE100168ACA /* NibLoable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoable.swift; sourceTree = "<group>"; };
+		9C9EFCAC20887EE100168ACA /* Notifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
+		9C9EFCC820887F8200168ACA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		9C9EFCCA2088904900168ACA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		9C9EFCCC2088916100168ACA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9C9EFCCE2088991A00168ACA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		9CBBE1732052CF240085DDA3 /* My.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBBE1762052CF240085DDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBBE17B2052CF240085DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +92,90 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C9EFC9420887EC900168ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFCCC2088916100168ACA /* Model.swift */,
+				9C9EFCCA2088904900168ACA /* Habit.swift */,
+				9C9EFCCE2088991A00168ACA /* Log.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C9EFC9520887EE100168ACA /* Codebase */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFC9620887EE100168ACA /* Animation */,
+				9C9EFC9820887EE100168ACA /* BaseObjects */,
+				9C9EFC9E20887EE100168ACA /* Database */,
+				9C9EFCA020887EE100168ACA /* Extensions */,
+				9C9EFCAA20887EE100168ACA /* Protocols */,
+			);
+			name = Codebase;
+			path = ../../../Codebase/Codebase;
+			sourceTree = "<group>";
+		};
+		9C9EFC9620887EE100168ACA /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFC9720887EE100168ACA /* Animation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		9C9EFC9820887EE100168ACA /* BaseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFC9920887EE100168ACA /* Button.swift */,
+				9C9EFC9A20887EE100168ACA /* ImageView.swift */,
+				9C9EFC9B20887EE100168ACA /* TableViewCell.swift */,
+				9C9EFC9C20887EE100168ACA /* View.swift */,
+				9C9EFC9D20887EE100168ACA /* ViewController.swift */,
+			);
+			path = BaseObjects;
+			sourceTree = "<group>";
+		};
+		9C9EFC9E20887EE100168ACA /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFC9F20887EE100168ACA /* SQLite.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9C9EFCA020887EE100168ACA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFCA120887EE100168ACA /* Ex_Array.swift */,
+				9C9EFCA220887EE100168ACA /* Ex_Calendar.swift */,
+				9C9EFCA320887EE100168ACA /* Ex_Date.swift */,
+				9C9EFCA420887EE100168ACA /* Ex_DateFormatter.swift */,
+				9C9EFCA520887EE100168ACA /* Ex_IndexPath.swift */,
+				9C9EFCA620887EE100168ACA /* Ex_Int.swift */,
+				9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */,
+				9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */,
+				9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C9EFCAA20887EE100168ACA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFCAB20887EE100168ACA /* NibLoable.swift */,
+				9C9EFCAC20887EE100168ACA /* Notifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9C9EFCC720887F8200168ACA /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EFCC820887F8200168ACA /* Keys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		9CBBE16A2052CF240085DDA3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +196,9 @@
 		9CBBE1752052CF240085DDA3 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				9C9EFC9520887EE100168ACA /* Codebase */,
+				9C9EFCC720887F8200168ACA /* Keys */,
+				9C9EFC9420887EC900168ACA /* Models */,
 				9CBBE18B2052CF430085DDA3 /* Resources */,
 			);
 			path = My;
@@ -160,8 +291,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
+				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
+				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
+				9C9EFCB120887EE100168ACA /* View.swift in Sources */,
+				9C9EFCB320887EE100168ACA /* SQLite.swift in Sources */,
+				9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */,
+				9C9EFCB520887EE100168ACA /* Ex_Calendar.swift in Sources */,
+				9C9EFCCF2088991A00168ACA /* Log.swift in Sources */,
+				9C9EFCAF20887EE100168ACA /* ImageView.swift in Sources */,
+				9C9EFCAE20887EE100168ACA /* Button.swift in Sources */,
+				9C9EFCB220887EE100168ACA /* ViewController.swift in Sources */,
+				9C9EFCBA20887EE100168ACA /* Ex_UIColor.swift in Sources */,
+				9C9EFCB420887EE100168ACA /* Ex_Array.swift in Sources */,
+				9C9EFCBD20887EE100168ACA /* NibLoable.swift in Sources */,
+				9C9EFCBC20887EE100168ACA /* Ex_UIScreen.swift in Sources */,
+				9C9EFCC920887F8200168ACA /* Keys.swift in Sources */,
+				9C9EFCCD2088916100168ACA /* Model.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
+				9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */,
+				9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */,
 				9CFC30962072320400ED5D4C /* MainController.swift in Sources */,
+				9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */,
+				9C9EFCB020887EE100168ACA /* TableViewCell.swift in Sources */,
+				9C9EFCB920887EE100168ACA /* Ex_Int.swift in Sources */,
 				9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
