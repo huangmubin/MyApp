@@ -22,7 +22,7 @@ class Habit {
     var type: Int = 0
     /** 默认长度，时间长度xx秒，次数的长度默认是 1 */
     var length: Int = 1
-    /** 功能标记，/n 换行符为一个标记 */
+    /** 功能标记，\n 换行符为一个标记 */
     var flag: String = """
     \(Keys.flags.info)
     \(Keys.flags.calender)

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D02088CF75007E069C /* HabitList.storyboard */; };
+		9C3069D32088CF94007E069C /* HabitListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D22088CF94007E069C /* HabitListController.swift */; };
+		9C3069D52088D150007E069C /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D42088D150007E069C /* HabitListCell.swift */; };
+		9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D72088D598007E069C /* HabitEdit.storyboard */; };
+		9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D92088D5AB007E069C /* HabitEditController.swift */; };
+		9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DC2088D649007E069C /* HabitEditCell.swift */; };
+		9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */; };
+		9C3069E12088D690007E069C /* HabitEditLengthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E02088D690007E069C /* HabitEditLengthCell.swift */; };
+		9C3069E32088D6C3007E069C /* HabitEditControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */; };
 		9C61B9392055148600336FD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B9382055148600336FD3 /* libsqlite3.tbd */; };
 		9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9720887EE100168ACA /* Animation.swift */; };
 		9C9EFCAE20887EE100168ACA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9920887EE100168ACA /* Button.swift */; };
@@ -28,7 +37,6 @@
 		9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCAC20887EE100168ACA /* Notifiable.swift */; };
 		9C9EFCC920887F8200168ACA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCC820887F8200168ACA /* Keys.swift */; };
 		9C9EFCCB2088904900168ACA /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCA2088904900168ACA /* Habit.swift */; };
-		9C9EFCCD2088916100168ACA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCC2088916100168ACA /* Model.swift */; };
 		9C9EFCCF2088991A00168ACA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCE2088991A00168ACA /* Log.swift */; };
 		9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE1762052CF240085DDA3 /* AppDelegate.swift */; };
 		9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE17A2052CF240085DDA3 /* Main.storyboard */; };
@@ -39,6 +47,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C3069D02088CF75007E069C /* HabitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitList.storyboard; sourceTree = "<group>"; };
+		9C3069D22088CF94007E069C /* HabitListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListController.swift; sourceTree = "<group>"; };
+		9C3069D42088D150007E069C /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
+		9C3069D72088D598007E069C /* HabitEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitEdit.storyboard; sourceTree = "<group>"; };
+		9C3069D92088D5AB007E069C /* HabitEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditController.swift; sourceTree = "<group>"; };
+		9C3069DC2088D649007E069C /* HabitEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditCell.swift; sourceTree = "<group>"; };
+		9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCell.swift; sourceTree = "<group>"; };
+		9C3069E02088D690007E069C /* HabitEditLengthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditLengthCell.swift; sourceTree = "<group>"; };
+		9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditControlCell.swift; sourceTree = "<group>"; };
 		9C61B9382055148600336FD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9C9EFC9720887EE100168ACA /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		9C9EFC9920887EE100168ACA /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -60,7 +77,6 @@
 		9C9EFCAC20887EE100168ACA /* Notifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
 		9C9EFCC820887F8200168ACA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		9C9EFCCA2088904900168ACA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		9C9EFCCC2088916100168ACA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9C9EFCCE2088991A00168ACA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		9CBBE1732052CF240085DDA3 /* My.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBBE1762052CF240085DDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +100,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C3069CE2088C778007E069C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9C3069D62088D58B007E069C /* HabitEdit */,
+				9C3069CF2088CF49007E069C /* HabitList */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		9C3069CF2088CF49007E069C /* HabitList */ = {
+			isa = PBXGroup;
+			children = (
+				9C3069D02088CF75007E069C /* HabitList.storyboard */,
+				9C3069D22088CF94007E069C /* HabitListController.swift */,
+				9C3069D42088D150007E069C /* HabitListCell.swift */,
+			);
+			path = HabitList;
+			sourceTree = "<group>";
+		};
+		9C3069D62088D58B007E069C /* HabitEdit */ = {
+			isa = PBXGroup;
+			children = (
+				9C3069D72088D598007E069C /* HabitEdit.storyboard */,
+				9C3069D92088D5AB007E069C /* HabitEditController.swift */,
+				9C3069DB2088D628007E069C /* Cells */,
+			);
+			path = HabitEdit;
+			sourceTree = "<group>";
+		};
+		9C3069DB2088D628007E069C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9C3069DC2088D649007E069C /* HabitEditCell.swift */,
+				9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */,
+				9C3069E02088D690007E069C /* HabitEditLengthCell.swift */,
+				9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9C61B9372055148600336FD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +151,6 @@
 		9C9EFC9420887EC900168ACA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9C9EFCCC2088916100168ACA /* Model.swift */,
 				9C9EFCCA2088904900168ACA /* Habit.swift */,
 				9C9EFCCE2088991A00168ACA /* Log.swift */,
 			);
@@ -196,9 +251,10 @@
 		9CBBE1752052CF240085DDA3 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				9C3069CE2088C778007E069C /* Interfaces */,
+				9C9EFC9420887EC900168ACA /* Models */,
 				9C9EFC9520887EE100168ACA /* Codebase */,
 				9C9EFCC720887F8200168ACA /* Keys */,
-				9C9EFC9420887EC900168ACA /* Models */,
 				9CBBE18B2052CF430085DDA3 /* Resources */,
 			);
 			path = My;
@@ -279,8 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBBE1842052CF240085DDA3 /* LaunchScreen.storyboard in Resources */,
+				9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */,
 				9CBBE1812052CF240085DDA3 /* Assets.xcassets in Resources */,
 				9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */,
+				9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */,
 				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
 				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
 				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
+				9C3069E12088D690007E069C /* HabitEditLengthCell.swift in Sources */,
 				9C9EFCB120887EE100168ACA /* View.swift in Sources */,
+				9C3069D52088D150007E069C /* HabitListCell.swift in Sources */,
 				9C9EFCB320887EE100168ACA /* SQLite.swift in Sources */,
 				9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */,
 				9C9EFCB520887EE100168ACA /* Ex_Calendar.swift in Sources */,
@@ -306,8 +367,11 @@
 				9C9EFCB420887EE100168ACA /* Ex_Array.swift in Sources */,
 				9C9EFCBD20887EE100168ACA /* NibLoable.swift in Sources */,
 				9C9EFCBC20887EE100168ACA /* Ex_UIScreen.swift in Sources */,
+				9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */,
+				9C3069E32088D6C3007E069C /* HabitEditControlCell.swift in Sources */,
 				9C9EFCC920887F8200168ACA /* Keys.swift in Sources */,
-				9C9EFCCD2088916100168ACA /* Model.swift in Sources */,
+				9C3069D32088CF94007E069C /* HabitListController.swift in Sources */,
+				9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
 				9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */,
 				9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */,
