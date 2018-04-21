@@ -8,17 +8,13 @@
 
 import UIKit
 
-class HabitEditCell: TableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+class HabitEditCell: TableCardsCell {
+    
+    /** HabitEditController */
+    var edit: HabitEditController? {
+        return controller as? HabitEditController
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    
+    
 }

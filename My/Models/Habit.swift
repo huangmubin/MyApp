@@ -12,6 +12,38 @@ import SQLite3
 /** 习惯数据 */
 class Habit {
     
+    // MARK: - Init
+    
+    private init(_ v: Int) {}
+    convenience init() {
+        self.init(0)
+        cache = Habit.Cache(habit: self)
+    }
+    
+    // MARK: - Interface
+    
+    /** 检测该习惯的统计方式是时长还是次数 */
+    var is_time: Bool {
+        set { type = (newValue ?  0 : 1) }
+        get { return type == 0 }
+    }
+    
+    /** 检测该习惯的状态是进行中，还是归档 */
+    var is_runing: Bool {
+        set { state = (newValue ?  0 : 1) }
+        get { return state == 0 }
+    }
+    
+    /** 检测是否是新建的习惯 */
+    var is_new: Bool {
+        get { return state == 5 }
+    }
+    
+    /** 缓存 */
+    var cache: Cache!
+    
+    /**  */
+    
     // MARK: - Database
     
     /** Habit 编码 Id */
@@ -19,7 +51,7 @@ class Habit {
     /** 名称 */
     var name: String = ""
     /** 时间，次数 */
-    var type: Int = 0
+    private var type: Int = 0
     /** 默认长度，时间长度xx秒，次数的长度默认是 1 */
     var length: Int = 1
     /** 功能标记，\n 换行符为一个标记 */
@@ -31,6 +63,12 @@ class Habit {
     """
     /** 目标留言 */
     var message: String = ""
+    /** 开始时间 */
+    var start: Int = 0
+    /** 目标 */
+    var goal: Int = 0
+    /** 状态，是进行中还是归档，如果是 5 表示这是一个新建的习惯 */
+    private var state: Int = 5
     
     // MARK: - Tools
     
@@ -55,12 +93,15 @@ class Habit {
     static func create() -> Bool {
         let sql = """
         create table if not exists \(table) (
-        id integer primary key,
-        name text,
-        type integer,
-        length integer,
-        flag text,
-        message text
+            id integer primary key,
+            name text,
+            type integer,
+            length integer,
+            flag text,
+            message text,
+            start integer,
+            goal integer,
+            state integer
         );
         """
         return SQLite.default.execut(sql: sql)
@@ -85,6 +126,12 @@ class Habit {
                 obj.flag = String(cString: sqlite3_column_text(state, i))
             case "message":
                 obj.message = String(cString: sqlite3_column_text(state, i))
+            case "start":
+                obj.start = Int(sqlite3_column_int64(state, i))
+            case "goal":
+                obj.goal = Int(sqlite3_column_int64(state, i))
+            case "state":
+                obj.state = Int(sqlite3_column_int64(state, i))
             default: break
             }
         }, next: { habits.append($0) })
@@ -98,7 +145,7 @@ class Habit {
     static func find(where value: String? = nil) -> [Habit] {
         var sql = "select * from \(table)"
         if let v = value {
-            sql += " \(v);"
+            sql += " where \(v);"
         } else {
             sql += ";"
         }
@@ -109,7 +156,7 @@ class Habit {
     
     /** 插入数据 */
     func insert() -> Bool {
-        let sql = "insert into \(table) values(\(id), '\(name)', \(type), \(length), '\(flag)', '\(message)');"
+        let sql = "insert into \(table) values(\(id), '\(name)', \(type), \(length), '\(flag)', '\(message)', \(start), \(goal), \(state));"
         return SQLite.default.execut(sql: sql)
     }
     
@@ -117,7 +164,7 @@ class Habit {
     
     /** 更新数据到数据库 */
     func update() -> Bool {
-        let sql = "update \(table) set name = '\(name)', type = \(type), length = \(length), flag = '\(flag)', message = '\(message)' where id = \(id)"
+        let sql = "update \(table) set name = '\(name)', type = \(type), length = \(length), flag = '\(flag)', message = '\(message)', start = \(start), goal = \(goal), state = \(state) where id = \(id)"
         return SQLite.default.execut(sql: sql)
     }
     

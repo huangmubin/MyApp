@@ -118,7 +118,7 @@ extension Habit {
         static func find(habit: Habit, where value: String? = nil) -> [Log] {
             var sql = "select * from \(table)"
             if let v = value {
-                sql += " \(v);"
+                sql += " where \(v);"
             } else {
                 sql += ";"
             }

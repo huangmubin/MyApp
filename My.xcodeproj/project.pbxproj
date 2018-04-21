@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0F2E7220898615004A7D3F /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7120898615004A7D3F /* Cache.swift */; };
+		9C0F2E7420899AF3004A7D3F /* HabitEditMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */; };
+		9C0F2E7620899B0F004A7D3F /* HabitEditStartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7520899B0F004A7D3F /* HabitEditStartCell.swift */; };
+		9C0F2E7820899B1A004A7D3F /* HabitEditLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7720899B1A004A7D3F /* HabitEditLogCell.swift */; };
+		9C0F2E7C2089C828004A7D3F /* Ex_UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */; };
+		9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7D2089CE50004A7D3F /* TableView.swift */; };
+		9C0F2E802089CEDE004A7D3F /* TableCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */; };
+		9C0F2E822089CEF1004A7D3F /* TableCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */; };
+		9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E842089D789004A7D3F /* Ex_String.swift */; };
+		9C0F2E872089D84B004A7D3F /* Ex_UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */; };
 		9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D02088CF75007E069C /* HabitList.storyboard */; };
 		9C3069D32088CF94007E069C /* HabitListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D22088CF94007E069C /* HabitListController.swift */; };
 		9C3069D52088D150007E069C /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D42088D150007E069C /* HabitListCell.swift */; };
@@ -14,7 +24,7 @@
 		9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D92088D5AB007E069C /* HabitEditController.swift */; };
 		9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DC2088D649007E069C /* HabitEditCell.swift */; };
 		9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */; };
-		9C3069E12088D690007E069C /* HabitEditLengthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E02088D690007E069C /* HabitEditLengthCell.swift */; };
+		9C3069E12088D690007E069C /* HabitEditTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E02088D690007E069C /* HabitEditTypeCell.swift */; };
 		9C3069E32088D6C3007E069C /* HabitEditControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */; };
 		9C61B9392055148600336FD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B9382055148600336FD3 /* libsqlite3.tbd */; };
 		9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9720887EE100168ACA /* Animation.swift */; };
@@ -47,6 +57,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C0F2E7120898615004A7D3F /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMessageCell.swift; sourceTree = "<group>"; };
+		9C0F2E7520899B0F004A7D3F /* HabitEditStartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditStartCell.swift; sourceTree = "<group>"; };
+		9C0F2E7720899B1A004A7D3F /* HabitEditLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditLogCell.swift; sourceTree = "<group>"; };
+		9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UIStoryboardSegue.swift; sourceTree = "<group>"; };
+		9C0F2E7D2089CE50004A7D3F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCards.swift; sourceTree = "<group>"; };
+		9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCardsCell.swift; sourceTree = "<group>"; };
+		9C0F2E842089D789004A7D3F /* Ex_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
+		9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UITextView.swift; sourceTree = "<group>"; };
 		9C3069D02088CF75007E069C /* HabitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitList.storyboard; sourceTree = "<group>"; };
 		9C3069D22088CF94007E069C /* HabitListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListController.swift; sourceTree = "<group>"; };
 		9C3069D42088D150007E069C /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
@@ -54,7 +74,7 @@
 		9C3069D92088D5AB007E069C /* HabitEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditController.swift; sourceTree = "<group>"; };
 		9C3069DC2088D649007E069C /* HabitEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditCell.swift; sourceTree = "<group>"; };
 		9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCell.swift; sourceTree = "<group>"; };
-		9C3069E02088D690007E069C /* HabitEditLengthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditLengthCell.swift; sourceTree = "<group>"; };
+		9C3069E02088D690007E069C /* HabitEditTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditTypeCell.swift; sourceTree = "<group>"; };
 		9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditControlCell.swift; sourceTree = "<group>"; };
 		9C61B9382055148600336FD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9C9EFC9720887EE100168ACA /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
@@ -100,6 +120,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0F2E832089CEFD004A7D3F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9C0F2E7D2089CE50004A7D3F /* TableView.swift */,
+				9C9EFC9B20887EE100168ACA /* TableViewCell.swift */,
+				9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */,
+				9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		9C3069CE2088C778007E069C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +165,10 @@
 			children = (
 				9C3069DC2088D649007E069C /* HabitEditCell.swift */,
 				9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */,
-				9C3069E02088D690007E069C /* HabitEditLengthCell.swift */,
+				9C0F2E7520899B0F004A7D3F /* HabitEditStartCell.swift */,
+				9C3069E02088D690007E069C /* HabitEditTypeCell.swift */,
+				9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */,
+				9C0F2E7720899B1A004A7D3F /* HabitEditLogCell.swift */,
 				9C3069E22088D6C3007E069C /* HabitEditControlCell.swift */,
 			);
 			path = Cells;
@@ -151,6 +185,7 @@
 		9C9EFC9420887EC900168ACA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C0F2E7120898615004A7D3F /* Cache.swift */,
 				9C9EFCCA2088904900168ACA /* Habit.swift */,
 				9C9EFCCE2088991A00168ACA /* Log.swift */,
 			);
@@ -181,11 +216,11 @@
 		9C9EFC9820887EE100168ACA /* BaseObjects */ = {
 			isa = PBXGroup;
 			children = (
+				9C9EFC9D20887EE100168ACA /* ViewController.swift */,
+				9C9EFC9C20887EE100168ACA /* View.swift */,
 				9C9EFC9920887EE100168ACA /* Button.swift */,
 				9C9EFC9A20887EE100168ACA /* ImageView.swift */,
-				9C9EFC9B20887EE100168ACA /* TableViewCell.swift */,
-				9C9EFC9C20887EE100168ACA /* View.swift */,
-				9C9EFC9D20887EE100168ACA /* ViewController.swift */,
+				9C0F2E832089CEFD004A7D3F /* TableView */,
 			);
 			path = BaseObjects;
 			sourceTree = "<group>";
@@ -210,6 +245,9 @@
 				9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */,
 				9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */,
 				9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */,
+				9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */,
+				9C0F2E842089D789004A7D3F /* Ex_String.swift */,
+				9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = myron;
 				TargetAttributes = {
 					9CBBE1722052CF240085DDA3 = {
@@ -353,11 +391,16 @@
 				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
 				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
 				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
-				9C3069E12088D690007E069C /* HabitEditLengthCell.swift in Sources */,
+				9C3069E12088D690007E069C /* HabitEditTypeCell.swift in Sources */,
+				9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */,
 				9C9EFCB120887EE100168ACA /* View.swift in Sources */,
 				9C3069D52088D150007E069C /* HabitListCell.swift in Sources */,
+				9C0F2E7420899AF3004A7D3F /* HabitEditMessageCell.swift in Sources */,
 				9C9EFCB320887EE100168ACA /* SQLite.swift in Sources */,
+				9C0F2E802089CEDE004A7D3F /* TableCards.swift in Sources */,
 				9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */,
+				9C0F2E7820899B1A004A7D3F /* HabitEditLogCell.swift in Sources */,
+				9C0F2E872089D84B004A7D3F /* Ex_UITextView.swift in Sources */,
 				9C9EFCB520887EE100168ACA /* Ex_Calendar.swift in Sources */,
 				9C9EFCCF2088991A00168ACA /* Log.swift in Sources */,
 				9C9EFCAF20887EE100168ACA /* ImageView.swift in Sources */,
@@ -373,13 +416,18 @@
 				9C3069D32088CF94007E069C /* HabitListController.swift in Sources */,
 				9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
+				9C0F2E822089CEF1004A7D3F /* TableCardsCell.swift in Sources */,
+				9C0F2E7620899B0F004A7D3F /* HabitEditStartCell.swift in Sources */,
 				9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */,
 				9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */,
+				9C0F2E7220898615004A7D3F /* Cache.swift in Sources */,
+				9C0F2E7C2089C828004A7D3F /* Ex_UIStoryboardSegue.swift in Sources */,
 				9CFC30962072320400ED5D4C /* MainController.swift in Sources */,
 				9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */,
 				9C9EFCB020887EE100168ACA /* TableViewCell.swift in Sources */,
 				9C9EFCB920887EE100168ACA /* Ex_Int.swift in Sources */,
 				9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */,
+				9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +467,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -426,6 +475,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -476,6 +526,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -483,6 +534,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
