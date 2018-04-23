@@ -10,15 +10,11 @@ import UIKit
 
 class HabitEditNameCell: HabitEditCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    /** name text view */
+    @IBOutlet weak var view: UITextView!
+    
+    override func view_reload() {
+        view.text = edit?.habit.name
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }
