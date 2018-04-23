@@ -53,6 +53,7 @@
 		9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE17D2052CF240085DDA3 /* My.xcdatamodeld */; };
 		9CBBE1812052CF240085DDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE1802052CF240085DDA3 /* Assets.xcassets */; };
 		9CBBE1842052CF240085DDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE1822052CF240085DDA3 /* LaunchScreen.storyboard */; };
+		9CD01B4A208DCF740007B34C /* Ex_UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD01B49208DCF740007B34C /* Ex_UILabel.swift */; };
 		9CFC30962072320400ED5D4C /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC30952072320400ED5D4C /* MainController.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		9CBBE1802052CF240085DDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBBE1832052CF240085DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBBE1852052CF240085DDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD01B49208DCF740007B34C /* Ex_UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UILabel.swift; sourceTree = "<group>"; };
 		9CFC30952072320400ED5D4C /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,18 +238,8 @@
 		9C9EFCA020887EE100168ACA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9C9EFCA120887EE100168ACA /* Ex_Array.swift */,
-				9C9EFCA220887EE100168ACA /* Ex_Calendar.swift */,
-				9C9EFCA320887EE100168ACA /* Ex_Date.swift */,
-				9C9EFCA420887EE100168ACA /* Ex_DateFormatter.swift */,
-				9C9EFCA520887EE100168ACA /* Ex_IndexPath.swift */,
-				9C9EFCA620887EE100168ACA /* Ex_Int.swift */,
-				9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */,
-				9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */,
-				9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */,
-				9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */,
-				9C0F2E842089D789004A7D3F /* Ex_String.swift */,
-				9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */,
+				9CD01B4C208DCF8C0007B34C /* UIKit */,
+				9CD01B4B208DCF840007B34C /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +302,33 @@
 				9CBBE17D2052CF240085DDA3 /* My.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CD01B4B208DCF840007B34C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9C0F2E842089D789004A7D3F /* Ex_String.swift */,
+				9C9EFCA620887EE100168ACA /* Ex_Int.swift */,
+				9C9EFCA520887EE100168ACA /* Ex_IndexPath.swift */,
+				9C9EFCA420887EE100168ACA /* Ex_DateFormatter.swift */,
+				9C9EFCA320887EE100168ACA /* Ex_Date.swift */,
+				9C9EFCA220887EE100168ACA /* Ex_Calendar.swift */,
+				9C9EFCA120887EE100168ACA /* Ex_Array.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9CD01B4C208DCF8C0007B34C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */,
+				9CD01B49208DCF740007B34C /* Ex_UILabel.swift */,
+				9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */,
+				9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */,
+				9C9EFCA920887EE100168ACA /* Ex_UIScreen.swift */,
+				9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +439,7 @@
 				9C0F2E7620899B0F004A7D3F /* HabitEditStartCell.swift in Sources */,
 				9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */,
 				9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */,
+				9CD01B4A208DCF740007B34C /* Ex_UILabel.swift in Sources */,
 				9C0F2E7220898615004A7D3F /* Cache.swift in Sources */,
 				9C0F2E7C2089C828004A7D3F /* Ex_UIStoryboardSegue.swift in Sources */,
 				9CFC30962072320400ED5D4C /* MainController.swift in Sources */,
