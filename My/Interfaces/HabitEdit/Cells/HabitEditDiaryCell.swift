@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HabitEditLogCell: HabitEditCell {
+class HabitEditDiaryCell: HabitEditCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

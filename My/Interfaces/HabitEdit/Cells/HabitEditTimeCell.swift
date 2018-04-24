@@ -1,14 +1,14 @@
 //
-//  HabitEditLengthCell.swift
+//  HabitEditStartCell.swift
 //  My
 //
-//  Created by 黄穆斌 on 2018/4/19.
+//  Created by Myron on 2018/4/20.
 //  Copyright © 2018年 myron. All rights reserved.
 //
 
 import UIKit
 
-class HabitEditTypeCell: HabitEditCell {
+class HabitEditTimeCell: HabitEditCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

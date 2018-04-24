@@ -1,5 +1,5 @@
 //
-//  HabitEditControlCell.swift
+//  HabitEditLengthCell.swift
 //  My
 //
 //  Created by 黄穆斌 on 2018/4/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HabitEditControlCell: HabitEditCell {
+class HabitEditGoalCell: HabitEditCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
