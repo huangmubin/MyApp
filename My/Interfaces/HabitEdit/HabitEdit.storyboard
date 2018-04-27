@@ -15,7 +15,7 @@
         <!--新习惯-->
         <scene sceneID="9hS-St-ned">
             <objects>
-                <viewController id="JEz-WJ-Ryi" sceneMemberID="viewController">
+                <viewController id="JEz-WJ-Ryi" customClass="HabitEditController" customModule="My" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Urp-6H-xbO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,15 +24,15 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditNameCell" rowHeight="92" id="uIC-06-IF2" customClass="HabitEditNameCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditNameCell" rowHeight="90" id="uIC-06-IF2" customClass="HabitEditNameCell" customModule="My" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uIC-06-IF2" id="iNq-rr-iZr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="新习惯" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJv-6L-KO8">
-                                                    <rect key="frame" x="20" y="39" width="335" height="42.5"/>
+                                                    <rect key="frame" x="20" y="39" width="335" height="40.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditTimeCell" rowHeight="80" id="T93-Us-FvY" customClass="HabitEditTimeCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="118" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T93-Us-FvY" id="DbN-ON-BvO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
@@ -89,11 +89,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditGoalCell" rowHeight="149" id="b7A-Dg-vjg" customClass="HabitEditGoalCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="149"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditGoalCell" rowHeight="150" id="b7A-Dg-vjg" customClass="HabitEditGoalCell" customModule="My" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="198" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7A-Dg-vjg" id="FLT-It-2tu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="给自己定个目标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-jj-anq">
@@ -103,10 +103,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xf4-fk-Z3W" customClass="View" customModule="My" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="41" width="710" height="97.5"/>
+                                                    <rect key="frame" x="20" y="41" width="710" height="98.5"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkV-I9-T7r">
-                                                            <rect key="frame" x="282" y="32" width="53" height="34"/>
+                                                            <rect key="frame" x="282" y="32.5" width="53" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <state key="normal" title="次数 &gt;">
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,7 +141,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auw-Xr-qHp">
-                                                            <rect key="frame" x="375" y="32" width="53" height="34"/>
+                                                            <rect key="frame" x="375" y="32.5" width="53" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <state key="normal" title="&lt; 时间">
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,11 +182,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditMessageCell" rowHeight="82" id="0Gl-4U-Ynm" customClass="HabitEditMessageCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="349" width="375" height="82"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditMessageCell" rowHeight="80" id="0Gl-4U-Ynm" customClass="HabitEditMessageCell" customModule="My" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="348" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Gl-4U-Ynm" id="YKB-Ge-ERl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="900" verticalCompressionResistancePriority="900" text="来个口号吧，告诉那个坚持中的自己" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idI-wg-iDL">
@@ -196,13 +196,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了更好的自己！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WES-aT-W5b">
-                                                    <rect key="frame" x="20" y="40.5" width="335" height="31"/>
+                                                    <rect key="frame" x="20" y="40.5" width="335" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yet-EQ-hat">
-                                                    <rect key="frame" x="20" y="40" width="335" height="31.5"/>
+                                                    <rect key="frame" x="20" y="40" width="335" height="29.5"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -220,11 +220,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditDiaryCell" rowHeight="87" id="b1R-qW-jbU" customClass="HabitEditDiaryCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="431" width="375" height="87"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditDiaryCell" rowHeight="80" id="b1R-qW-jbU" customClass="HabitEditDiaryCell" customModule="My" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="428" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1R-qW-jbU" id="Fjc-T2-WRE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="900" text="习惯修改记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGi-xd-jud">
@@ -234,7 +234,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-10-10 创建：xxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-cK-Xjf">
-                                                    <rect key="frame" x="30" y="41" width="325" height="35.5"/>
+                                                    <rect key="frame" x="30" y="41" width="325" height="28.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -252,7 +252,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitEditMenuCell" rowHeight="70" id="2L5-nN-0xd" customClass="HabitEditMenuCell" customModule="My" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="518" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="508" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2L5-nN-0xd" id="3Zd-c5-q51">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
@@ -297,6 +297,9 @@
                         <barButtonItem key="leftBarButtonItem" title="取消" id="pjm-3X-8j2"/>
                         <barButtonItem key="rightBarButtonItem" title="保存" id="qxb-aH-tkG"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="dS2-Bb-XZw" id="XfF-EP-M32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2l-vG-Tn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

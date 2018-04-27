@@ -41,18 +41,18 @@ extension HabitEditController {
     /** 编辑状态下的 Cards */
     static let eidt: [String] = [
         "HabitEditNameCell",
-        "HabitEditStartCell",
-        "HabitEditTypeCell",
+        "HabitEditTimeCell",
+        "HabitEditGoalCell",
         "HabitEditMessageCell",
-        "HabitEditLogCell",
-        "HabitEditControlCell",
+        "HabitEditDiaryCell",
+        "HabitEditMenuCell",
     ]
     
     /** 新建状态下的 Cards */
     static let new: [String] = [
         "HabitEditNameCell",
-        "HabitEditStartCell",
-        "HabitEditTypeCell",
+        "HabitEditTimeCell",
+        "HabitEditGoalCell",
         "HabitEditMessageCell",
     ]
     
@@ -62,15 +62,21 @@ extension HabitEditController {
 
 extension HabitEditController {
     
-    /** 计算单元格的高度规则 */
+    /** 计算初始化单元格的高度规则 */
     func height(id: String) -> CGFloat {
         switch id {
-        case "HabitEditNameCell": break
-        case "HabitEditStartCell": break
-        case "HabitEditTypeCell": break
-        case "HabitEditMessageCell": break
-        case "HabitEditLogCell": break
-        case "HabitEditControlCell": break
+        case "HabitEditNameCell":
+            return 90
+        case "HabitEditTimeCell":
+            return 80
+        case "HabitEditGoalCell":
+            return 150
+        case "HabitEditMessageCell":
+            return 80
+        case "HabitEditDiaryCell":
+            return 80
+        case "HabitEditMenuCell":
+            return 70
         default: break
         }
         return 0

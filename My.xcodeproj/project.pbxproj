@@ -26,13 +26,15 @@
 		9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */; };
 		9C3069E12088D690007E069C /* HabitEditGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E02088D690007E069C /* HabitEditGoalCell.swift */; };
 		9C3069E32088D6C3007E069C /* HabitEditMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E22088D6C3007E069C /* HabitEditMenuCell.swift */; };
+		9C5F2613209319470080E1DC /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F260F209319470080E1DC /* InputView.xib */; };
+		9C5F2614209319470080E1DC /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2610209319470080E1DC /* InputTextView.swift */; };
+		9C5F2615209319470080E1DC /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F2611209319470080E1DC /* InputTextView.xib */; };
+		9C5F2616209319470080E1DC /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2612209319470080E1DC /* InputView.swift */; };
+		9C5F2618209319C80080E1DC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F2617209319C80080E1DC /* TabBar.storyboard */; };
 		9C61B9392055148600336FD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B9382055148600336FD3 /* libsqlite3.tbd */; };
 		9C8FAE15208ECE3700AB8CE7 /* iSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE14208ECE3700AB8CE7 /* iSelector.swift */; };
 		9C8FAE17208ECE4300AB8CE7 /* iSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8FAE16208ECE4300AB8CE7 /* iSelector.xib */; };
 		9C8FAE19208ED2D800AB8CE7 /* iDateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE18208ED2D800AB8CE7 /* iDateSelector.swift */; };
-		9C8FAE1D208EDBAA00AB8CE7 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE1C208EDBAA00AB8CE7 /* InputView.swift */; };
-		9C8FAE1F208EDBC200AB8CE7 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8FAE1E208EDBC200AB8CE7 /* InputView.xib */; };
-		9C8FAE21208EDFA400AB8CE7 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE20208EDFA400AB8CE7 /* InputTextView.swift */; };
 		9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9720887EE100168ACA /* Animation.swift */; };
 		9C9EFCAE20887EE100168ACA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9920887EE100168ACA /* Button.swift */; };
 		9C9EFCAF20887EE100168ACA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFC9A20887EE100168ACA /* ImageView.swift */; };
@@ -83,13 +85,15 @@
 		9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCell.swift; sourceTree = "<group>"; };
 		9C3069E02088D690007E069C /* HabitEditGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditGoalCell.swift; sourceTree = "<group>"; };
 		9C3069E22088D6C3007E069C /* HabitEditMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMenuCell.swift; sourceTree = "<group>"; };
+		9C5F260F209319470080E1DC /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		9C5F2610209319470080E1DC /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		9C5F2611209319470080E1DC /* InputTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
+		9C5F2612209319470080E1DC /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		9C5F2617209319C80080E1DC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9C61B9382055148600336FD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9C8FAE14208ECE3700AB8CE7 /* iSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSelector.swift; sourceTree = "<group>"; };
 		9C8FAE16208ECE4300AB8CE7 /* iSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iSelector.xib; sourceTree = "<group>"; };
 		9C8FAE18208ED2D800AB8CE7 /* iDateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDateSelector.swift; sourceTree = "<group>"; };
-		9C8FAE1C208EDBAA00AB8CE7 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
-		9C8FAE1E208EDBC200AB8CE7 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
-		9C8FAE20208EDFA400AB8CE7 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		9C9EFC9720887EE100168ACA /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		9C9EFC9920887EE100168ACA /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		9C9EFC9A20887EE100168ACA /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -148,8 +152,9 @@
 		9C3069CE2088C778007E069C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				9C3069D62088D58B007E069C /* HabitEdit */,
+				9C5F2617209319C80080E1DC /* TabBar.storyboard */,
 				9C3069CF2088CF49007E069C /* HabitList */,
+				9C3069D62088D58B007E069C /* HabitEdit */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -188,6 +193,17 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9C5F260E209319470080E1DC /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				9C5F260F209319470080E1DC /* InputView.xib */,
+				9C5F2610209319470080E1DC /* InputTextView.swift */,
+				9C5F2611209319470080E1DC /* InputTextView.xib */,
+				9C5F2612209319470080E1DC /* InputView.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 		9C61B9372055148600336FD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +215,7 @@
 		9C8FAE13208ECA0A00AB8CE7 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				9C8FAE1B208EDA3A00AB8CE7 /* Input */,
+				9C5F260E209319470080E1DC /* Input */,
 				9C8FAE1A208EDA1D00AB8CE7 /* Selector */,
 			);
 			path = Interface;
@@ -213,16 +229,6 @@
 				9C8FAE16208ECE4300AB8CE7 /* iSelector.xib */,
 			);
 			path = Selector;
-			sourceTree = "<group>";
-		};
-		9C8FAE1B208EDA3A00AB8CE7 /* Input */ = {
-			isa = PBXGroup;
-			children = (
-				9C8FAE1C208EDBAA00AB8CE7 /* InputView.swift */,
-				9C8FAE1E208EDBC200AB8CE7 /* InputView.xib */,
-				9C8FAE20208EDFA400AB8CE7 /* InputTextView.swift */,
-			);
-			path = Input;
 			sourceTree = "<group>";
 		};
 		9C9EFC9420887EC900168ACA /* Models */ = {
@@ -434,12 +440,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBBE1842052CF240085DDA3 /* LaunchScreen.storyboard in Resources */,
+				9C5F2618209319C80080E1DC /* TabBar.storyboard in Resources */,
 				9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */,
+				9C5F2615209319470080E1DC /* InputTextView.xib in Resources */,
 				9C8FAE17208ECE4300AB8CE7 /* iSelector.xib in Resources */,
 				9CBBE1812052CF240085DDA3 /* Assets.xcassets in Resources */,
 				9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */,
 				9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */,
-				9C8FAE1F208EDBC200AB8CE7 /* InputView.xib in Resources */,
+				9C5F2613209319470080E1DC /* InputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,9 +461,11 @@
 				9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */,
 				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
 				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
+				9C5F2616209319470080E1DC /* InputView.swift in Sources */,
 				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
 				9C3069E12088D690007E069C /* HabitEditGoalCell.swift in Sources */,
 				9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */,
+				9C5F2614209319470080E1DC /* InputTextView.swift in Sources */,
 				9C9EFCB120887EE100168ACA /* View.swift in Sources */,
 				9C3069D52088D150007E069C /* HabitListCell.swift in Sources */,
 				9C0F2E7420899AF3004A7D3F /* HabitEditMessageCell.swift in Sources */,
@@ -476,7 +486,6 @@
 				9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */,
 				9C3069E32088D6C3007E069C /* HabitEditMenuCell.swift in Sources */,
 				9C9EFCC920887F8200168ACA /* Keys.swift in Sources */,
-				9C8FAE21208EDFA400AB8CE7 /* InputTextView.swift in Sources */,
 				9C3069D32088CF94007E069C /* HabitListController.swift in Sources */,
 				9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
@@ -493,7 +502,6 @@
 				9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */,
 				9C9EFCB020887EE100168ACA /* TableViewCell.swift in Sources */,
 				9C9EFCB920887EE100168ACA /* Ex_Int.swift in Sources */,
-				9C8FAE1D208EDBAA00AB8CE7 /* InputView.swift in Sources */,
 				9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */,
 				9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */,
 			);
@@ -638,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KGH4RWYPW;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/My/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myron.My;
@@ -656,7 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KGH4RWYPW;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/My/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myron.My;

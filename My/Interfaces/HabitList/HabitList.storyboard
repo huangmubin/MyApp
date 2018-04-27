@@ -13,7 +13,7 @@
         <!--习惯卡片-->
         <scene sceneID="GBB-1U-90T">
             <objects>
-                <viewController id="tB1-V5-wxC" sceneMemberID="viewController">
+                <viewController id="tB1-V5-wxC" customClass="HabitListController" customModule="My" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fc6-Ec-hax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tB1-V5-wxC" id="kSv-Hc-z9B"/>
+                                    <outlet property="delegate" destination="tB1-V5-wxC" id="YoM-Ty-ehS"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,11 +127,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="FbX-Fw-TXQ"/>
                     <navigationItem key="navigationItem" title="习惯卡片" id="oVB-P6-0wX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="HVi-Lb-CLn"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ax0-C3-KK2"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="HVi-Lb-CLn">
+                            <connections>
+                                <action selector="idle:" destination="tB1-V5-wxC" id="P6Y-U0-5PV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ax0-C3-KK2">
+                            <connections>
+                                <action selector="add:" destination="tB1-V5-wxC" id="PZg-kb-9w9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="table" destination="Fkk-QZ-It4" id="Ncw-bm-gz4"/>
                         <segue destination="fnj-QS-yvs" kind="presentation" identifier="HabitAdd" id="9iO-ad-2Vu"/>
                     </connections>
                 </viewController>

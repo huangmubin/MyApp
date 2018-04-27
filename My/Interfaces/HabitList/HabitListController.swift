@@ -51,8 +51,13 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
     // MARK: - Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? ViewController {
-            print(destination)
+        switch segue.identifier! {
+        case "HabitAdd":
+            if let destination = segue.controller as? HabitEditController {
+                destination.habit = Habit()
+            }
+        default:
+            break
         }
     }
     
