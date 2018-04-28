@@ -8,13 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C0F2E7220898615004A7D3F /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7120898615004A7D3F /* Cache.swift */; };
-		9C0F2E7420899AF3004A7D3F /* HabitEditMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */; };
-		9C0F2E7620899B0F004A7D3F /* HabitEditTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7520899B0F004A7D3F /* HabitEditTimeCell.swift */; };
-		9C0F2E7820899B1A004A7D3F /* HabitEditDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7720899B1A004A7D3F /* HabitEditDiaryCell.swift */; };
 		9C0F2E7C2089C828004A7D3F /* Ex_UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */; };
 		9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7D2089CE50004A7D3F /* TableView.swift */; };
-		9C0F2E802089CEDE004A7D3F /* TableCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */; };
-		9C0F2E822089CEF1004A7D3F /* TableCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */; };
 		9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E842089D789004A7D3F /* Ex_String.swift */; };
 		9C0F2E872089D84B004A7D3F /* Ex_UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */; };
 		9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D02088CF75007E069C /* HabitList.storyboard */; };
@@ -22,10 +17,6 @@
 		9C3069D52088D150007E069C /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D42088D150007E069C /* HabitListCell.swift */; };
 		9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D72088D598007E069C /* HabitEdit.storyboard */; };
 		9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D92088D5AB007E069C /* HabitEditController.swift */; };
-		9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DC2088D649007E069C /* HabitEditCell.swift */; };
-		9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */; };
-		9C3069E12088D690007E069C /* HabitEditGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E02088D690007E069C /* HabitEditGoalCell.swift */; };
-		9C3069E32088D6C3007E069C /* HabitEditMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069E22088D6C3007E069C /* HabitEditMenuCell.swift */; };
 		9C5F2613209319470080E1DC /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F260F209319470080E1DC /* InputView.xib */; };
 		9C5F2614209319470080E1DC /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2610209319470080E1DC /* InputTextView.swift */; };
 		9C5F2615209319470080E1DC /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F2611209319470080E1DC /* InputTextView.xib */; };
@@ -56,6 +47,19 @@
 		9C9EFCC920887F8200168ACA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCC820887F8200168ACA /* Keys.swift */; };
 		9C9EFCCB2088904900168ACA /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCA2088904900168ACA /* Habit.swift */; };
 		9C9EFCCF2088991A00168ACA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EFCCE2088991A00168ACA /* Log.swift */; };
+		9CB658DA2094064A00C5AE77 /* CardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658D82094064A00C5AE77 /* CardTable.swift */; };
+		9CB658DB2094064A00C5AE77 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658D92094064A00C5AE77 /* CardView.swift */; };
+		9CB658DD2094098D00C5AE77 /* HabitEditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658DC2094098D00C5AE77 /* HabitEditCard.swift */; };
+		9CB658DF209409B700C5AE77 /* HabitEditNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658DE209409B700C5AE77 /* HabitEditNameCard.swift */; };
+		9CB658E1209409E300C5AE77 /* HabitEditTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E0209409E300C5AE77 /* HabitEditTimeCard.swift */; };
+		9CB658E3209409EC00C5AE77 /* HabitEditGoalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E2209409EC00C5AE77 /* HabitEditGoalCard.swift */; };
+		9CB658E5209409FB00C5AE77 /* HabitEditMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E4209409FB00C5AE77 /* HabitEditMessageCard.swift */; };
+		9CB658E720940A0200C5AE77 /* HabitEditDiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E620940A0200C5AE77 /* HabitEditDiaryCard.swift */; };
+		9CB658E920940A0A00C5AE77 /* HabitEditMenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E820940A0A00C5AE77 /* HabitEditMenuCard.swift */; };
+		9CB658EB2094266000C5AE77 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EA2094266000C5AE77 /* Operator.swift */; };
+		9CB658ED20945CA200C5AE77 /* CardSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EC20945CA200C5AE77 /* CardSeparator.swift */; };
+		9CB658EF209475F700C5AE77 /* EditLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EE209475F700C5AE77 /* EditLabel.swift */; };
+		9CB658F12094760200C5AE77 /* EditLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB658F02094760200C5AE77 /* EditLabel.xib */; };
 		9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE1762052CF240085DDA3 /* AppDelegate.swift */; };
 		9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE17A2052CF240085DDA3 /* Main.storyboard */; };
 		9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE17D2052CF240085DDA3 /* My.xcdatamodeld */; };
@@ -67,13 +71,8 @@
 
 /* Begin PBXFileReference section */
 		9C0F2E7120898615004A7D3F /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMessageCell.swift; sourceTree = "<group>"; };
-		9C0F2E7520899B0F004A7D3F /* HabitEditTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditTimeCell.swift; sourceTree = "<group>"; };
-		9C0F2E7720899B1A004A7D3F /* HabitEditDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditDiaryCell.swift; sourceTree = "<group>"; };
 		9C0F2E7B2089C828004A7D3F /* Ex_UIStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UIStoryboardSegue.swift; sourceTree = "<group>"; };
 		9C0F2E7D2089CE50004A7D3F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCards.swift; sourceTree = "<group>"; };
-		9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCardsCell.swift; sourceTree = "<group>"; };
 		9C0F2E842089D789004A7D3F /* Ex_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
 		9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UITextView.swift; sourceTree = "<group>"; };
 		9C3069D02088CF75007E069C /* HabitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitList.storyboard; sourceTree = "<group>"; };
@@ -81,10 +80,6 @@
 		9C3069D42088D150007E069C /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
 		9C3069D72088D598007E069C /* HabitEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitEdit.storyboard; sourceTree = "<group>"; };
 		9C3069D92088D5AB007E069C /* HabitEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditController.swift; sourceTree = "<group>"; };
-		9C3069DC2088D649007E069C /* HabitEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditCell.swift; sourceTree = "<group>"; };
-		9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCell.swift; sourceTree = "<group>"; };
-		9C3069E02088D690007E069C /* HabitEditGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditGoalCell.swift; sourceTree = "<group>"; };
-		9C3069E22088D6C3007E069C /* HabitEditMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMenuCell.swift; sourceTree = "<group>"; };
 		9C5F260F209319470080E1DC /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
 		9C5F2610209319470080E1DC /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		9C5F2611209319470080E1DC /* InputTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
@@ -115,6 +110,19 @@
 		9C9EFCC820887F8200168ACA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		9C9EFCCA2088904900168ACA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		9C9EFCCE2088991A00168ACA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		9CB658D82094064A00C5AE77 /* CardTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTable.swift; sourceTree = "<group>"; };
+		9CB658D92094064A00C5AE77 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9CB658DC2094098D00C5AE77 /* HabitEditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditCard.swift; sourceTree = "<group>"; };
+		9CB658DE209409B700C5AE77 /* HabitEditNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCard.swift; sourceTree = "<group>"; };
+		9CB658E0209409E300C5AE77 /* HabitEditTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditTimeCard.swift; sourceTree = "<group>"; };
+		9CB658E2209409EC00C5AE77 /* HabitEditGoalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditGoalCard.swift; sourceTree = "<group>"; };
+		9CB658E4209409FB00C5AE77 /* HabitEditMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMessageCard.swift; sourceTree = "<group>"; };
+		9CB658E620940A0200C5AE77 /* HabitEditDiaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditDiaryCard.swift; sourceTree = "<group>"; };
+		9CB658E820940A0A00C5AE77 /* HabitEditMenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMenuCard.swift; sourceTree = "<group>"; };
+		9CB658EA2094266000C5AE77 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		9CB658EC20945CA200C5AE77 /* CardSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSeparator.swift; sourceTree = "<group>"; };
+		9CB658EE209475F700C5AE77 /* EditLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabel.swift; sourceTree = "<group>"; };
+		9CB658F02094760200C5AE77 /* EditLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditLabel.xib; sourceTree = "<group>"; };
 		9CBBE1732052CF240085DDA3 /* My.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBBE1762052CF240085DDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBBE17B2052CF240085DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,8 +151,6 @@
 			children = (
 				9C0F2E7D2089CE50004A7D3F /* TableView.swift */,
 				9C9EFC9B20887EE100168ACA /* TableViewCell.swift */,
-				9C0F2E7F2089CEDE004A7D3F /* TableCards.swift */,
-				9C0F2E812089CEF1004A7D3F /* TableCardsCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -174,23 +180,23 @@
 			children = (
 				9C3069D72088D598007E069C /* HabitEdit.storyboard */,
 				9C3069D92088D5AB007E069C /* HabitEditController.swift */,
-				9C3069DB2088D628007E069C /* Cells */,
+				9C3069DB2088D628007E069C /* Cards */,
 			);
 			path = HabitEdit;
 			sourceTree = "<group>";
 		};
-		9C3069DB2088D628007E069C /* Cells */ = {
+		9C3069DB2088D628007E069C /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				9C3069DC2088D649007E069C /* HabitEditCell.swift */,
-				9C3069DE2088D66A007E069C /* HabitEditNameCell.swift */,
-				9C0F2E7520899B0F004A7D3F /* HabitEditTimeCell.swift */,
-				9C3069E02088D690007E069C /* HabitEditGoalCell.swift */,
-				9C0F2E7320899AF3004A7D3F /* HabitEditMessageCell.swift */,
-				9C0F2E7720899B1A004A7D3F /* HabitEditDiaryCell.swift */,
-				9C3069E22088D6C3007E069C /* HabitEditMenuCell.swift */,
+				9CB658DC2094098D00C5AE77 /* HabitEditCard.swift */,
+				9CB658DE209409B700C5AE77 /* HabitEditNameCard.swift */,
+				9CB658E0209409E300C5AE77 /* HabitEditTimeCard.swift */,
+				9CB658E2209409EC00C5AE77 /* HabitEditGoalCard.swift */,
+				9CB658E4209409FB00C5AE77 /* HabitEditMessageCard.swift */,
+				9CB658E620940A0200C5AE77 /* HabitEditDiaryCard.swift */,
+				9CB658E820940A0A00C5AE77 /* HabitEditMenuCard.swift */,
 			);
-			path = Cells;
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		9C5F260E209319470080E1DC /* Input */ = {
@@ -200,6 +206,8 @@
 				9C5F2610209319470080E1DC /* InputTextView.swift */,
 				9C5F2611209319470080E1DC /* InputTextView.xib */,
 				9C5F2612209319470080E1DC /* InputView.swift */,
+				9CB658EE209475F700C5AE77 /* EditLabel.swift */,
+				9CB658F02094760200C5AE77 /* EditLabel.xib */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				9C9EFC9C20887EE100168ACA /* View.swift */,
 				9C9EFC9920887EE100168ACA /* Button.swift */,
 				9C9EFC9A20887EE100168ACA /* ImageView.swift */,
+				9CB658D72094064A00C5AE77 /* ScrollView */,
 				9C0F2E832089CEFD004A7D3F /* TableView */,
 			);
 			path = BaseObjects;
@@ -297,6 +306,7 @@
 			children = (
 				9C9EFCAB20887EE100168ACA /* NibLoable.swift */,
 				9C9EFCAC20887EE100168ACA /* Notifiable.swift */,
+				9CB658EA2094266000C5AE77 /* Operator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -307,6 +317,16 @@
 				9C9EFCC820887F8200168ACA /* Keys.swift */,
 			);
 			path = Keys;
+			sourceTree = "<group>";
+		};
+		9CB658D72094064A00C5AE77 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9CB658D82094064A00C5AE77 /* CardTable.swift */,
+				9CB658D92094064A00C5AE77 /* CardView.swift */,
+				9CB658EC20945CA200C5AE77 /* CardSeparator.swift */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 		9CBBE16A2052CF240085DDA3 = {
@@ -439,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB658F12094760200C5AE77 /* EditLabel.xib in Resources */,
 				9CBBE1842052CF240085DDA3 /* LaunchScreen.storyboard in Resources */,
 				9C5F2618209319C80080E1DC /* TabBar.storyboard in Resources */,
 				9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */,
@@ -458,52 +479,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3069DD2088D649007E069C /* HabitEditCell.swift in Sources */,
 				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
+				9CB658EF209475F700C5AE77 /* EditLabel.swift in Sources */,
 				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
 				9C5F2616209319470080E1DC /* InputView.swift in Sources */,
 				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
-				9C3069E12088D690007E069C /* HabitEditGoalCell.swift in Sources */,
+				9CB658DF209409B700C5AE77 /* HabitEditNameCard.swift in Sources */,
 				9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */,
 				9C5F2614209319470080E1DC /* InputTextView.swift in Sources */,
 				9C9EFCB120887EE100168ACA /* View.swift in Sources */,
 				9C3069D52088D150007E069C /* HabitListCell.swift in Sources */,
-				9C0F2E7420899AF3004A7D3F /* HabitEditMessageCell.swift in Sources */,
+				9CB658ED20945CA200C5AE77 /* CardSeparator.swift in Sources */,
 				9C9EFCB320887EE100168ACA /* SQLite.swift in Sources */,
-				9C0F2E802089CEDE004A7D3F /* TableCards.swift in Sources */,
 				9C9EFCBE20887EE100168ACA /* Notifiable.swift in Sources */,
-				9C0F2E7820899B1A004A7D3F /* HabitEditDiaryCell.swift in Sources */,
 				9C0F2E872089D84B004A7D3F /* Ex_UITextView.swift in Sources */,
 				9C9EFCB520887EE100168ACA /* Ex_Calendar.swift in Sources */,
 				9C9EFCCF2088991A00168ACA /* Log.swift in Sources */,
 				9C9EFCAF20887EE100168ACA /* ImageView.swift in Sources */,
+				9CB658DB2094064A00C5AE77 /* CardView.swift in Sources */,
 				9C9EFCAE20887EE100168ACA /* Button.swift in Sources */,
 				9C9EFCB220887EE100168ACA /* ViewController.swift in Sources */,
 				9C9EFCBA20887EE100168ACA /* Ex_UIColor.swift in Sources */,
 				9C9EFCB420887EE100168ACA /* Ex_Array.swift in Sources */,
+				9CB658EB2094266000C5AE77 /* Operator.swift in Sources */,
 				9C9EFCBD20887EE100168ACA /* NibLoable.swift in Sources */,
 				9C9EFCBC20887EE100168ACA /* Ex_UIScreen.swift in Sources */,
 				9C3069DA2088D5AB007E069C /* HabitEditController.swift in Sources */,
-				9C3069E32088D6C3007E069C /* HabitEditMenuCell.swift in Sources */,
+				9CB658DD2094098D00C5AE77 /* HabitEditCard.swift in Sources */,
+				9CB658DA2094064A00C5AE77 /* CardTable.swift in Sources */,
 				9C9EFCC920887F8200168ACA /* Keys.swift in Sources */,
 				9C3069D32088CF94007E069C /* HabitListController.swift in Sources */,
-				9C3069DF2088D66A007E069C /* HabitEditNameCell.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
 				9C8FAE15208ECE3700AB8CE7 /* iSelector.swift in Sources */,
 				9C8FAE19208ED2D800AB8CE7 /* iDateSelector.swift in Sources */,
-				9C0F2E822089CEF1004A7D3F /* TableCardsCell.swift in Sources */,
-				9C0F2E7620899B0F004A7D3F /* HabitEditTimeCell.swift in Sources */,
 				9C9EFCB720887EE100168ACA /* Ex_DateFormatter.swift in Sources */,
 				9C9EFCB820887EE100168ACA /* Ex_IndexPath.swift in Sources */,
 				9CD01B4A208DCF740007B34C /* Ex_UILabel.swift in Sources */,
 				9C0F2E7220898615004A7D3F /* Cache.swift in Sources */,
+				9CB658E5209409FB00C5AE77 /* HabitEditMessageCard.swift in Sources */,
 				9C0F2E7C2089C828004A7D3F /* Ex_UIStoryboardSegue.swift in Sources */,
+				9CB658E3209409EC00C5AE77 /* HabitEditGoalCard.swift in Sources */,
 				9CFC30962072320400ED5D4C /* MainController.swift in Sources */,
 				9C9EFCAD20887EE100168ACA /* Animation.swift in Sources */,
+				9CB658E920940A0A00C5AE77 /* HabitEditMenuCard.swift in Sources */,
 				9C9EFCB020887EE100168ACA /* TableViewCell.swift in Sources */,
 				9C9EFCB920887EE100168ACA /* Ex_Int.swift in Sources */,
 				9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */,
 				9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */,
+				9CB658E1209409E300C5AE77 /* HabitEditTimeCard.swift in Sources */,
+				9CB658E720940A0200C5AE77 /* HabitEditDiaryCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +670,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BBKEKP879;
 				INFOPLIST_FILE = "$(SRCROOT)/My/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myron.My;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myron-MyApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -664,10 +689,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BBKEKP879;
 				INFOPLIST_FILE = "$(SRCROOT)/My/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myron.My;
+				PRODUCT_BUNDLE_IDENTIFIER = "Myron-MyApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
