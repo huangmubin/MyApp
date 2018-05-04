@@ -10,12 +10,17 @@ import UIKit
 
 class HabitEditDiaryCard: HabitEditCard {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func reload() {
+        
     }
-    */
+    
+    @IBOutlet weak var label: UILabel!
+    
+    func update(label: String) {
+        self.label.text = label
+        let h = max(self.label.sizeThatFits(CGSize(width: bounds.width, height: 42)).height, 42)
+        self.frame.size.height = h + 48
+        table.update_content_size()
+    }
 
 }

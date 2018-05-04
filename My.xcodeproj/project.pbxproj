@@ -12,6 +12,8 @@
 		9C0F2E7E2089CE50004A7D3F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E7D2089CE50004A7D3F /* TableView.swift */; };
 		9C0F2E852089D789004A7D3F /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E842089D789004A7D3F /* Ex_String.swift */; };
 		9C0F2E872089D84B004A7D3F /* Ex_UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */; };
+		9C181733209C423400FBD419 /* VarlenaInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C181731209C423400FBD419 /* VarlenaInput.swift */; };
+		9C181734209C423400FBD419 /* VarlenaInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C181732209C423400FBD419 /* VarlenaInput.xib */; };
 		9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3069D02088CF75007E069C /* HabitList.storyboard */; };
 		9C3069D32088CF94007E069C /* HabitListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D22088CF94007E069C /* HabitListController.swift */; };
 		9C3069D52088D150007E069C /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3069D42088D150007E069C /* HabitListCell.swift */; };
@@ -23,6 +25,7 @@
 		9C5F2616209319470080E1DC /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2612209319470080E1DC /* InputView.swift */; };
 		9C5F2618209319C80080E1DC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5F2617209319C80080E1DC /* TabBar.storyboard */; };
 		9C61B9392055148600336FD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B9382055148600336FD3 /* libsqlite3.tbd */; };
+		9C7F2ABC209C03B8005B6A44 /* Ex_UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F2ABB209C03B8005B6A44 /* Ex_UITextField.swift */; };
 		9C8FAE15208ECE3700AB8CE7 /* iSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE14208ECE3700AB8CE7 /* iSelector.swift */; };
 		9C8FAE17208ECE4300AB8CE7 /* iSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8FAE16208ECE4300AB8CE7 /* iSelector.xib */; };
 		9C8FAE19208ED2D800AB8CE7 /* iDateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FAE18208ED2D800AB8CE7 /* iDateSelector.swift */; };
@@ -58,8 +61,6 @@
 		9CB658E920940A0A00C5AE77 /* HabitEditMenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658E820940A0A00C5AE77 /* HabitEditMenuCard.swift */; };
 		9CB658EB2094266000C5AE77 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EA2094266000C5AE77 /* Operator.swift */; };
 		9CB658ED20945CA200C5AE77 /* CardSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EC20945CA200C5AE77 /* CardSeparator.swift */; };
-		9CB658EF209475F700C5AE77 /* EditLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB658EE209475F700C5AE77 /* EditLabel.swift */; };
-		9CB658F12094760200C5AE77 /* EditLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB658F02094760200C5AE77 /* EditLabel.xib */; };
 		9CBBE1772052CF240085DDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE1762052CF240085DDA3 /* AppDelegate.swift */; };
 		9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE17A2052CF240085DDA3 /* Main.storyboard */; };
 		9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE17D2052CF240085DDA3 /* My.xcdatamodeld */; };
@@ -75,6 +76,8 @@
 		9C0F2E7D2089CE50004A7D3F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		9C0F2E842089D789004A7D3F /* Ex_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
 		9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UITextView.swift; sourceTree = "<group>"; };
+		9C181731209C423400FBD419 /* VarlenaInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarlenaInput.swift; sourceTree = "<group>"; };
+		9C181732209C423400FBD419 /* VarlenaInput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarlenaInput.xib; sourceTree = "<group>"; };
 		9C3069D02088CF75007E069C /* HabitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitList.storyboard; sourceTree = "<group>"; };
 		9C3069D22088CF94007E069C /* HabitListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListController.swift; sourceTree = "<group>"; };
 		9C3069D42088D150007E069C /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		9C5F2612209319470080E1DC /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		9C5F2617209319C80080E1DC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9C61B9382055148600336FD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9C7F2ABB209C03B8005B6A44 /* Ex_UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UITextField.swift; sourceTree = "<group>"; };
 		9C8FAE14208ECE3700AB8CE7 /* iSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSelector.swift; sourceTree = "<group>"; };
 		9C8FAE16208ECE4300AB8CE7 /* iSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iSelector.xib; sourceTree = "<group>"; };
 		9C8FAE18208ED2D800AB8CE7 /* iDateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDateSelector.swift; sourceTree = "<group>"; };
@@ -121,8 +125,6 @@
 		9CB658E820940A0A00C5AE77 /* HabitEditMenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMenuCard.swift; sourceTree = "<group>"; };
 		9CB658EA2094266000C5AE77 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		9CB658EC20945CA200C5AE77 /* CardSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSeparator.swift; sourceTree = "<group>"; };
-		9CB658EE209475F700C5AE77 /* EditLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabel.swift; sourceTree = "<group>"; };
-		9CB658F02094760200C5AE77 /* EditLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditLabel.xib; sourceTree = "<group>"; };
 		9CBBE1732052CF240085DDA3 /* My.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBBE1762052CF240085DDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBBE17B2052CF240085DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,12 +204,12 @@
 		9C5F260E209319470080E1DC /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				9C5F2612209319470080E1DC /* InputView.swift */,
 				9C5F260F209319470080E1DC /* InputView.xib */,
 				9C5F2610209319470080E1DC /* InputTextView.swift */,
 				9C5F2611209319470080E1DC /* InputTextView.xib */,
-				9C5F2612209319470080E1DC /* InputView.swift */,
-				9CB658EE209475F700C5AE77 /* EditLabel.swift */,
-				9CB658F02094760200C5AE77 /* EditLabel.xib */,
+				9C181731209C423400FBD419 /* VarlenaInput.swift */,
+				9C181732209C423400FBD419 /* VarlenaInput.xib */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -390,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0F2E862089D84B004A7D3F /* Ex_UITextView.swift */,
+				9C7F2ABB209C03B8005B6A44 /* Ex_UITextField.swift */,
 				9CD01B49208DCF740007B34C /* Ex_UILabel.swift */,
 				9C9EFCA720887EE100168ACA /* Ex_UIColor.swift */,
 				9C9EFCA820887EE100168ACA /* Ex_UIDevice.swift */,
@@ -459,13 +462,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB658F12094760200C5AE77 /* EditLabel.xib in Resources */,
 				9CBBE1842052CF240085DDA3 /* LaunchScreen.storyboard in Resources */,
 				9C5F2618209319C80080E1DC /* TabBar.storyboard in Resources */,
 				9C3069D82088D598007E069C /* HabitEdit.storyboard in Resources */,
 				9C5F2615209319470080E1DC /* InputTextView.xib in Resources */,
 				9C8FAE17208ECE4300AB8CE7 /* iSelector.xib in Resources */,
 				9CBBE1812052CF240085DDA3 /* Assets.xcassets in Resources */,
+				9C181734209C423400FBD419 /* VarlenaInput.xib in Resources */,
 				9CBBE17C2052CF240085DDA3 /* Main.storyboard in Resources */,
 				9C3069D12088CF75007E069C /* HabitList.storyboard in Resources */,
 				9C5F2613209319470080E1DC /* InputView.xib in Resources */,
@@ -479,8 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C181733209C423400FBD419 /* VarlenaInput.swift in Sources */,
 				9C9EFCCB2088904900168ACA /* Habit.swift in Sources */,
-				9CB658EF209475F700C5AE77 /* EditLabel.swift in Sources */,
 				9C9EFCBB20887EE100168ACA /* Ex_UIDevice.swift in Sources */,
 				9C5F2616209319470080E1DC /* InputView.swift in Sources */,
 				9C9EFCB620887EE100168ACA /* Ex_Date.swift in Sources */,
@@ -509,6 +512,7 @@
 				9CB658DA2094064A00C5AE77 /* CardTable.swift in Sources */,
 				9C9EFCC920887F8200168ACA /* Keys.swift in Sources */,
 				9C3069D32088CF94007E069C /* HabitListController.swift in Sources */,
+				9C7F2ABC209C03B8005B6A44 /* Ex_UITextField.swift in Sources */,
 				9CBBE17F2052CF240085DDA3 /* My.xcdatamodeld in Sources */,
 				9C8FAE15208ECE3700AB8CE7 /* iSelector.swift in Sources */,
 				9C8FAE19208ED2D800AB8CE7 /* iDateSelector.swift in Sources */,

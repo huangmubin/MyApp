@@ -10,6 +10,13 @@ import UIKit
 
 class HabitEditNameCard: HabitEditCard, UITextViewDelegate {
 
+    // MARK: - Reload
+    
+    /** Override: Reload */
+    public override func reload() {
+        text.text = edit.habit.name
+    }
+
     // MARK: - Text
     
     /** Text */

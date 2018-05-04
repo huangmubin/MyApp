@@ -17,6 +17,15 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         habits = Habit.find(where: "state = 0")
+        
+        for (i, n) in ["英语学习", "编程开发", "运动健身", "Python学习", "游戏娱乐", "陪伴家人"].enumerated() {
+            let habit = Habit(new: true)
+            habit.name = n
+            habit.id = i
+            habit.message = "加油！！！"
+            habit.goal = 10000
+            habits.append(habit)
+        }
     }
     
     // MARK: - Table View
@@ -54,7 +63,7 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
         switch segue.identifier! {
         case "HabitAdd":
             if let destination = segue.controller as? HabitEditController {
-                destination.habit = Habit()
+                destination.habit = Habit(new: true)
             }
         default:
             break

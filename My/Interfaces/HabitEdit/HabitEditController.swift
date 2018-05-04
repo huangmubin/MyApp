@@ -20,7 +20,15 @@ class HabitEditController: ViewController {
     /**  */
     override func viewDidLoad() {
         super.viewDidLoad()
+        table.controller = self
         table.reload()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let name = table.cards.find(condition: { $0 is HabitEditNameCard }) as? HabitEditNameCard {
+            name.text.becomeFirstResponder()
+        }
     }
     
     // MARK: - Card Table

@@ -17,16 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print(NSHomeDirectory())
-        //SQLite.default.open()
+        SQLite.default.open()
+        Habit.create()
+        Habit.Log.create()
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        //SQLite.default.open()
+        SQLite.default.open()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        //SQLite.default.close()
+        SQLite.default.close()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

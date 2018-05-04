@@ -10,6 +10,15 @@ import UIKit
 
 class HabitEditTimeCard: HabitEditCard {
 
+    // MARK: - Reload
+    
+    /** Override: Reload */
+    public override func reload() {
+        date.update(
+            date: Date(time: edit.habit.start)
+        )
+    }
+    
     // MARK: - Date
     
     /**  */

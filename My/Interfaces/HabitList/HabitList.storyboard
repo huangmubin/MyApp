@@ -13,16 +13,16 @@
         <!--习惯卡片-->
         <scene sceneID="GBB-1U-90T">
             <objects>
-                <viewController id="tB1-V5-wxC" customClass="HabitListController" customModule="My" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tB1-V5-wxC" customClass="HabitListController" customModule="My" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fc6-Ec-hax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-QZ-It4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-QZ-It4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="157" id="O03-le-VKX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="157" id="O03-le-VKX" customClass="HabitListCell" customModule="My" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O03-le-VKX" id="006-IZ-rFO">
@@ -108,6 +108,16 @@
                                                 <constraint firstAttribute="bottom" secondItem="yp5-Lo-0fH" secondAttribute="bottom" constant="10" id="vul-CN-oGb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backgroundView" destination="yp5-Lo-0fH" id="fNB-my-Kpf"/>
+                                            <outlet property="check" destination="q6t-eM-S40" id="PHd-Zj-xNh"/>
+                                            <outlet property="complete" destination="FfT-JF-SUN" id="qPZ-bD-3vX"/>
+                                            <outlet property="count" destination="0MN-bs-yCM" id="iGy-OA-vf5"/>
+                                            <outlet property="days" destination="TFF-QF-eNl" id="53k-Ep-eke"/>
+                                            <outlet property="goal" destination="xWf-SF-Rha" id="VXg-gi-tG3"/>
+                                            <outlet property="name" destination="6Ac-sF-7pC" id="U83-v6-oug"/>
+                                            <outlet property="start" destination="8YQ-kU-9kv" id="6cS-Pd-bIa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

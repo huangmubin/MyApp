@@ -20,6 +20,13 @@ class Habit {
         cache = Habit.Cache(habit: self)
     }
     
+    convenience init(new: Bool) {
+        self.init(0)
+        cache = Habit.Cache(habit: self)
+        start = Date().time1970
+        
+    }
+    
     // MARK: - Interface
     
     /** 检测该习惯的统计方式是时长还是次数 */

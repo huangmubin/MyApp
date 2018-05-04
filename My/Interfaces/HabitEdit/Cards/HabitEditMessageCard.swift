@@ -8,14 +8,27 @@
 
 import UIKit
 
-class HabitEditMessageCard: HabitEditCard {
+class HabitEditMessageCard: HabitEditCard, InputViewDelegate {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func reload() {
+        inputView(InputTextView(delegate: self), save_action: edit.habit.message)
     }
-    */
+    
+    @IBOutlet weak var message: UILabel!
+    
+    @IBAction func push() {
+        if let view = InputTextView.load(nib: nil) {
+            view.delegate = self
+            view.frame = edit.table.frame
+            edit.view.addSubview(view)
+        }
+    }
+    
+    func inputView(_ view: InputView, save_action value: Any) {
+        message.text = value as? String
+        let h = max(message.sizeThatFits(CGSize(width: bounds.width, height: 42)).height, 42)
+        self.frame.size.height = h + 48
+        table.update_content_size()
+    }
 
 }
