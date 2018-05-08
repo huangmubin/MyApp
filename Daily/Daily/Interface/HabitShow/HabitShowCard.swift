@@ -13,4 +13,7 @@ class HabitShowCard: CardView {
     /** 习惯对象 */
     var obj: Habit { return (table.controller as! HabitShowController).habit }
     
+    /** 控制器 */
+    var show: HabitShowController { return table.controller as! HabitShowController }
+    
 }

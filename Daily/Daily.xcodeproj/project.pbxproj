@@ -65,6 +65,11 @@
 		9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9B20A043A800D6A32A /* HabitShowCard.swift */; };
 		9C243D9E20A043D400D6A32A /* ShowNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9D20A043D400D6A32A /* ShowNameCard.swift */; };
 		9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */; };
+		9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2620A1853700DE4340 /* CalendarCell.swift */; };
+		9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD29D2720A1853700DE4340 /* CalendarCell.xib */; };
+		9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2820A1853700DE4340 /* CalendarView.swift */; };
+		9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD29D2920A1853700DE4340 /* CalendarView.xib */; };
+		9CD29D3020A18D1200DE4340 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2F20A18D1200DE4340 /* LogEditController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +133,11 @@
 		9C243D9B20A043A800D6A32A /* HabitShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCard.swift; sourceTree = "<group>"; };
 		9C243D9D20A043D400D6A32A /* ShowNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameCard.swift; sourceTree = "<group>"; };
 		9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalendarCard.swift; sourceTree = "<group>"; };
+		9CD29D2620A1853700DE4340 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		9CD29D2720A1853700DE4340 /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		9CD29D2820A1853700DE4340 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		9CD29D2920A1853700DE4340 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		9CD29D2F20A18D1200DE4340 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +298,7 @@
 		9C181779209D57B400FBD419 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				9CD29D2520A1853700DE4340 /* Calender */,
 				9C1817BB209DACBC00FBD419 /* Progress */,
 				9C18177A209D57B400FBD419 /* Input */,
 				9C181781209D57B400FBD419 /* Selector */,
@@ -339,6 +350,7 @@
 		9C1817B1209D57F800FBD419 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				9CD29D2E20A18CE900DE4340 /* LogEdit */,
 				9C243DA120A047C700D6A32A /* Views */,
 				9C243D9720A042B700D6A32A /* HabitShow */,
 				9C243D9220A03A9700D6A32A /* HabitAdd */,
@@ -409,6 +421,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9CD29D2520A1853700DE4340 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				9CD29D2620A1853700DE4340 /* CalendarCell.swift */,
+				9CD29D2720A1853700DE4340 /* CalendarCell.xib */,
+				9CD29D2820A1853700DE4340 /* CalendarView.swift */,
+				9CD29D2920A1853700DE4340 /* CalendarView.xib */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		9CD29D2E20A18CE900DE4340 /* LogEdit */ = {
+			isa = PBXGroup;
+			children = (
+				9CD29D2F20A18D1200DE4340 /* LogEditController.swift */,
+			);
+			path = LogEdit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,6 +501,8 @@
 				9C1817A7209D57B500FBD419 /* VarlenaInput.xib in Resources */,
 				9C18174F209D574300FBD419 /* LaunchScreen.storyboard in Resources */,
 				9C18174C209D574300FBD419 /* Assets.xcassets in Resources */,
+				9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */,
+				9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */,
 				9C1817A3209D57B500FBD419 /* InputTextView.xib in Resources */,
 				9C1817AA209D57B500FBD419 /* iSelector.xib in Resources */,
 				9C181747209D573F00FBD419 /* Main.storyboard in Resources */,
@@ -485,10 +518,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C18178B209D57B500FBD419 /* ImageView.swift in Sources */,
+				9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */,
 				9C181793209D57B500FBD419 /* SQLite.swift in Sources */,
 				9C243D9020A0395100D6A32A /* Log.swift in Sources */,
 				9C181795209D57B500FBD419 /* Ex_Calendar.swift in Sources */,
 				9C18178F209D57B500FBD419 /* TableView.swift in Sources */,
+				9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */,
 				9C1817AC209D57B500FBD419 /* Notifiable.swift in Sources */,
 				9C181796209D57B500FBD419 /* Ex_Date.swift in Sources */,
 				9C1817BD209DACD000FBD419 /* ProgressView.swift in Sources */,
@@ -496,6 +531,7 @@
 				9C18178E209D57B500FBD419 /* CardView.swift in Sources */,
 				9C181799209D57B500FBD419 /* Ex_Int.swift in Sources */,
 				9C243D8F20A0395100D6A32A /* Cache.swift in Sources */,
+				9CD29D3020A18D1200DE4340 /* LogEditController.swift in Sources */,
 				9C18179B209D57B500FBD419 /* Ex_UIColor.swift in Sources */,
 				9C18178A209D57B500FBD419 /* Button.swift in Sources */,
 				9C243D8920A035B100D6A32A /* HabitTableCell.swift in Sources */,

@@ -27,6 +27,17 @@ extension Habit {
             self.length = obj.length
         }
         
+        // MARK: - Interface
+        
+        /** 是否是请假 */
+        var is_sick: Bool {
+            get { return type == 1 }
+            set { type = newValue ? 1 : 0 }
+        }
+        
+        /** 获取结束时间 */
+        var end: Int { return start + length * 60 }
+        
         // MARK: - Database
         
         /** 本身的 id */
