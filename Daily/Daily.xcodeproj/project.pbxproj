@@ -69,6 +69,10 @@
 		9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9B20A043A800D6A32A /* HabitShowCard.swift */; };
 		9C243D9E20A043D400D6A32A /* ShowNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9D20A043D400D6A32A /* ShowNameCard.swift */; };
 		9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */; };
+		9CA5B69520A3351600B0C69E /* LogEditTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69420A3351600B0C69E /* LogEditTimeCard.swift */; };
+		9CA5B69720A33D3D00B0C69E /* LogEditMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69620A33D3D00B0C69E /* LogEditMessageCard.swift */; };
+		9CA5B69920A3480F00B0C69E /* HabitAdd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */; };
+		9CA5B69C20A3483600B0C69E /* HabitAddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */; };
 		9CD294A420A2EF13008CC61F /* HabitTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A320A2EF13008CC61F /* HabitTable.storyboard */; };
 		9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A520A2EF5E008CC61F /* TabBar.storyboard */; };
 		9CD294A820A2F9EC008CC61F /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */; };
@@ -147,6 +151,10 @@
 		9C243D9B20A043A800D6A32A /* HabitShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCard.swift; sourceTree = "<group>"; };
 		9C243D9D20A043D400D6A32A /* ShowNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameCard.swift; sourceTree = "<group>"; };
 		9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalendarCard.swift; sourceTree = "<group>"; };
+		9CA5B69420A3351600B0C69E /* LogEditTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditTimeCard.swift; sourceTree = "<group>"; };
+		9CA5B69620A33D3D00B0C69E /* LogEditMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditMessageCard.swift; sourceTree = "<group>"; };
+		9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitAdd.storyboard; sourceTree = "<group>"; };
+		9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddCard.swift; sourceTree = "<group>"; };
 		9CD294A320A2EF13008CC61F /* HabitTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitTable.storyboard; sourceTree = "<group>"; };
 		9CD294A520A2EF5E008CC61F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
@@ -424,6 +432,8 @@
 			isa = PBXGroup;
 			children = (
 				9C243D9320A03AB700D6A32A /* HabitAddController.swift */,
+				9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */,
+				9CA5B69A20A3482100B0C69E /* Cards */,
 			);
 			path = HabitAdd;
 			sourceTree = "<group>";
@@ -455,12 +465,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9CA5B69A20A3482100B0C69E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		9CD294AB20A2FCF6008CC61F /* Cards */ = {
 			isa = PBXGroup;
 			children = (
 				9CD294A920A2FCF3008CC61F /* LogEditCard.swift */,
 				9CD294AE20A2FFE7008CC61F /* LogEditTopCard.swift */,
 				9CD294AC20A2FD13008CC61F /* LogEditDateCard.swift */,
+				9CA5B69420A3351600B0C69E /* LogEditTimeCard.swift */,
+				9CA5B69620A33D3D00B0C69E /* LogEditMessageCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -547,6 +567,7 @@
 				9C1817A7209D57B500FBD419 /* VarlenaInput.xib in Resources */,
 				9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */,
 				9C18174F209D574300FBD419 /* LaunchScreen.storyboard in Resources */,
+				9CA5B69920A3480F00B0C69E /* HabitAdd.storyboard in Resources */,
 				9C18174C209D574300FBD419 /* Assets.xcassets in Resources */,
 				9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */,
 				9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */,
@@ -568,6 +589,8 @@
 			files = (
 				9C18178B209D57B500FBD419 /* ImageView.swift in Sources */,
 				9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */,
+				9CA5B69C20A3483600B0C69E /* HabitAddCard.swift in Sources */,
+				9CA5B69720A33D3D00B0C69E /* LogEditMessageCard.swift in Sources */,
 				9CD294AA20A2FCF3008CC61F /* LogEditCard.swift in Sources */,
 				9C181793209D57B500FBD419 /* SQLite.swift in Sources */,
 				9CD294AD20A2FD13008CC61F /* LogEditDateCard.swift in Sources */,
@@ -575,6 +598,7 @@
 				9C181795209D57B500FBD419 /* Ex_Calendar.swift in Sources */,
 				9C18178F209D57B500FBD419 /* TableView.swift in Sources */,
 				9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */,
+				9CA5B69520A3351600B0C69E /* LogEditTimeCard.swift in Sources */,
 				9C1817AC209D57B500FBD419 /* Notifiable.swift in Sources */,
 				9C181796209D57B500FBD419 /* Ex_Date.swift in Sources */,
 				9C1817BD209DACD000FBD419 /* ProgressView.swift in Sources */,

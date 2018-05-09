@@ -69,7 +69,7 @@ class Habit {
     var message: String = ""
     /** 开始时间 */
     var start: Int = 0
-    /** 目标 */
+    /** 目标，秒 */
     var goal: Int = 0
     /** 状态，是进行中还是归档，如果是 5 表示这是一个新建的习惯 */
     private var state: Int = 5

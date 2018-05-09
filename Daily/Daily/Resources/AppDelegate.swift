@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Habit.create()
         Habit.Log.create()
         Habit.Event.create()
+        //SQLite.default.execut(sql: "insert into Habit values(0, 'Daily 开发', 0, 10, '', '希望能是个让我骄傲的产品。', \(Date().time1970), 10000, 0);")
+        //SQLite.default.execut(sql: "update Habit set length = 600 where id = 0;")
+//        SQLite.default.execut(sql: "update Habit set goal = 3600000 where id = 0;")
         return true
     }
 

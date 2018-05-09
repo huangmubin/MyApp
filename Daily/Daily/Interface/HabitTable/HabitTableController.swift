@@ -31,6 +31,15 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
                 table.insertRows(at: [IndexPath(habits)], with: .automatic)
             }
         }
+        if let log = messages.removeValue(forKey: "LogAdd") as? Habit.Log {
+            if log.insert() {
+                log.obj.cache.reload_logs(date: log.date)
+                log.obj.cache.reload_length()
+                if let index = habits.index(where: { $0 === log.obj }) {
+                    table.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+                }
+            }
+        }
     }
     
     // MARK: - UITableViewDataSource

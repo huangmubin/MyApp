@@ -36,7 +36,7 @@ extension Habit {
         }
         
         /** 获取结束时间 */
-        var end: Int { return start + length * 60 }
+        var end: Int { return start + length }
         
         // MARK: - Database
         

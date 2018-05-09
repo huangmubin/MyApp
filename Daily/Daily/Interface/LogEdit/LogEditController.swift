@@ -41,45 +41,45 @@ class LogEditController: BaseViewController {
     @IBOutlet weak var cards: CardTable!
     
     
-    
-    
-    // MARK: - Save
-    
-    @IBAction func save_action(_ sender: UIBarButtonItem) {
-        log.date = date.date().date
-        log.start = start.date().time1970
-        log.length = end.date().time1970 - log.start
-        log.note = note.text
-        if log.id == 0 {
-            log.id = Habit.Log.new_id
-            toSuperController(object: ["LogAdd": log])
-        } else {
-            toSuperController(object: ["LogEdit": log])
-        }
-        if navigationController == nil {
-            dismiss(animated: true, completion: nil)
-        } else {
-            navigationController?.popViewController(animated: true)
-        }
-    }
-    
-    
-    // MARK: - Date
-    
-    /**  */
-    @IBOutlet weak var date: iDateSelector!
-    
-    // MARK: - Time
-    
-    /**  */
-    @IBOutlet weak var start: iDateSelector!
-    /**  */
-    @IBOutlet weak var end: iDateSelector!
-    
-    // MARK: - note
-    
-    /**  */
-    @IBOutlet weak var note: UITextView!
-    
+//    
+//    
+//    // MARK: - Save
+//    
+//    @IBAction func save_action(_ sender: UIBarButtonItem) {
+//        log.date = date.date().date
+//        log.start = start.date().time1970
+//        log.length = end.date().time1970 - log.start
+//        log.note = note.text
+//        if log.id == 0 {
+//            log.id = Habit.Log.new_id
+//            toSuperController(object: ["LogAdd": log])
+//        } else {
+//            toSuperController(object: ["LogEdit": log])
+//        }
+//        if navigationController == nil {
+//            dismiss(animated: true, completion: nil)
+//        } else {
+//            navigationController?.popViewController(animated: true)
+//        }
+//    }
+//    
+//    
+//    // MARK: - Date
+//    
+//    /**  */
+//    @IBOutlet weak var date: iDateSelector!
+//    
+//    // MARK: - Time
+//    
+//    /**  */
+//    @IBOutlet weak var start: iDateSelector!
+//    /**  */
+//    @IBOutlet weak var end: iDateSelector!
+//    
+//    // MARK: - note
+//    
+//    /**  */
+//    @IBOutlet weak var note: UITextView!
+//    
     
 }

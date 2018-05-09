@@ -10,49 +10,49 @@ import UIKit
 
 class LogEditDateCard: LogEditCard {
 
+    /** Date 20180610 */
+    var value: Int {
+        return date_selector.date().date
+    }
+    
     // MARK: - Date
     
-    @IBOutlet weak var date_button: UIButton!
+    /**  */
+    @IBOutlet weak var layout_bottom: NSLayoutConstraint!
+    /**  */
+    @IBOutlet weak var layout_top: NSLayoutConstraint!
     
+    /**  */
     @IBAction func date_action(_ sender: UIButton) {
         if self.frame.size.height < 200 {
             UIView.animate(withDuration: 0.25, animations: {
                 self.frame.size.height = 200
                 self.table.update_content_size()
+                self.layout_bottom.constant = -70
+                self.layout_top.constant = 70
                 self.layoutIfNeeded()
-            }, completion: { _ in
-                let date = Date(time: self.log.start)
-//                self.date_selector.isHidden = false
-                self.date_selector.update(date: date)
-                DispatchQueue.global().async {
-                    Thread.sleep(forTimeInterval: 0.5)
-                    DispatchQueue.main.async {
-                        UIView.animate(withDuration: 0.25, animations: {
-                            self.date_selector.alpha = 1
-                        })
-                    }
-                }
             })
         } else {
             UIView.animate(withDuration: 0.25, animations: {
-                self.date_selector.alpha = 0
-                self.frame.size.height = 130
+                self.frame.size.height = 120
                 self.table.update_content_size()
+                self.layout_bottom.constant = -10
+                self.layout_top.constant = 10
                 self.layoutIfNeeded()
-            }, completion: nil)
+            })
         }
     }
     
     // MARK: - Select
     
+    /**  */
     @IBOutlet weak var date_selector: iDateSelector!
     
     // MARK: - Reload
     
+    /**  */
     override func reload() {
-        let date = Date(time: log.start)
-        date_button.setTitle("\(date.year) 年 \(date.month) 月 \(date.day) 日", for: .normal)
-        date_selector.update(date: date)
+        date_selector.update(date: Date(time: log.start), animate: false)
     }
 
 }

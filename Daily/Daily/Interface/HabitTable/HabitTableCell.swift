@@ -52,7 +52,17 @@ class HabitTableCell: TableViewCell {
     override func view_reload() {
         name.text = obj.name
         message.text = obj.message
-        complete.text = "\(obj.cache.length) / \(obj.goal)"
+        complete.text = String(format: "%.1f / %.1f", Double(obj.cache.length) / 3600, Double(obj.goal) / 3600)
+        
+        let logs = obj.cache.logs(Date().date)
+        check_label.text = "\(logs.count)"
+        if logs.contains(where: { $0.is_sick }) {
+            check_button.setImage(UIImage(named: "check_out"), for: .normal)
+        } else if logs.count > 0 {
+            check_button.setImage(UIImage(named: "check_in"), for: .normal)
+        } else {
+            check_button.setImage(UIImage(named: "check_wait"), for: .normal)
+        }
     }
     
 }
