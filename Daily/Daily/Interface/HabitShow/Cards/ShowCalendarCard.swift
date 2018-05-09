@@ -61,4 +61,7 @@ class ShowCalendarCard: HabitShowCard, CalendarViewDelegate {
         show.performSegue(withIdentifier: "LogEditController", sender: log)
     }
     
+    @IBAction func open_detail_logs(_ sender: UIButton) {
+        show.performSegue(withIdentifier: "LogListController", sender: calendar.date.date)
+    }
 }

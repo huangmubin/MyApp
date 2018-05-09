@@ -35,7 +35,11 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
     
     // MARK: - UITableViewDataSource
     
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var table: UITableView! {
+        didSet {
+            table.rowHeight = UITableViewAutomaticDimension
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return habits.count
@@ -59,6 +63,9 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let show = segue.destination as? HabitShowController {
             show.habit = sender as! Habit
+        }
+        if let log = segue.controller as? LogEditController {
+            log.log = sender as! Habit.Log
         }
     }
     

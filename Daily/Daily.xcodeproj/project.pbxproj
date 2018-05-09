@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0C440820A2863C0076B43F /* LogListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C440720A2863C0076B43F /* LogListController.swift */; };
+		9C0C440A20A2864E0076B43F /* LogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C440920A2864E0076B43F /* LogListCell.swift */; };
+		9C0C441520A297060076B43F /* ShowEventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C441420A297060076B43F /* ShowEventCard.swift */; };
+		9C0C441720A297C20076B43F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C441620A297C20076B43F /* Event.swift */; };
 		9C181742209D573F00FBD419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C181741209D573F00FBD419 /* AppDelegate.swift */; };
 		9C181744209D573F00FBD419 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C181743209D573F00FBD419 /* TestController.swift */; };
 		9C181747209D573F00FBD419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C181745209D573F00FBD419 /* Main.storyboard */; };
@@ -65,6 +69,12 @@
 		9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9B20A043A800D6A32A /* HabitShowCard.swift */; };
 		9C243D9E20A043D400D6A32A /* ShowNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9D20A043D400D6A32A /* ShowNameCard.swift */; };
 		9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */; };
+		9CD294A420A2EF13008CC61F /* HabitTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A320A2EF13008CC61F /* HabitTable.storyboard */; };
+		9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A520A2EF5E008CC61F /* TabBar.storyboard */; };
+		9CD294A820A2F9EC008CC61F /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */; };
+		9CD294AA20A2FCF3008CC61F /* LogEditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD294A920A2FCF3008CC61F /* LogEditCard.swift */; };
+		9CD294AD20A2FD13008CC61F /* LogEditDateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD294AC20A2FD13008CC61F /* LogEditDateCard.swift */; };
+		9CD294AF20A2FFE7008CC61F /* LogEditTopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD294AE20A2FFE7008CC61F /* LogEditTopCard.swift */; };
 		9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2620A1853700DE4340 /* CalendarCell.swift */; };
 		9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD29D2720A1853700DE4340 /* CalendarCell.xib */; };
 		9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2820A1853700DE4340 /* CalendarView.swift */; };
@@ -73,6 +83,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C0C440720A2863C0076B43F /* LogListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListController.swift; sourceTree = "<group>"; };
+		9C0C440920A2864E0076B43F /* LogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListCell.swift; sourceTree = "<group>"; };
+		9C0C441420A297060076B43F /* ShowEventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEventCard.swift; sourceTree = "<group>"; };
+		9C0C441620A297C20076B43F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9C18173E209D573F00FBD419 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C181741209D573F00FBD419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C181743209D573F00FBD419 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
@@ -133,6 +147,12 @@
 		9C243D9B20A043A800D6A32A /* HabitShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCard.swift; sourceTree = "<group>"; };
 		9C243D9D20A043D400D6A32A /* ShowNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameCard.swift; sourceTree = "<group>"; };
 		9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalendarCard.swift; sourceTree = "<group>"; };
+		9CD294A320A2EF13008CC61F /* HabitTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitTable.storyboard; sourceTree = "<group>"; };
+		9CD294A520A2EF5E008CC61F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
+		9CD294A920A2FCF3008CC61F /* LogEditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditCard.swift; sourceTree = "<group>"; };
+		9CD294AC20A2FD13008CC61F /* LogEditDateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditDateCard.swift; sourceTree = "<group>"; };
+		9CD294AE20A2FFE7008CC61F /* LogEditTopCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditTopCard.swift; sourceTree = "<group>"; };
 		9CD29D2620A1853700DE4340 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		9CD29D2720A1853700DE4340 /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		9CD29D2820A1853700DE4340 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -152,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0C440620A286290076B43F /* LogList */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C440720A2863C0076B43F /* LogListController.swift */,
+				9C0C440920A2864E0076B43F /* LogListCell.swift */,
+			);
+			path = LogList;
+			sourceTree = "<group>";
+		};
 		9C181735209D573E00FBD419 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +216,7 @@
 				9C181743209D573F00FBD419 /* TestController.swift */,
 				9C1817B5209D58BB00FBD419 /* BaseViewController.swift */,
 				9C181745209D573F00FBD419 /* Main.storyboard */,
+				9CD294A520A2EF5E008CC61F /* TabBar.storyboard */,
 				9C18174B209D574300FBD419 /* Assets.xcassets */,
 				9C18174D209D574300FBD419 /* LaunchScreen.storyboard */,
 				9C181750209D574300FBD419 /* Info.plist */,
@@ -350,6 +380,7 @@
 		9C1817B1209D57F800FBD419 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				9C0C440620A286290076B43F /* LogList */,
 				9CD29D2E20A18CE900DE4340 /* LogEdit */,
 				9C243DA120A047C700D6A32A /* Views */,
 				9C243D9720A042B700D6A32A /* HabitShow */,
@@ -374,6 +405,7 @@
 				9C243D8C20A0395100D6A32A /* Cache.swift */,
 				9C243D8B20A0395000D6A32A /* Habit.swift */,
 				9C243D8D20A0395100D6A32A /* Log.swift */,
+				9C0C441620A297C20076B43F /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +415,7 @@
 			children = (
 				9C243D8620A0352100D6A32A /* HabitTableController.swift */,
 				9C243D8820A035B100D6A32A /* HabitTableCell.swift */,
+				9CD294A320A2EF13008CC61F /* HabitTable.storyboard */,
 			);
 			path = HabitTable;
 			sourceTree = "<group>";
@@ -410,6 +443,7 @@
 			children = (
 				9C243D9D20A043D400D6A32A /* ShowNameCard.swift */,
 				9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */,
+				9C0C441420A297060076B43F /* ShowEventCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -419,6 +453,16 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9CD294AB20A2FCF6008CC61F /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9CD294A920A2FCF3008CC61F /* LogEditCard.swift */,
+				9CD294AE20A2FFE7008CC61F /* LogEditTopCard.swift */,
+				9CD294AC20A2FD13008CC61F /* LogEditDateCard.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		9CD29D2520A1853700DE4340 /* Calender */ = {
@@ -436,6 +480,8 @@
 			isa = PBXGroup;
 			children = (
 				9CD29D2F20A18D1200DE4340 /* LogEditController.swift */,
+				9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */,
+				9CD294AB20A2FCF6008CC61F /* Cards */,
 			);
 			path = LogEdit;
 			sourceTree = "<group>";
@@ -499,12 +545,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1817A7209D57B500FBD419 /* VarlenaInput.xib in Resources */,
+				9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */,
 				9C18174F209D574300FBD419 /* LaunchScreen.storyboard in Resources */,
 				9C18174C209D574300FBD419 /* Assets.xcassets in Resources */,
 				9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */,
 				9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */,
 				9C1817A3209D57B500FBD419 /* InputTextView.xib in Resources */,
+				9CD294A420A2EF13008CC61F /* HabitTable.storyboard in Resources */,
 				9C1817AA209D57B500FBD419 /* iSelector.xib in Resources */,
+				9CD294A820A2F9EC008CC61F /* LogEdit.storyboard in Resources */,
 				9C181747209D573F00FBD419 /* Main.storyboard in Resources */,
 				9C1817A5209D57B500FBD419 /* InputView.xib in Resources */,
 			);
@@ -519,7 +568,9 @@
 			files = (
 				9C18178B209D57B500FBD419 /* ImageView.swift in Sources */,
 				9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */,
+				9CD294AA20A2FCF3008CC61F /* LogEditCard.swift in Sources */,
 				9C181793209D57B500FBD419 /* SQLite.swift in Sources */,
+				9CD294AD20A2FD13008CC61F /* LogEditDateCard.swift in Sources */,
 				9C243D9020A0395100D6A32A /* Log.swift in Sources */,
 				9C181795209D57B500FBD419 /* Ex_Calendar.swift in Sources */,
 				9C18178F209D57B500FBD419 /* TableView.swift in Sources */,
@@ -528,6 +579,7 @@
 				9C181796209D57B500FBD419 /* Ex_Date.swift in Sources */,
 				9C1817BD209DACD000FBD419 /* ProgressView.swift in Sources */,
 				9C18179A209D57B500FBD419 /* Ex_String.swift in Sources */,
+				9C0C441520A297060076B43F /* ShowEventCard.swift in Sources */,
 				9C18178E209D57B500FBD419 /* CardView.swift in Sources */,
 				9C181799209D57B500FBD419 /* Ex_Int.swift in Sources */,
 				9C243D8F20A0395100D6A32A /* Cache.swift in Sources */,
@@ -538,11 +590,14 @@
 				9C18178C209D57B500FBD419 /* CardSeparator.swift in Sources */,
 				9C243D9420A03AB700D6A32A /* HabitAddController.swift in Sources */,
 				9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */,
+				9CD294AF20A2FFE7008CC61F /* LogEditTopCard.swift in Sources */,
 				9C181744209D573F00FBD419 /* TestController.swift in Sources */,
 				9C1817BF209DAD1F00FBD419 /* RoundProgress.swift in Sources */,
 				9C18179C209D57B500FBD419 /* Ex_UIDevice.swift in Sources */,
+				9C0C441720A297C20076B43F /* Event.swift in Sources */,
 				9C181790209D57B500FBD419 /* TableViewCell.swift in Sources */,
 				9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */,
+				9C0C440A20A2864E0076B43F /* LogListCell.swift in Sources */,
 				9C1817A9209D57B500FBD419 /* iSelector.swift in Sources */,
 				9C18178D209D57B500FBD419 /* CardTable.swift in Sources */,
 				9C243D9620A03AC500D6A32A /* TableViewController.swift in Sources */,
@@ -569,6 +624,7 @@
 				9C1817AB209D57B500FBD419 /* NibLoable.swift in Sources */,
 				9C1817A4209D57B500FBD419 /* InputView.swift in Sources */,
 				9C181742209D573F00FBD419 /* AppDelegate.swift in Sources */,
+				9C0C440820A2863C0076B43F /* LogListController.swift in Sources */,
 				9C181794209D57B500FBD419 /* Ex_Array.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

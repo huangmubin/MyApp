@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogEditController: TableViewController {
+class LogEditController: BaseViewController {
 
     // MARK: - Data
     
@@ -19,14 +19,27 @@ class LogEditController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.async {
-            self.navigationItem.title = self.log.obj.name
-            self.date.update(date: Date(self.log.date))
-            self.start.update(date: Date(time: self.log.start))
-            self.end.update(date: Date(time: self.log.end))
-            self.note.text = self.log.note
-        }
+//        DispatchQueue.main.async {
+//            self.navigationItem.title = self.log.obj.name
+//            self.date.update(date: Date(self.log.date))
+//            self.start.update(date: Date(time: self.log.start))
+//            self.end.update(date: Date(time: self.log.end))
+//            self.note.text = self.log.note
+//        }
+        cards.controller = self
+        cards.reload()
     }
+    
+    // MARK: - preferredStatusBarStyle
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.default
+    }
+    
+    // MARK: - Card
+    
+    @IBOutlet weak var cards: CardTable!
+    
     
     
     
@@ -68,10 +81,5 @@ class LogEditController: TableViewController {
     /**  */
     @IBOutlet weak var note: UITextView!
     
-    // MARK: - Scroll
-    
-    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        note.resignFirstResponder()
-    }
     
 }

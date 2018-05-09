@@ -30,6 +30,7 @@ class HabitAddController: TableViewController {
         habit.name = name.text
         habit.goal = Int(goal.text!) ?? 1000
         habit.length = Int(length.text!) ?? 10
+        habit.message = message.text
         habit.id = Habit.new_id
         toSuperController(object: ["HabitAdd": habit])
         if navigationController == nil {

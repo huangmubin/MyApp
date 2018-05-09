@@ -20,8 +20,9 @@ extension Habit {
         weak var obj: Habit!
         init(habit: Habit) {
             self.obj = habit
-            self.reload_count()
+            self.reload_length()
             self.reload_dates()
+            self.reload_events()
         }
         
         // MARK: - Clear
@@ -33,19 +34,19 @@ extension Habit {
         
         // MARK: - Total
         
-        /** 统计总打卡的时长 / 次数 */
-        private var _count: Int = 0
+        /** 统计总打卡的时长 */
+        private var _length: Int = 0
         
-        /** 统计总打卡的时长 / 次数 */
-        var count: Int { return _count }
+        /** 统计总打卡的时长 */
+        var length: Int { return _length }
         
         /** 重新查询 */
-        func reload_count() {
-            _count = 0
+        func reload_length() {
+            _length = 0
             SQLite.default.find(
                 sql: "select length from \(Habit.Log.table) where habit = \(obj.id);",
                 default: 0,
-                datas: { _count += $0 }
+                datas: { _length += $0 }
             )
         }
         
@@ -103,6 +104,18 @@ extension Habit {
         func log(index: IndexPath) -> Habit.Log {
             return logs(dates[index.section])[index.row]
         }
+        
+        // MARK: - Event
+        
+        /** 事件列表 */
+        var events: [Habit.Event] = []
+        
+        /** Reload the events */
+        func reload_events() {
+            events = Habit.Event.find(habit: obj).sorted(by: { $0.sort < $1.sort })
+        }
+        
+        
         
     }
     

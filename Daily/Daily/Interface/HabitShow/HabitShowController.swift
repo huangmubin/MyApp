@@ -54,6 +54,10 @@ class HabitShowController: BaseViewController {
         if let log = segue.destination as? LogEditController {
             log.log = sender as! Habit.Log
         }
+        if let logs = segue.destination as? LogListController {
+            logs.date = sender as! Int
+            logs.obj = habit
+        }
     }
     
 }

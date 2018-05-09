@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SQLite.default.open()
         Habit.create()
         Habit.Log.create()
+        Habit.Event.create()
         return true
     }
 

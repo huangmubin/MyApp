@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hh2-q5-YfL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log Edit Controller-->
+        <scene sceneID="KId-Ay-GhI">
+            <objects>
+                <viewController id="hh2-q5-YfL" customClass="LogEditController" customModule="Daily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wi1-f4-gSB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7O-dL-rhV" customClass="CardTable" customModule="Daily" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="separator" destination="lHN-8x-W3k" id="HXb-2l-SNr"/>
+                                    <outletCollection property="cards" destination="ECr-C5-PkR" collectionClass="NSMutableArray" id="751-0I-UVj"/>
+                                    <outletCollection property="cards" destination="x0z-sh-BcS" collectionClass="NSMutableArray" id="pXU-EH-h8b"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H7O-dL-rhV" firstAttribute="trailing" secondItem="Ymc-zB-Vgz" secondAttribute="trailing" id="LyH-BD-4In"/>
+                            <constraint firstItem="H7O-dL-rhV" firstAttribute="bottom" secondItem="Ymc-zB-Vgz" secondAttribute="bottom" id="gWN-Bb-WCe"/>
+                            <constraint firstItem="H7O-dL-rhV" firstAttribute="leading" secondItem="Ymc-zB-Vgz" secondAttribute="leading" id="owN-ZF-bFD"/>
+                            <constraint firstItem="H7O-dL-rhV" firstAttribute="top" secondItem="Ymc-zB-Vgz" secondAttribute="top" id="tMW-av-ewO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ymc-zB-Vgz"/>
+                    </view>
+                    <connections>
+                        <outlet property="cards" destination="H7O-dL-rhV" id="f8u-lf-2cP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6o-dn-EtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="lHN-8x-W3k" customClass="CardSeparator" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="90" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="3YZ-ao-404"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="left">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="right">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" id="ECr-C5-PkR" customClass="LogEditTopCard" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="习惯名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-lL-qOj">
+                            <rect key="frame" x="79.5" y="18" width="82" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-3n-yhk">
+                            <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="error_black"/>
+                            <connections>
+                                <action selector="error_action:" destination="ECr-C5-PkR" eventType="touchUpInside" id="k7B-kv-A0R"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-bE-Zk7">
+                            <rect key="frame" x="170" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="success_black"/>
+                            <connections>
+                                <action selector="success_action:" destination="ECr-C5-PkR" eventType="touchUpInside" id="IYN-KH-KCD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vrJ-hj-Wd2" firstAttribute="trailing" secondItem="qOy-bE-Zk7" secondAttribute="trailing" constant="10" id="0AP-zE-w8L"/>
+                        <constraint firstItem="UN9-3n-yhk" firstAttribute="centerY" secondItem="vrJ-hj-Wd2" secondAttribute="centerY" id="I5K-FQ-74o"/>
+                        <constraint firstItem="d7F-lL-qOj" firstAttribute="centerX" secondItem="vrJ-hj-Wd2" secondAttribute="centerX" id="LcD-kg-3yY"/>
+                        <constraint firstItem="qOy-bE-Zk7" firstAttribute="centerY" secondItem="vrJ-hj-Wd2" secondAttribute="centerY" id="T5h-bL-i4w"/>
+                        <constraint firstItem="UN9-3n-yhk" firstAttribute="leading" secondItem="vrJ-hj-Wd2" secondAttribute="leading" constant="10" id="jw5-Nf-3XP"/>
+                        <constraint firstItem="d7F-lL-qOj" firstAttribute="centerY" secondItem="vrJ-hj-Wd2" secondAttribute="centerY" id="uFb-hD-wmT"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="vrJ-hj-Wd2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Top"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="name" destination="d7F-lL-qOj" id="okG-JZ-uft"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="x0z-sh-BcS" customClass="LogEditDateCard" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="256" height="130"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKa-2e-v5E">
+                            <rect key="frame" x="20" y="37" width="216" height="83"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="2015 年 12 月 10 日">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="date_action:" destination="x0z-sh-BcS" eventType="touchUpInside" id="hg6-jQ-Xqv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打卡日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd5-Z5-822">
+                            <rect key="frame" x="20" y="20" width="216" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRP-3o-k5S" customClass="iDateSelector" customModule="Daily" customModuleProvider="target">
+                            <rect key="frame" x="38" y="37" width="180" height="83"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVO-Go-78d" customClass="iSelector" customModule="Daily" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="54" height="83"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVO-A7-xTs">
+                                            <rect key="frame" x="4" y="29.5" width="46" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="VVO-A7-xTs" firstAttribute="centerX" secondItem="AVO-Go-78d" secondAttribute="centerX" id="0zz-w1-Cgv"/>
+                                        <constraint firstAttribute="width" constant="54" id="B12-qY-ajI"/>
+                                        <constraint firstItem="VVO-A7-xTs" firstAttribute="centerY" secondItem="AVO-Go-78d" secondAttribute="centerY" id="HYU-0N-f9D"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="default_data">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="label" destination="VVO-A7-xTs" id="wS2-zt-HVf"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZM-9C-RNJ" customClass="iSelector" customModule="Daily" customModuleProvider="target">
+                                    <rect key="frame" x="74.5" y="0.0" width="30" height="83"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UR-DZ-jcm">
+                                            <rect key="frame" x="4.5" y="29.5" width="21" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Alv-Zs-69N"/>
+                                        <constraint firstItem="6UR-DZ-jcm" firstAttribute="centerX" secondItem="XZM-9C-RNJ" secondAttribute="centerX" id="nmu-Ol-Xfh"/>
+                                        <constraint firstItem="6UR-DZ-jcm" firstAttribute="centerY" secondItem="XZM-9C-RNJ" secondAttribute="centerY" id="ric-2f-aUH"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="default_data">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="label" destination="6UR-DZ-jcm" id="Qa5-6V-duB"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0K-IL-X1a" customClass="iSelector" customModule="Daily" customModuleProvider="target">
+                                    <rect key="frame" x="125" y="0.0" width="30" height="83"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4G-pe-6xq">
+                                            <rect key="frame" x="4.5" y="29.5" width="21.5" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Edo-Fe-lrj"/>
+                                        <constraint firstItem="s4G-pe-6xq" firstAttribute="centerY" secondItem="s0K-IL-X1a" secondAttribute="centerY" id="Qhd-nD-88B"/>
+                                        <constraint firstItem="s4G-pe-6xq" firstAttribute="centerX" secondItem="s0K-IL-X1a" secondAttribute="centerX" id="wsB-ix-UJD"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="default_data">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="label" destination="s4G-pe-6xq" id="FBr-IV-a8O"/>
+                                    </connections>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-rh-0Yc">
+                                    <rect key="frame" x="54" y="29.5" width="20.5" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-bB-cUg">
+                                    <rect key="frame" x="104.5" y="29.5" width="20.5" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V63-kj-sqh">
+                                    <rect key="frame" x="155" y="29.5" width="21" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="s0K-IL-X1a" firstAttribute="bottom" secondItem="rtm-ma-PDb" secondAttribute="bottom" id="4tw-Wd-i0S"/>
+                                <constraint firstItem="XZM-9C-RNJ" firstAttribute="centerX" secondItem="rtm-ma-PDb" secondAttribute="centerX" id="8Q3-OB-mDN"/>
+                                <constraint firstAttribute="width" constant="180" id="D6u-zW-jUS"/>
+                                <constraint firstItem="V63-kj-sqh" firstAttribute="leading" secondItem="s0K-IL-X1a" secondAttribute="trailing" id="RAd-Ad-JS7"/>
+                                <constraint firstItem="NKn-rh-0Yc" firstAttribute="centerY" secondItem="rtm-ma-PDb" secondAttribute="centerY" id="cf9-QI-iHd"/>
+                                <constraint firstItem="rcO-bB-cUg" firstAttribute="leading" secondItem="XZM-9C-RNJ" secondAttribute="trailing" id="dJQ-54-N7k"/>
+                                <constraint firstItem="AVO-Go-78d" firstAttribute="bottom" secondItem="rtm-ma-PDb" secondAttribute="bottom" id="ftz-Im-Rss"/>
+                                <constraint firstItem="V63-kj-sqh" firstAttribute="centerY" secondItem="rtm-ma-PDb" secondAttribute="centerY" id="gto-uT-aOr"/>
+                                <constraint firstItem="s0K-IL-X1a" firstAttribute="top" secondItem="rtm-ma-PDb" secondAttribute="top" id="kJu-Lg-8Ys"/>
+                                <constraint firstItem="XZM-9C-RNJ" firstAttribute="leading" secondItem="NKn-rh-0Yc" secondAttribute="trailing" id="nfL-yc-eL8"/>
+                                <constraint firstItem="s0K-IL-X1a" firstAttribute="leading" secondItem="rcO-bB-cUg" secondAttribute="trailing" id="q7z-CZ-PxL"/>
+                                <constraint firstItem="rcO-bB-cUg" firstAttribute="centerY" secondItem="rtm-ma-PDb" secondAttribute="centerY" id="tFC-te-Gqz"/>
+                                <constraint firstItem="XZM-9C-RNJ" firstAttribute="top" secondItem="rtm-ma-PDb" secondAttribute="top" id="uNz-Gu-FMt"/>
+                                <constraint firstItem="NKn-rh-0Yc" firstAttribute="leading" secondItem="AVO-Go-78d" secondAttribute="trailing" id="w6N-xq-qz7"/>
+                                <constraint firstItem="AVO-Go-78d" firstAttribute="top" secondItem="rtm-ma-PDb" secondAttribute="top" id="xJb-m5-6Ug"/>
+                                <constraint firstItem="XZM-9C-RNJ" firstAttribute="bottom" secondItem="rtm-ma-PDb" secondAttribute="bottom" id="zbV-Yz-XdT"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="rtm-ma-PDb"/>
+                            <connections>
+                                <outlet property="day" destination="s0K-IL-X1a" id="85E-x7-Fc7"/>
+                                <outlet property="month" destination="XZM-9C-RNJ" id="23n-qC-4Ee"/>
+                                <outlet property="year" destination="AVO-Go-78d" id="jLb-ra-GMR"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZRP-3o-k5S" firstAttribute="centerY" secondItem="PKa-2e-v5E" secondAttribute="centerY" id="1bp-Tq-qHD"/>
+                        <constraint firstItem="ZRP-3o-k5S" firstAttribute="centerX" secondItem="PKa-2e-v5E" secondAttribute="centerX" id="2fu-KG-8ZY"/>
+                        <constraint firstItem="ZRP-3o-k5S" firstAttribute="height" secondItem="PKa-2e-v5E" secondAttribute="height" id="GXG-Mp-Z2B"/>
+                        <constraint firstItem="kd5-Z5-822" firstAttribute="top" secondItem="trz-OZ-TkD" secondAttribute="top" constant="20" id="LZZ-j3-gGU"/>
+                        <constraint firstItem="trz-OZ-TkD" firstAttribute="trailing" secondItem="PKa-2e-v5E" secondAttribute="trailing" constant="20" id="Loq-YX-7KA"/>
+                        <constraint firstItem="trz-OZ-TkD" firstAttribute="bottom" secondItem="PKa-2e-v5E" secondAttribute="bottom" constant="10" id="MQD-Uj-MC9"/>
+                        <constraint firstItem="PKa-2e-v5E" firstAttribute="top" secondItem="kd5-Z5-822" secondAttribute="bottom" id="YuD-h8-VmF"/>
+                        <constraint firstItem="PKa-2e-v5E" firstAttribute="leading" secondItem="trz-OZ-TkD" secondAttribute="leading" constant="20" id="c73-Zh-SCp"/>
+                        <constraint firstItem="kd5-Z5-822" firstAttribute="leading" secondItem="trz-OZ-TkD" secondAttribute="leading" constant="20" id="kOq-fV-Iro"/>
+                        <constraint firstItem="trz-OZ-TkD" firstAttribute="trailing" secondItem="kd5-Z5-822" secondAttribute="trailing" constant="20" id="p57-vY-VPm"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="trz-OZ-TkD"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Date"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="date_button" destination="PKa-2e-v5E" id="qkx-cn-hfU"/>
+                        <outlet property="date_selector" destination="ZRP-3o-k5S" id="hJk-B3-F5A"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="405.60000000000002" y="-36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error_black" width="60" height="60"/>
+        <image name="success_black" width="60" height="60"/>
+    </resources>
+</document>

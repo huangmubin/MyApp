@@ -5,7 +5,7 @@
 # 原始图片
 verson="1024.png"
 # 保存的文件夹，项目的路径
-folder="/Users/myron/Developer/Work/My/My/My/Resources/Assets.xcassets/AppIcon.appiconset"
+folder="/Users/myron/Myron/Project/MyApp/Daily/Daily/Resources/Assets.xcassets/AppIcon.appiconset"
 
 # 保存的大小
 size_array=(
@@ -44,7 +44,7 @@ for (( i = 0; i < ${#size_array[@]}; i++ )); do
 done
 
 
-# 将 1024 大小的图片压缩成所有大小
+# # 将 1024 大小的图片压缩成所有大小
 
 # filename="1024.png"
 # foldername="images"
