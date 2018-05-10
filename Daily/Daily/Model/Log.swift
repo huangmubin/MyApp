@@ -140,7 +140,7 @@ extension Habit {
         
         /** 更新数据到数据库 */
         func update() -> Bool {
-            let sql = "update \(table) set date = \(date), start = \(start), length = \(length), note = \(note), type = \(type) where id = \(id)"
+            let sql = "update \(table) set date = \(date), start = \(start), length = \(length), note = '\(note)', type = \(type) where id = \(id)"
             return SQLite.default.execut(sql: sql)
         }
         

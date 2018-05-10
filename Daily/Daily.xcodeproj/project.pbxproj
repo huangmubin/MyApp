@@ -63,7 +63,7 @@
 		9C243D8E20A0395100D6A32A /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D8B20A0395000D6A32A /* Habit.swift */; };
 		9C243D8F20A0395100D6A32A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D8C20A0395100D6A32A /* Cache.swift */; };
 		9C243D9020A0395100D6A32A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D8D20A0395100D6A32A /* Log.swift */; };
-		9C243D9420A03AB700D6A32A /* HabitAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9320A03AB700D6A32A /* HabitAddController.swift */; };
+		9C243D9420A03AB700D6A32A /* HabitEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9320A03AB700D6A32A /* HabitEditController.swift */; };
 		9C243D9620A03AC500D6A32A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9520A03AC500D6A32A /* TableViewController.swift */; };
 		9C243D9920A042D000D6A32A /* HabitShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9820A042D000D6A32A /* HabitShowController.swift */; };
 		9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9B20A043A800D6A32A /* HabitShowCard.swift */; };
@@ -71,8 +71,14 @@
 		9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */; };
 		9CA5B69520A3351600B0C69E /* LogEditTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69420A3351600B0C69E /* LogEditTimeCard.swift */; };
 		9CA5B69720A33D3D00B0C69E /* LogEditMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69620A33D3D00B0C69E /* LogEditMessageCard.swift */; };
-		9CA5B69920A3480F00B0C69E /* HabitAdd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */; };
-		9CA5B69C20A3483600B0C69E /* HabitAddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */; };
+		9CA5B69920A3480F00B0C69E /* HabitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA5B69820A3480F00B0C69E /* HabitEdit.storyboard */; };
+		9CA5B69C20A3483600B0C69E /* HabitEditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5B69B20A3483600B0C69E /* HabitEditCard.swift */; };
+		9CC4F7EC20A3E23D0086BBCE /* CardViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC4F7EB20A3E23D0086BBCE /* CardViews.xib */; };
+		9CC4F7F020A3E3160086BBCE /* HabitEditNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4F7EF20A3E3160086BBCE /* HabitEditNameCard.swift */; };
+		9CC4F7F220A3F4290086BBCE /* HabitEditMenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4F7F120A3F4290086BBCE /* HabitEditMenuCard.swift */; };
+		9CC4F7F420A3F6D30086BBCE /* HabitEditGoalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4F7F320A3F6D30086BBCE /* HabitEditGoalCard.swift */; };
+		9CC4F7F620A3F7DF0086BBCE /* HabitEditMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4F7F520A3F7DF0086BBCE /* HabitEditMessageCard.swift */; };
+		9CC4F7F820A417450086BBCE /* HabitShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC4F7F720A417450086BBCE /* HabitShow.storyboard */; };
 		9CD294A420A2EF13008CC61F /* HabitTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A320A2EF13008CC61F /* HabitTable.storyboard */; };
 		9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A520A2EF5E008CC61F /* TabBar.storyboard */; };
 		9CD294A820A2F9EC008CC61F /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */; };
@@ -84,6 +90,10 @@
 		9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2820A1853700DE4340 /* CalendarView.swift */; };
 		9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD29D2920A1853700DE4340 /* CalendarView.xib */; };
 		9CD29D3020A18D1200DE4340 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD29D2F20A18D1200DE4340 /* LogEditController.swift */; };
+		9CDB0E6220A4262600476E20 /* LogList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB0E6120A4262600476E20 /* LogList.storyboard */; };
+		9CDB0E6520A4425C00476E20 /* EventListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB0E6420A4425C00476E20 /* EventListController.swift */; };
+		9CDB0E6720A4426300476E20 /* EventList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB0E6620A4426300476E20 /* EventList.storyboard */; };
+		9CDB0E6920A4463400476E20 /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB0E6820A4463400476E20 /* EventListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,7 +155,7 @@
 		9C243D8B20A0395000D6A32A /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		9C243D8C20A0395100D6A32A /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		9C243D8D20A0395100D6A32A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		9C243D9320A03AB700D6A32A /* HabitAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddController.swift; sourceTree = "<group>"; };
+		9C243D9320A03AB700D6A32A /* HabitEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditController.swift; sourceTree = "<group>"; };
 		9C243D9520A03AC500D6A32A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9C243D9820A042D000D6A32A /* HabitShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowController.swift; sourceTree = "<group>"; };
 		9C243D9B20A043A800D6A32A /* HabitShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCard.swift; sourceTree = "<group>"; };
@@ -153,8 +163,14 @@
 		9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalendarCard.swift; sourceTree = "<group>"; };
 		9CA5B69420A3351600B0C69E /* LogEditTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditTimeCard.swift; sourceTree = "<group>"; };
 		9CA5B69620A33D3D00B0C69E /* LogEditMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditMessageCard.swift; sourceTree = "<group>"; };
-		9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitAdd.storyboard; sourceTree = "<group>"; };
-		9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddCard.swift; sourceTree = "<group>"; };
+		9CA5B69820A3480F00B0C69E /* HabitEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitEdit.storyboard; sourceTree = "<group>"; };
+		9CA5B69B20A3483600B0C69E /* HabitEditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditCard.swift; sourceTree = "<group>"; };
+		9CC4F7EB20A3E23D0086BBCE /* CardViews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViews.xib; sourceTree = "<group>"; };
+		9CC4F7EF20A3E3160086BBCE /* HabitEditNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditNameCard.swift; sourceTree = "<group>"; };
+		9CC4F7F120A3F4290086BBCE /* HabitEditMenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMenuCard.swift; sourceTree = "<group>"; };
+		9CC4F7F320A3F6D30086BBCE /* HabitEditGoalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditGoalCard.swift; sourceTree = "<group>"; };
+		9CC4F7F520A3F7DF0086BBCE /* HabitEditMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditMessageCard.swift; sourceTree = "<group>"; };
+		9CC4F7F720A417450086BBCE /* HabitShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitShow.storyboard; sourceTree = "<group>"; };
 		9CD294A320A2EF13008CC61F /* HabitTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitTable.storyboard; sourceTree = "<group>"; };
 		9CD294A520A2EF5E008CC61F /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9CD294A720A2F9EC008CC61F /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
@@ -166,6 +182,10 @@
 		9CD29D2820A1853700DE4340 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		9CD29D2920A1853700DE4340 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		9CD29D2F20A18D1200DE4340 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
+		9CDB0E6120A4262600476E20 /* LogList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogList.storyboard; sourceTree = "<group>"; };
+		9CDB0E6420A4425C00476E20 /* EventListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListController.swift; sourceTree = "<group>"; };
+		9CDB0E6620A4426300476E20 /* EventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventList.storyboard; sourceTree = "<group>"; };
+		9CDB0E6820A4463400476E20 /* EventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +203,7 @@
 		9C0C440620A286290076B43F /* LogList */ = {
 			isa = PBXGroup;
 			children = (
+				9CDB0E6120A4262600476E20 /* LogList.storyboard */,
 				9C0C440720A2863C0076B43F /* LogListController.swift */,
 				9C0C440920A2864E0076B43F /* LogListCell.swift */,
 			);
@@ -275,6 +296,7 @@
 				9C18175E209D57B400FBD419 /* CardSeparator.swift */,
 				9C18175F209D57B400FBD419 /* CardTable.swift */,
 				9C181760209D57B400FBD419 /* CardView.swift */,
+				9CC4F7EB20A3E23D0086BBCE /* CardViews.xib */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -388,11 +410,12 @@
 		9C1817B1209D57F800FBD419 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				9CDB0E6320A441E500476E20 /* EventList */,
+				9C243DA120A047C700D6A32A /* Views */,
 				9C0C440620A286290076B43F /* LogList */,
 				9CD29D2E20A18CE900DE4340 /* LogEdit */,
-				9C243DA120A047C700D6A32A /* Views */,
 				9C243D9720A042B700D6A32A /* HabitShow */,
-				9C243D9220A03A9700D6A32A /* HabitAdd */,
+				9C243D9220A03A9700D6A32A /* HabitEdit */,
 				9C243D9120A03A9100D6A32A /* HabitTable */,
 			);
 			path = Interface;
@@ -421,26 +444,27 @@
 		9C243D9120A03A9100D6A32A /* HabitTable */ = {
 			isa = PBXGroup;
 			children = (
+				9CD294A320A2EF13008CC61F /* HabitTable.storyboard */,
 				9C243D8620A0352100D6A32A /* HabitTableController.swift */,
 				9C243D8820A035B100D6A32A /* HabitTableCell.swift */,
-				9CD294A320A2EF13008CC61F /* HabitTable.storyboard */,
 			);
 			path = HabitTable;
 			sourceTree = "<group>";
 		};
-		9C243D9220A03A9700D6A32A /* HabitAdd */ = {
+		9C243D9220A03A9700D6A32A /* HabitEdit */ = {
 			isa = PBXGroup;
 			children = (
-				9C243D9320A03AB700D6A32A /* HabitAddController.swift */,
-				9CA5B69820A3480F00B0C69E /* HabitAdd.storyboard */,
+				9CA5B69820A3480F00B0C69E /* HabitEdit.storyboard */,
+				9C243D9320A03AB700D6A32A /* HabitEditController.swift */,
 				9CA5B69A20A3482100B0C69E /* Cards */,
 			);
-			path = HabitAdd;
+			path = HabitEdit;
 			sourceTree = "<group>";
 		};
 		9C243D9720A042B700D6A32A /* HabitShow */ = {
 			isa = PBXGroup;
 			children = (
+				9CC4F7F720A417450086BBCE /* HabitShow.storyboard */,
 				9C243D9820A042D000D6A32A /* HabitShowController.swift */,
 				9C243D9B20A043A800D6A32A /* HabitShowCard.swift */,
 				9C243D9A20A0435400D6A32A /* Cards */,
@@ -468,7 +492,11 @@
 		9CA5B69A20A3482100B0C69E /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				9CA5B69B20A3483600B0C69E /* HabitAddCard.swift */,
+				9CA5B69B20A3483600B0C69E /* HabitEditCard.swift */,
+				9CC4F7EF20A3E3160086BBCE /* HabitEditNameCard.swift */,
+				9CC4F7F320A3F6D30086BBCE /* HabitEditGoalCard.swift */,
+				9CC4F7F520A3F7DF0086BBCE /* HabitEditMessageCard.swift */,
+				9CC4F7F120A3F4290086BBCE /* HabitEditMenuCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -504,6 +532,16 @@
 				9CD294AB20A2FCF6008CC61F /* Cards */,
 			);
 			path = LogEdit;
+			sourceTree = "<group>";
+		};
+		9CDB0E6320A441E500476E20 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB0E6620A4426300476E20 /* EventList.storyboard */,
+				9CDB0E6420A4425C00476E20 /* EventListController.swift */,
+				9CDB0E6820A4463400476E20 /* EventListCell.swift */,
+			);
+			path = EventList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,13 +605,17 @@
 				9C1817A7209D57B500FBD419 /* VarlenaInput.xib in Resources */,
 				9CD294A620A2EF5E008CC61F /* TabBar.storyboard in Resources */,
 				9C18174F209D574300FBD419 /* LaunchScreen.storyboard in Resources */,
-				9CA5B69920A3480F00B0C69E /* HabitAdd.storyboard in Resources */,
+				9CA5B69920A3480F00B0C69E /* HabitEdit.storyboard in Resources */,
 				9C18174C209D574300FBD419 /* Assets.xcassets in Resources */,
 				9CD29D2D20A1853700DE4340 /* CalendarView.xib in Resources */,
 				9CD29D2B20A1853700DE4340 /* CalendarCell.xib in Resources */,
+				9CDB0E6220A4262600476E20 /* LogList.storyboard in Resources */,
 				9C1817A3209D57B500FBD419 /* InputTextView.xib in Resources */,
 				9CD294A420A2EF13008CC61F /* HabitTable.storyboard in Resources */,
 				9C1817AA209D57B500FBD419 /* iSelector.xib in Resources */,
+				9CC4F7EC20A3E23D0086BBCE /* CardViews.xib in Resources */,
+				9CDB0E6720A4426300476E20 /* EventList.storyboard in Resources */,
+				9CC4F7F820A417450086BBCE /* HabitShow.storyboard in Resources */,
 				9CD294A820A2F9EC008CC61F /* LogEdit.storyboard in Resources */,
 				9C181747209D573F00FBD419 /* Main.storyboard in Resources */,
 				9C1817A5209D57B500FBD419 /* InputView.xib in Resources */,
@@ -589,7 +631,7 @@
 			files = (
 				9C18178B209D57B500FBD419 /* ImageView.swift in Sources */,
 				9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */,
-				9CA5B69C20A3483600B0C69E /* HabitAddCard.swift in Sources */,
+				9CA5B69C20A3483600B0C69E /* HabitEditCard.swift in Sources */,
 				9CA5B69720A33D3D00B0C69E /* LogEditMessageCard.swift in Sources */,
 				9CD294AA20A2FCF3008CC61F /* LogEditCard.swift in Sources */,
 				9C181793209D57B500FBD419 /* SQLite.swift in Sources */,
@@ -597,6 +639,7 @@
 				9C243D9020A0395100D6A32A /* Log.swift in Sources */,
 				9C181795209D57B500FBD419 /* Ex_Calendar.swift in Sources */,
 				9C18178F209D57B500FBD419 /* TableView.swift in Sources */,
+				9CDB0E6920A4463400476E20 /* EventListCell.swift in Sources */,
 				9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */,
 				9CA5B69520A3351600B0C69E /* LogEditTimeCard.swift in Sources */,
 				9C1817AC209D57B500FBD419 /* Notifiable.swift in Sources */,
@@ -606,16 +649,19 @@
 				9C0C441520A297060076B43F /* ShowEventCard.swift in Sources */,
 				9C18178E209D57B500FBD419 /* CardView.swift in Sources */,
 				9C181799209D57B500FBD419 /* Ex_Int.swift in Sources */,
+				9CC4F7F420A3F6D30086BBCE /* HabitEditGoalCard.swift in Sources */,
 				9C243D8F20A0395100D6A32A /* Cache.swift in Sources */,
 				9CD29D3020A18D1200DE4340 /* LogEditController.swift in Sources */,
 				9C18179B209D57B500FBD419 /* Ex_UIColor.swift in Sources */,
 				9C18178A209D57B500FBD419 /* Button.swift in Sources */,
 				9C243D8920A035B100D6A32A /* HabitTableCell.swift in Sources */,
 				9C18178C209D57B500FBD419 /* CardSeparator.swift in Sources */,
-				9C243D9420A03AB700D6A32A /* HabitAddController.swift in Sources */,
+				9C243D9420A03AB700D6A32A /* HabitEditController.swift in Sources */,
 				9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */,
+				9CC4F7F620A3F7DF0086BBCE /* HabitEditMessageCard.swift in Sources */,
 				9CD294AF20A2FFE7008CC61F /* LogEditTopCard.swift in Sources */,
 				9C181744209D573F00FBD419 /* TestController.swift in Sources */,
+				9CC4F7F020A3E3160086BBCE /* HabitEditNameCard.swift in Sources */,
 				9C1817BF209DAD1F00FBD419 /* RoundProgress.swift in Sources */,
 				9C18179C209D57B500FBD419 /* Ex_UIDevice.swift in Sources */,
 				9C0C441720A297C20076B43F /* Event.swift in Sources */,
@@ -638,6 +684,7 @@
 				9C1817A8209D57B500FBD419 /* iDateSelector.swift in Sources */,
 				9C1817AD209D57B500FBD419 /* Operator.swift in Sources */,
 				9C243D9E20A043D400D6A32A /* ShowNameCard.swift in Sources */,
+				9CC4F7F220A3F4290086BBCE /* HabitEditMenuCard.swift in Sources */,
 				9C181789209D57B500FBD419 /* Animation.swift in Sources */,
 				9C181797209D57B500FBD419 /* Ex_DateFormatter.swift in Sources */,
 				9C1817A2209D57B500FBD419 /* InputTextView.swift in Sources */,
@@ -649,6 +696,7 @@
 				9C1817A4209D57B500FBD419 /* InputView.swift in Sources */,
 				9C181742209D573F00FBD419 /* AppDelegate.swift in Sources */,
 				9C0C440820A2863C0076B43F /* LogListController.swift in Sources */,
+				9CDB0E6520A4425C00476E20 /* EventListController.swift in Sources */,
 				9C181794209D57B500FBD419 /* Ex_Array.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

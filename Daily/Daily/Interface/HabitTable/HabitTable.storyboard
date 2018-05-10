@@ -19,6 +19,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="rfC-3D-qYq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
@@ -41,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HabitTableCell" rowHeight="196" id="dlp-uK-ucF" customClass="HabitTableCell" customModule="Daily" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="196" id="dlp-uK-ucF" customClass="HabitTableCell" customModule="Daily" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="196"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dlp-uK-ucF" id="Zcp-j3-1Oo">
@@ -86,7 +87,7 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-en-KMT">
-                                                            <rect key="frame" x="278" y="112.5" width="15" height="29"/>
+                                                            <rect key="frame" x="278" y="111.5" width="15" height="29"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                             <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -158,16 +159,29 @@
                     <navigationItem key="navigationItem" title="习惯" id="wHO-nQ-EtT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hte-li-h6V">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="add_new_habit:" destination="3F2-5d-f0M" id="8LN-SU-zFU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="table" destination="iTa-Y0-2mi" id="aUE-r4-AAA"/>
                         <segue destination="Zfu-lM-274" kind="presentation" identifier="LogEdit" id="VRi-c3-aKL"/>
+                        <segue destination="fyn-rO-DMn" kind="presentation" identifier="HabitEdit" id="m6k-Lu-8Xc"/>
+                        <segue destination="XsB-1I-ohT" kind="show" identifier="HabitShow" id="7QZ-mS-s22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZv-5p-fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="504.80000000000001" y="152.47376311844079"/>
+        </scene>
+        <!--HabitEdit-->
+        <scene sceneID="k6z-VU-z5p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HabitEdit" id="fyn-rO-DMn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKF-Mk-8ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="61"/>
         </scene>
         <!--LogEdit-->
         <scene sceneID="in5-re-ZAP">
@@ -176,6 +190,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBq-Dn-QAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176" y="152"/>
+        </scene>
+        <!--HabitShow-->
+        <scene sceneID="Tbl-6C-GlC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HabitShow" id="XsB-1I-ohT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujK-RS-O0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="230"/>
         </scene>
     </scenes>
     <resources>

@@ -11,5 +11,7 @@ import UIKit
 class LogListCell: TableViewCell {
 
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var length: UILabel!
+    @IBOutlet weak var note: UILabel!
     
 }

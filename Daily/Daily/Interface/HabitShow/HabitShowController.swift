@@ -19,6 +19,7 @@ class HabitShowController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = habit.name
         card.controller = self
         card.reload()
     }
@@ -55,8 +56,11 @@ class HabitShowController: BaseViewController {
             log.log = sender as! Habit.Log
         }
         if let logs = segue.destination as? LogListController {
-            logs.date = sender as! Int
+            logs.date = sender as! Date
             logs.obj = habit
+        }
+        if let event = segue.destination as? EventListController {
+            event.habit = habit
         }
     }
     

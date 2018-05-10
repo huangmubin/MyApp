@@ -32,9 +32,9 @@ class ShowCalendarCard: HabitShowCard, CalendarViewDelegate {
     func calendar(view: CalendarView, back_color_at index: IndexPath, date: Date) -> UIColor {
         let logs = obj.cache.logs(date.date)
         if logs.contains(where: { $0.is_sick }) {
-            return UIColor.red
+            return UIColor(0xFF5A6F) // 红色
         } else if logs.count > 0 {
-            return UIColor.green
+            return UIColor(0x50E3C2) // 绿色
         } else {
             return UIColor.white
         }
@@ -48,7 +48,10 @@ class ShowCalendarCard: HabitShowCard, CalendarViewDelegate {
         let date = calendar.current
         log.date = date.date
         log.start = date.time1970
-        show.performSegue(withIdentifier: "LogEditController", sender: log)
+        show.performSegue(
+            withIdentifier: "LogEdit",
+            sender: log
+        )
     }
     
     /**  */
@@ -58,10 +61,16 @@ class ShowCalendarCard: HabitShowCard, CalendarViewDelegate {
         log.is_sick = true
         log.date = date.date
         log.start = date.time1970
-        show.performSegue(withIdentifier: "LogEditController", sender: log)
+        show.performSegue(
+            withIdentifier: "LogEdit",
+            sender: log
+        )
     }
     
     @IBAction func open_detail_logs(_ sender: UIButton) {
-        show.performSegue(withIdentifier: "LogListController", sender: calendar.date.date)
+        show.performSegue(
+            withIdentifier: "LogList",
+            sender: calendar.date
+        )
     }
 }

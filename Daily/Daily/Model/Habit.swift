@@ -22,9 +22,6 @@ class Habit {
     
     convenience init(new: Bool) {
         self.init(0)
-        if new {
-           id = Habit.new_id
-        }
         cache = Habit.Cache(habit: self)
         start = Date().time1970
     }
@@ -62,7 +59,7 @@ class Habit {
     /** 时间，次数 */
     private var type: Int = 0
     /** 默认长度，时间长度xx秒，次数的长度默认是 1 */
-    var length: Int = 1
+    var length: Int = 600
     /** 功能标记，\n 换行符为一个标记 */
     var flag: String = ""
     /** 目标留言 */
@@ -70,7 +67,7 @@ class Habit {
     /** 开始时间 */
     var start: Int = 0
     /** 目标，秒 */
-    var goal: Int = 0
+    var goal: Int = 3600000
     /** 状态，是进行中还是归档，如果是 5 表示这是一个新建的习惯 */
     private var state: Int = 5
     

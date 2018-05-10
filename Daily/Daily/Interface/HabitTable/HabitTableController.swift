@@ -55,16 +55,22 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HabitTableCell", for: indexPath) as! HabitTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HabitTableCell
         cell.view_update(index: indexPath, controller: self)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(
-            withIdentifier: "HabitShowController",
+            withIdentifier: "HabitShow",
             sender: habits[indexPath.row]
         )
+    }
+    
+    // MARK: - Add
+    
+    @IBAction func add_new_habit(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "HabitEdit", sender: nil)
     }
     
     // MAKR: - Segue
@@ -75,6 +81,9 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
         }
         if let log = segue.controller as? LogEditController {
             log.log = sender as! Habit.Log
+        }
+        if let habit = segue.destination as? HabitEditController {
+            habit.habit = Habit(new: true)
         }
     }
     

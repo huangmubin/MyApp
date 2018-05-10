@@ -1,15 +1,16 @@
 //
-//  LogEditMessageCard.swift
+//  HabitEditMessageCard.swift
 //  Daily
 //
-//  Created by 黄穆斌 on 2018/5/9.
+//  Created by Myron on 2018/5/10.
 //  Copyright © 2018年 Myron. All rights reserved.
 //
 
 import UIKit
 
-class LogEditMessageCard: LogEditCard, UITextViewDelegate {
+class HabitEditMessageCard: HabitEditCard, UITextViewDelegate {
 
+    
     /**  */
     var value: String {
         return note?.text ?? ""
@@ -35,9 +36,9 @@ class LogEditMessageCard: LogEditCard, UITextViewDelegate {
     
     /**  */
     override func reload() {
-        note.text = log.note
+        note.text = habit.message
     }
-
+    
     // MARK: - Tap
     
     /**  */
@@ -56,4 +57,5 @@ class LogEditMessageCard: LogEditCard, UITextViewDelegate {
         note.resignFirstResponder()
     }
     
+
 }
