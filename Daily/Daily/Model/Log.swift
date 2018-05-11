@@ -127,9 +127,9 @@ extension Habit {
         
         /** 根据条件查找数据 */
         static func find(habit: Habit, where value: String? = nil) -> [Log] {
-            var sql = "select * from \(table)"
+            var sql = "select * from \(table) where habit = \(habit.id)"
             if let v = value {
-                sql += " where \(v);"
+                sql += " and \(v);"
             } else {
                 sql += ";"
             }

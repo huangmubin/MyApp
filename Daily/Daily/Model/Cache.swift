@@ -18,11 +18,13 @@ extension Habit {
         
         /** 所属 habit */
         weak var obj: Habit!
-        init(habit: Habit) {
+        init(habit: Habit, load: Bool = false) {
             self.obj = habit
-            self.reload_length()
-            self.reload_dates()
-            self.reload_events()
+            if load {
+                self.reload_length()
+                self.reload_dates()
+                self.reload_events()
+            }
         }
         
         // MARK: - Clear
@@ -30,6 +32,14 @@ extension Habit {
         /** 释放内存 */
         func clear() {
             _logs.removeAll(keepingCapacity: false)
+        }
+        
+        /** 重新获取所有数据 */
+        func reload() {
+            clear()
+            self.reload_length()
+            self.reload_dates()
+            self.reload_events()
         }
         
         // MARK: - Total

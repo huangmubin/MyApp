@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S0Y-LM-5qn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Edit Controller-->
+        <scene sceneID="ZEi-X7-blG">
+            <objects>
+                <viewController id="S0Y-LM-5qn" customClass="EventEditController" customModule="Daily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cM3-f7-Kd1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-se-XNe" customClass="CardTable" customModule="Daily" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="separator" destination="fbA-KR-jy0" id="t61-Bd-qiY"/>
+                                    <outletCollection property="cards" destination="moc-Va-Pht" collectionClass="NSMutableArray" id="VHH-mK-59y"/>
+                                    <outletCollection property="cards" destination="OA4-0x-wDb" collectionClass="NSMutableArray" id="2zy-rG-tbE"/>
+                                    <outletCollection property="cards" destination="5tZ-I9-wcO" collectionClass="NSMutableArray" id="SMg-za-mPh"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2ll-JP-vUr" firstAttribute="trailing" secondItem="8IU-se-XNe" secondAttribute="trailing" id="FgV-TJ-QzD"/>
+                            <constraint firstItem="2ll-JP-vUr" firstAttribute="bottom" secondItem="8IU-se-XNe" secondAttribute="bottom" id="OoB-OC-lbd"/>
+                            <constraint firstItem="8IU-se-XNe" firstAttribute="top" secondItem="2ll-JP-vUr" secondAttribute="top" id="mEL-DW-96g"/>
+                            <constraint firstItem="8IU-se-XNe" firstAttribute="leading" secondItem="2ll-JP-vUr" secondAttribute="leading" id="nxA-T4-D89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2ll-JP-vUr"/>
+                    </view>
+                    <connections>
+                        <outlet property="cards" destination="8IU-se-XNe" id="piv-2r-eT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTf-Zo-iKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="fbA-KR-jy0" customClass="CardSeparator" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="62" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="SeL-ds-8IO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="left">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="right">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" id="moc-Va-Pht" customClass="EventEditTopCard" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="习惯名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUX-Ll-7Li">
+                            <rect key="frame" x="79.5" y="18" width="82" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-tf-PaU">
+                            <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="error_black"/>
+                            <connections>
+                                <action selector="error_action:" destination="moc-Va-Pht" eventType="touchUpInside" id="5y1-G5-BgJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-dj-CWQ">
+                            <rect key="frame" x="170" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="success_black"/>
+                            <connections>
+                                <action selector="success_action:" destination="moc-Va-Pht" eventType="touchUpInside" id="EnB-OF-za7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kUX-Ll-7Li" firstAttribute="centerX" secondItem="Qmb-PY-UDd" secondAttribute="centerX" id="3m9-cG-6nt"/>
+                        <constraint firstItem="Qmb-PY-UDd" firstAttribute="trailing" secondItem="1ks-dj-CWQ" secondAttribute="trailing" constant="10" id="GFL-2f-cNF"/>
+                        <constraint firstItem="dwv-tf-PaU" firstAttribute="leading" secondItem="Qmb-PY-UDd" secondAttribute="leading" constant="10" id="HdG-uO-yhS"/>
+                        <constraint firstItem="dwv-tf-PaU" firstAttribute="centerY" secondItem="Qmb-PY-UDd" secondAttribute="centerY" id="gPo-zl-IaF"/>
+                        <constraint firstItem="1ks-dj-CWQ" firstAttribute="centerY" secondItem="Qmb-PY-UDd" secondAttribute="centerY" id="h56-eC-Sgk"/>
+                        <constraint firstItem="kUX-Ll-7Li" firstAttribute="centerY" secondItem="Qmb-PY-UDd" secondAttribute="centerY" id="kgn-kH-0hL"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Qmb-PY-UDd"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Top"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="name" destination="kUX-Ll-7Li" id="kgU-7H-zjz"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="OA4-0x-wDb" customClass="EventEditNameCard" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="107"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事件内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgv-dJ-1js">
+                            <rect key="frame" x="20" y="20" width="58" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1RI-Vl-s6n">
+                            <rect key="frame" x="20" y="47" width="252" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="OA4-0x-wDb" id="crk-Ad-Rhl"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vgv-dJ-1js" firstAttribute="leading" secondItem="BH2-kl-qtA" secondAttribute="leading" constant="20" id="LTm-7O-vJO"/>
+                        <constraint firstItem="1RI-Vl-s6n" firstAttribute="top" secondItem="Vgv-dJ-1js" secondAttribute="bottom" constant="10" id="WH2-0E-dpq"/>
+                        <constraint firstItem="BH2-kl-qtA" firstAttribute="bottom" secondItem="1RI-Vl-s6n" secondAttribute="bottom" constant="20" id="XlG-zG-qPS"/>
+                        <constraint firstItem="1RI-Vl-s6n" firstAttribute="leading" secondItem="BH2-kl-qtA" secondAttribute="leading" constant="20" id="j2U-e9-Jh0"/>
+                        <constraint firstItem="Vgv-dJ-1js" firstAttribute="top" secondItem="BH2-kl-qtA" secondAttribute="top" constant="20" id="jOe-gA-xzL"/>
+                        <constraint firstItem="BH2-kl-qtA" firstAttribute="trailing" secondItem="1RI-Vl-s6n" secondAttribute="trailing" constant="20" id="pEV-3D-69T"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="BH2-kl-qtA"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Name"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="note" destination="1RI-Vl-s6n" id="dci-cT-0Ln"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="5tZ-I9-wcO" customClass="EventEditNoteCard" customModule="Daily" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="107"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAN-4N-ESA">
+                            <rect key="frame" x="20" y="20" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9F6-aQ-9Re">
+                            <rect key="frame" x="20" y="47" width="252" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="5tZ-I9-wcO" id="47F-qv-9Mh"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9F6-aQ-9Re" firstAttribute="top" secondItem="aAN-4N-ESA" secondAttribute="bottom" constant="10" id="1Vr-wX-Ztv"/>
+                        <constraint firstItem="mtY-I7-v7v" firstAttribute="bottom" secondItem="9F6-aQ-9Re" secondAttribute="bottom" constant="20" id="5M7-Sq-t1K"/>
+                        <constraint firstItem="mtY-I7-v7v" firstAttribute="trailing" secondItem="9F6-aQ-9Re" secondAttribute="trailing" constant="20" id="Fg5-Av-hSw"/>
+                        <constraint firstItem="aAN-4N-ESA" firstAttribute="top" secondItem="mtY-I7-v7v" secondAttribute="top" constant="20" id="QVg-tg-sjq"/>
+                        <constraint firstItem="9F6-aQ-9Re" firstAttribute="leading" secondItem="mtY-I7-v7v" secondAttribute="leading" constant="20" id="tBm-Dg-GoR"/>
+                        <constraint firstItem="aAN-4N-ESA" firstAttribute="leading" secondItem="mtY-I7-v7v" secondAttribute="leading" constant="20" id="wby-7b-PKK"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="mtY-I7-v7v"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Note"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="note" destination="9F6-aQ-9Re" id="Mq0-mZ-R7g"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-41" y="259"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error_black" width="60" height="60"/>
+        <image name="success_black" width="60" height="60"/>
+    </resources>
+</document>
