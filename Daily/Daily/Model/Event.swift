@@ -136,9 +136,9 @@ extension Habit {
         
         /** 根据条件查找数据 */
         static func find(habit: Habit, where value: String? = nil) -> [Event] {
-            var sql = "select * from \(table)"
+            var sql = "select * from \(table) where habit = \(habit.id)"
             if let v = value {
-                sql += " where \(v);"
+                sql += " and \(v);"
             } else {
                 sql += ";"
             }
@@ -149,11 +149,12 @@ extension Habit {
         
         /** 更新数据到数据库 */
         func update() -> Bool {
-            let sql = "update \(table) set name = \(name), start = \(start), end = \(end), note = \(note), type = \(type), level = \(level), sort = \(sort) where id = \(id)"
+            let sql = "update \(table) set name = '\(name)', start = \(start), end = \(end), note = '\(note)', type = \(type), level = \(level), sort = \(sort) where id = \(id)"
             return SQLite.default.execut(sql: sql)
         }
         
         /** 更新数据到数据库 */
+        @discardableResult
         func update(_ values: String) -> Bool {
             let sql = "update \(table) set \(values) where id = \(id)"
             return SQLite.default.execut(sql: sql)
