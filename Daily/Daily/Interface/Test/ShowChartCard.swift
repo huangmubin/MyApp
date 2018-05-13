@@ -12,6 +12,8 @@ class ShowChartCard: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     
     // MARK: - obj
     
+    var chart: Chart!
+    
     // MARK: - Name
     
     @IBOutlet weak var title: UILabel!
@@ -29,7 +31,9 @@ class ShowChartCard: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     
     @IBOutlet weak var chart: UICollectionView!
     
-    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        cha
+    }
     
 }
 

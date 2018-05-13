@@ -7,25 +7,23 @@
 //
 
 import UIKit
+import SQLite3
 
 class Chart {
     
     // MARK: - Init
     
-    private init(_ v: Int) {}
-    convenience init() {
-        self.init(0)
-    }
-    
-    convenience init(new: Bool) {
-        self.init(0)
-        cache = Habit.Cache(habit: self)
-        start = Date().time1970
+    private init() {}
+    convenience init(habit: Habit) {
+        self.init()
+        self.obj = habit
     }
     
     // MARK: - Interface
     
     weak var obj: Habit!
+    
+    var units: [Int] = []
     
     // MARK: - Database
     
@@ -38,22 +36,21 @@ class Chart {
     /** 所属 habit 的 id */
     var habit: Int = 0
     
-    
     // MARK: - Tools
     
     /** 获取最新的 id */
     static var new_id: Int {
-        let id = UserDefaults.standard.integer(forKey: "Habit_id")
-        UserDefaults.standard.set(id + 1, forKey: "Habit_id")
+        let id = UserDefaults.standard.integer(forKey: "Chart")
+        UserDefaults.standard.set(id + 1, forKey: "Chart")
         return id + 1
     }
     
     // MARK: - SQLite
     
     /** Database table name */
-    static let table = "Habit"
+    static let table = "Chart"
     /** Database table name */
-    var table: String { return Habit.table }
+    var table: String { return Chart.table }
     
     // MARK: Create
     
@@ -64,13 +61,8 @@ class Chart {
         create table if not exists \(table) (
         id integer primary key,
         name text,
-        type integer,
-        length integer,
-        flag text,
-        message text,
-        start integer,
         goal integer,
-        state integer
+        habit integer
         );
         """
         return SQLite.default.execut(sql: sql)
@@ -79,28 +71,18 @@ class Chart {
     // MARK: Find
     
     /** 根据完整的 SQL 语句查找数据 */
-    private static func find(sql: String) -> [Habit] {
-        var habits = [Habit]()
-        SQLite.default.find(sql: sql, line: { Habit() }, datas: { (state, i, obj, name) in
+    private static func find(habit: Habit, sql: String) -> [Chart] {
+        var habits = [Chart]()
+        SQLite.default.find(sql: sql, line: { Chart(habit: habit) }, datas: { (state, i, obj, name) in
             switch name {
             case "id":
                 obj.id = Int(sqlite3_column_int64(state, i))
             case "name":
                 obj.name = String(cString: sqlite3_column_text(state, i))
-            case "type":
-                obj.type = Int(sqlite3_column_int64(state, i))
-            case "length":
-                obj.length = Int(sqlite3_column_int64(state, i))
-            case "flag":
-                obj.flag = String(cString: sqlite3_column_text(state, i))
-            case "message":
-                obj.message = String(cString: sqlite3_column_text(state, i))
-            case "start":
-                obj.start = Int(sqlite3_column_int64(state, i))
             case "goal":
                 obj.goal = Int(sqlite3_column_int64(state, i))
-            case "state":
-                obj.state = Int(sqlite3_column_int64(state, i))
+            case "habit":
+                obj.habit = Int(sqlite3_column_int64(state, i))
             default: break
             }
         }, next: { habits.append($0) })
@@ -111,21 +93,21 @@ class Chart {
      where = nil 查找所有数据
      where != nil 则添加约束条件
      */
-    static func find(where value: String? = nil) -> [Habit] {
-        var sql = "select * from \(table)"
+    static func find(habit: Habit, where value: String? = nil) -> [Chart] {
+        var sql = "select * from \(table) where habit = \(habit.id)"
         if let v = value {
-            sql += " where \(v);"
+            sql += " and \(v);"
         } else {
             sql += ";"
         }
-        return find(sql: sql)
+        return find(habit: habit, sql: sql)
     }
     
     // MARK: Insert
     
     /** 插入数据 */
     func insert() -> Bool {
-        let sql = "insert into \(table) values(\(id), '\(name)', \(type), \(length), '\(flag)', '\(message)', \(start), \(goal), \(state));"
+        let sql = "insert into \(table) values(\(id), '\(name)', \(goal), \(habit));"
         return SQLite.default.execut(sql: sql)
     }
     
@@ -133,7 +115,7 @@ class Chart {
     
     /** 更新数据到数据库 */
     func update() -> Bool {
-        let sql = "update \(table) set name = '\(name)', type = \(type), length = \(length), flag = '\(flag)', message = '\(message)', start = \(start), goal = \(goal), state = \(state) where id = \(id)"
+        let sql = "update \(table) set name = '\(name)', goal = \(goal), habit = \(habit) where id = \(id)"
         return SQLite.default.execut(sql: sql)
     }
     
