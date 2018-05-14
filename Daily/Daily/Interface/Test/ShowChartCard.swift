@@ -12,7 +12,7 @@ class ShowChartCard: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     
     // MARK: - obj
     
-    var chart: Chart!
+    var chart: Habit.Chart!
     
     // MARK: - Name
     
@@ -29,10 +29,15 @@ class ShowChartCard: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     
     // MARK: - Chart
     
-    @IBOutlet weak var chart: UICollectionView!
+    @IBOutlet weak var collection: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        cha
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! UICollectionViewCell
+        return cell
     }
     
 }

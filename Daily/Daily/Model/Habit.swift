@@ -109,9 +109,9 @@ class Habit {
     }
     
     // MARK: Find
-    
+
     /** 根据完整的 SQL 语句查找数据 */
-    private static func find(sql: String) -> [Habit] {
+    static func find(sql: String) -> [Habit] {
         var habits = [Habit]()
         SQLite.default.find(sql: sql, line: { Habit() }, datas: { (state, i, obj, name) in
             switch name {
@@ -138,7 +138,7 @@ class Habit {
         }, next: { habits.append($0) })
         return habits
     }
-    
+
     /**
      where = nil 查找所有数据
      where != nil 则添加约束条件
@@ -152,7 +152,7 @@ class Habit {
         }
         return find(sql: sql)
     }
-    
+
     // MARK: Insert
     
     /** 插入数据 */
@@ -168,19 +168,19 @@ class Habit {
         let sql = "update \(table) set name = '\(name)', type = \(type), length = \(length), flag = '\(flag)', message = '\(message)', start = \(start), goal = \(goal), state = \(state) where id = \(id)"
         return SQLite.default.execut(sql: sql)
     }
-    
-    /** 更新数据到数据库 */
-    func update(_ values: String) -> Bool {
-        let sql = "update \(table) set \(values) where id = \(id)"
-        return SQLite.default.execut(sql: sql)
-    }
-    
-    // MARK: Delete
-    
-    /** 删除数据 */
-    func delete() -> Bool {
-        let sql = "delete from \(table) where id = \(id);"
-        return SQLite.default.execut(sql: sql)
-    }
+//
+//    /** 更新数据到数据库 */
+//    func update(_ values: String) -> Bool {
+//        let sql = "update \(table) set \(values) where id = \(id)"
+//        return SQLite.default.execut(sql: sql)
+//    }
+//
+//    // MARK: Delete
+//
+//    /** 删除数据 */
+//    func delete() -> Bool {
+//        let sql = "delete from \(table) where id = \(id);"
+//        return SQLite.default.execut(sql: sql)
+//    }
 }
 
