@@ -454,8 +454,8 @@
 		9C243D8A20A0393200D6A32A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9C243D8C20A0395100D6A32A /* Cache.swift */,
 				9C243D8B20A0395000D6A32A /* Habit.swift */,
+				9C243D8C20A0395100D6A32A /* Cache.swift */,
 				9C243D8D20A0395100D6A32A /* Log.swift */,
 				9C0C441620A297C20076B43F /* Event.swift */,
 				9C7BDE1020A59F52005D2504 /* Chart.swift */,

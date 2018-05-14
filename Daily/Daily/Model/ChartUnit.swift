@@ -9,14 +9,14 @@
 import UIKit
 import SQLite3
 
-extension Chart {
+extension Habit.Chart {
     
     class Unit {
         
         // MARK: - Model
         
-        weak var obj: Chart!
-        init(_ obj: Chart) {
+        weak var obj: Habit.Chart!
+        init(_ obj: Habit.Chart) {
             self.obj = obj
             
             let now = Date()
@@ -28,10 +28,10 @@ extension Chart {
         
         // MARK: - Interface
         
-        /** 是否是请假 */
-        var is_sick: Bool {
-            get { return type == 1 }
-            set { type = newValue ? 1 : 0 }
+        /** 是否是时间，还是次数，时间为 0 */
+        var is_time: Bool {
+            get { return type == 0 }
+            set { type = newValue ? 0 : 1 }
         }
         
         /** 获取结束时间 */
@@ -41,7 +41,7 @@ extension Chart {
         
         /** 本身的 id */
         var id: Int = 0
-        /** Habit 的 id */
+        /** Chart 的 id */
         var chart: Int = 0
         /** 日期 */
         var date: Int = 0
@@ -51,24 +51,24 @@ extension Chart {
         var length: Int = 0
         /** 文本记录 */
         var note: String = ""
-        /** 类型记录，正常打卡，请假打卡 */
+        /** 类型记录，时间，次数 */
         var type: Int = 0
         
         // MARK: - Tools
         
         /** 创建最新的 id */
         static var new_id: Int {
-            let id = UserDefaults.standard.integer(forKey: "Chart_Unit")
-            UserDefaults.standard.set(id + 1, forKey: "Chart_Unit")
+            let id = UserDefaults.standard.integer(forKey: "Habit_Chart_Unit")
+            UserDefaults.standard.set(id + 1, forKey: "Habit_Chart_Unit")
             return id + 1
         }
         
         // MARK: - SQLite
         
         /** Database table name */
-        static let table = "Chart_Unit"
+        static let table = "Habit_Chart_Unit"
         /** Database table name */
-        var table: String { return Chart.Unit.table }
+        var table: String { return Habit.Chart.Unit.table }
         
         // MARK: Create
         
@@ -78,7 +78,7 @@ extension Chart {
             let sql = """
             create table if not exists \(table) (
             id integer primary key,
-            habit integer,
+            chart integer,
             date integer,
             start integer,
             length integer,
@@ -100,8 +100,8 @@ extension Chart {
         // MARK: Find
         
         /** 根据 SQL 跟 Habit 查找记录 */
-        private static func find(chart: Chart, sql: String) -> [Chart.Unit] {
-            var logs = [Chart.Unit]()
+        private static func find(chart: Habit.Chart, sql: String) -> [Habit.Chart.Unit] {
+            var logs = [Habit.Chart.Unit]()
             SQLite.default.find(sql: sql, line: { Unit(chart) }, datas: { (state, i, obj, name) in
                 switch name {
                 case "id":
@@ -125,7 +125,7 @@ extension Chart {
         }
         
         /** 根据条件查找数据 */
-        static func find(chart: Chart, where value: String? = nil) -> [Chart.Unit] {
+        static func find(chart: Habit.Chart, where value: String? = nil) -> [Habit.Chart.Unit] {
             var sql = "select * from \(table) where chart = \(chart.id)"
             if let v = value {
                 sql += " and \(v);"
