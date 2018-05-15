@@ -68,6 +68,8 @@
 		9C243D9C20A043A800D6A32A /* HabitShowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9B20A043A800D6A32A /* HabitShowCard.swift */; };
 		9C243D9E20A043D400D6A32A /* ShowNameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9D20A043D400D6A32A /* ShowNameCard.swift */; };
 		9C243DA020A0461D00D6A32A /* ShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */; };
+		9C71357620AADA9A003D98DA /* SQLiteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C71357520AADA9A003D98DA /* SQLiteProtocol.swift */; };
+		9C71357820AADABB003D98DA /* SQLiteProtocol2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C71357720AADABB003D98DA /* SQLiteProtocol2.swift */; };
 		9C7BDDF320A54338005D2504 /* EventEdtiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7BDDF220A54338005D2504 /* EventEdtiController.swift */; };
 		9C7BDDF520A54C2B005D2504 /* EventEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7BDDF420A54C2B005D2504 /* EventEdit.storyboard */; };
 		9C7BDDF720A5836A005D2504 /* EventEditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7BDDF620A5836A005D2504 /* EventEditCard.swift */; };
@@ -173,6 +175,8 @@
 		9C243D9B20A043A800D6A32A /* HabitShowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCard.swift; sourceTree = "<group>"; };
 		9C243D9D20A043D400D6A32A /* ShowNameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameCard.swift; sourceTree = "<group>"; };
 		9C243D9F20A0461D00D6A32A /* ShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalendarCard.swift; sourceTree = "<group>"; };
+		9C71357520AADA9A003D98DA /* SQLiteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteProtocol.swift; sourceTree = "<group>"; };
+		9C71357720AADABB003D98DA /* SQLiteProtocol2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteProtocol2.swift; sourceTree = "<group>"; };
 		9C7BDDF220A54338005D2504 /* EventEdtiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEdtiController.swift; sourceTree = "<group>"; };
 		9C7BDDF420A54C2B005D2504 /* EventEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEdit.storyboard; sourceTree = "<group>"; };
 		9C7BDDF620A5836A005D2504 /* EventEditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditCard.swift; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 			isa = PBXGroup;
 			children = (
 				9C181767209D57B400FBD419 /* SQLite.swift */,
+				9C71357520AADA9A003D98DA /* SQLiteProtocol.swift */,
+				9C71357720AADABB003D98DA /* SQLiteProtocol2.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -714,6 +720,7 @@
 				9C7BDDFC20A583FF005D2504 /* EventEditNoteCard.swift in Sources */,
 				9C18178B209D57B500FBD419 /* ImageView.swift in Sources */,
 				9CD29D2A20A1853700DE4340 /* CalendarCell.swift in Sources */,
+				9C71357620AADA9A003D98DA /* SQLiteProtocol.swift in Sources */,
 				9CA5B69C20A3483600B0C69E /* HabitEditCard.swift in Sources */,
 				9CA5B69720A33D3D00B0C69E /* LogEditMessageCard.swift in Sources */,
 				9CD294AA20A2FCF3008CC61F /* LogEditCard.swift in Sources */,
@@ -727,6 +734,7 @@
 				9C7BDE0920A592D2005D2504 /* CardTextView.swift in Sources */,
 				9CD29D2C20A1853700DE4340 /* CalendarView.swift in Sources */,
 				9CA5B69520A3351600B0C69E /* LogEditTimeCard.swift in Sources */,
+				9C71357820AADABB003D98DA /* SQLiteProtocol2.swift in Sources */,
 				9C1817AC209D57B500FBD419 /* Notifiable.swift in Sources */,
 				9C181796209D57B500FBD419 /* Ex_Date.swift in Sources */,
 				9C1817BD209DACD000FBD419 /* ProgressView.swift in Sources */,

@@ -168,19 +168,18 @@ class Habit {
         let sql = "update \(table) set name = '\(name)', type = \(type), length = \(length), flag = '\(flag)', message = '\(message)', start = \(start), goal = \(goal), state = \(state) where id = \(id)"
         return SQLite.default.execut(sql: sql)
     }
-//
-//    /** 更新数据到数据库 */
-//    func update(_ values: String) -> Bool {
-//        let sql = "update \(table) set \(values) where id = \(id)"
-//        return SQLite.default.execut(sql: sql)
-//    }
-//
-//    // MARK: Delete
-//
-//    /** 删除数据 */
-//    func delete() -> Bool {
-//        let sql = "delete from \(table) where id = \(id);"
-//        return SQLite.default.execut(sql: sql)
-//    }
-}
 
+    /** 更新数据到数据库 */
+    func update(_ values: String) -> Bool {
+        let sql = "update \(table) set \(values) where id = \(id)"
+        return SQLite.default.execut(sql: sql)
+    }
+
+    // MARK: Delete
+
+    /** 删除数据 */
+    func delete() -> Bool {
+        let sql = "delete from \(table) where id = \(id);"
+        return SQLite.default.execut(sql: sql)
+    }
+}

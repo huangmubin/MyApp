@@ -85,7 +85,7 @@ class HabitTableController: BaseViewController, UITableViewDataSource, UITableVi
             log.log = sender as! Habit.Log
         }
         if let habit = segue.destination as? HabitEditController {
-            habit.habit = Habit(new: true)
+            habit.habit = Habit()
         }
     }
     
