@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HKT-eN-wug">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Habit Edit Controller-->
+        <scene sceneID="1B2-hj-tKb">
+            <objects>
+                <viewController id="HKT-eN-wug" customClass="HabitEditController" customModule="Days" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fhj-Jw-lMv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nt-UO-PHm" customClass="CardTable" customModule="Days" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outletCollection property="cards" destination="oeQ-WC-bcU" collectionClass="NSMutableArray" id="lYU-n2-NaZ"/>
+                                    <outletCollection property="cards" destination="bqZ-Oj-UpF" collectionClass="NSMutableArray" id="2dk-yb-XIh"/>
+                                    <outletCollection property="cards" destination="W0V-ua-F57" collectionClass="NSMutableArray" id="oZR-hb-PIG"/>
+                                    <outletCollection property="cards" destination="y1v-v7-lRY" collectionClass="NSMutableArray" id="Mpw-A7-9Lo"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Nt-UO-PHm" firstAttribute="top" secondItem="3k8-mb-tWZ" secondAttribute="top" id="11x-Rb-Og3"/>
+                            <constraint firstItem="3k8-mb-tWZ" firstAttribute="bottom" secondItem="3Nt-UO-PHm" secondAttribute="bottom" id="63j-hN-RrL"/>
+                            <constraint firstItem="3k8-mb-tWZ" firstAttribute="trailing" secondItem="3Nt-UO-PHm" secondAttribute="trailing" id="g5k-6R-yKT"/>
+                            <constraint firstItem="3Nt-UO-PHm" firstAttribute="leading" secondItem="3k8-mb-tWZ" secondAttribute="leading" id="uRJ-hR-gfG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3k8-mb-tWZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="cards" destination="3Nt-UO-PHm" id="mhv-yv-KFN"/>
+                        <segue destination="BoU-bq-VWA" kind="show" identifier="Color" id="iV9-Nn-Jvg"/>
+                        <segue destination="W8k-mo-mnf" kind="show" identifier="Image" id="AfW-PZ-aCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7r-sc-GrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="oeQ-WC-bcU" customClass="HabitEditTopCard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新习惯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dit-Js-PNs">
+                            <rect key="frame" x="100" y="9" width="90" height="42"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="30"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBJ-Xf-MRR">
+                            <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="but_error"/>
+                            <connections>
+                                <action selector="left_action" destination="oeQ-WC-bcU" eventType="touchUpInside" id="2yR-ds-XPG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-b6-H7R">
+                            <rect key="frame" x="220" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="but_success"/>
+                            <connections>
+                                <action selector="rigth_action" destination="oeQ-WC-bcU" eventType="touchUpInside" id="Xp0-i9-kyJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qBJ-Xf-MRR" firstAttribute="leading" secondItem="OPj-fz-yNY" secondAttribute="leading" constant="10" id="0my-SH-0Qd"/>
+                        <constraint firstItem="qBJ-Xf-MRR" firstAttribute="centerY" secondItem="OPj-fz-yNY" secondAttribute="centerY" id="0t1-P3-q9S"/>
+                        <constraint firstItem="OPj-fz-yNY" firstAttribute="trailing" secondItem="Ol0-b6-H7R" secondAttribute="trailing" constant="10" id="CjU-lW-AT5"/>
+                        <constraint firstItem="dit-Js-PNs" firstAttribute="centerX" secondItem="OPj-fz-yNY" secondAttribute="centerX" id="jg9-sN-i4L"/>
+                        <constraint firstItem="Ol0-b6-H7R" firstAttribute="centerY" secondItem="OPj-fz-yNY" secondAttribute="centerY" id="sNY-du-dl9"/>
+                        <constraint firstItem="dit-Js-PNs" firstAttribute="centerY" secondItem="OPj-fz-yNY" secondAttribute="centerY" id="tsa-kF-3rh"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="OPj-fz-yNY"/>
+                    <connections>
+                        <outlet property="left" destination="qBJ-Xf-MRR" id="TFK-fZ-wlf"/>
+                        <outlet property="right" destination="Ol0-b6-H7R" id="gdW-SK-rWO"/>
+                        <outlet property="title" destination="dit-Js-PNs" id="SQy-lj-9sk"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="bqZ-Oj-UpF" customClass="HabitEditNameCard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="266" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="习惯名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnC-6Q-X5h">
+                            <rect key="frame" x="20" y="20" width="104.5" height="36.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTL-iu-eVU" customClass="View" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="76.5" width="226" height="63.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAn-bj-xlh">
+                                    <rect key="frame" x="20" y="12" width="186" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal" title="新习惯">
+                                        <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="name_action:" destination="bqZ-Oj-UpF" eventType="touchUpInside" id="Vfg-c1-7r3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="PAn-bj-xlh" firstAttribute="centerY" secondItem="zTL-iu-eVU" secondAttribute="centerY" id="Bf5-4q-GlC"/>
+                                <constraint firstAttribute="trailing" secondItem="PAn-bj-xlh" secondAttribute="trailing" constant="20" id="GuS-PH-Qz0"/>
+                                <constraint firstItem="PAn-bj-xlh" firstAttribute="leading" secondItem="zTL-iu-eVU" secondAttribute="leading" constant="20" id="Wcv-Dh-Atv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FaE-3h-qYM" firstAttribute="bottom" secondItem="zTL-iu-eVU" secondAttribute="bottom" constant="20" id="F3t-5I-3z5"/>
+                        <constraint firstItem="MnC-6Q-X5h" firstAttribute="top" secondItem="FaE-3h-qYM" secondAttribute="top" constant="20" id="XTI-kL-0D3"/>
+                        <constraint firstItem="FaE-3h-qYM" firstAttribute="trailing" secondItem="zTL-iu-eVU" secondAttribute="trailing" constant="20" id="c0w-rd-KA8"/>
+                        <constraint firstItem="zTL-iu-eVU" firstAttribute="top" secondItem="MnC-6Q-X5h" secondAttribute="bottom" constant="20" id="dTf-aO-37y"/>
+                        <constraint firstItem="zTL-iu-eVU" firstAttribute="leading" secondItem="FaE-3h-qYM" secondAttribute="leading" constant="20" id="evU-Od-H9N"/>
+                        <constraint firstItem="MnC-6Q-X5h" firstAttribute="leading" secondItem="FaE-3h-qYM" secondAttribute="leading" constant="20" id="nMN-So-aly"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="FaE-3h-qYM"/>
+                    <connections>
+                        <outlet property="name_button" destination="PAn-bj-xlh" id="Xb2-uf-aaX"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="W0V-ua-F57" customClass="HabitEditGoalCard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="254" height="385"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJk-JF-YWu">
+                            <rect key="frame" x="20" y="20" width="52.5" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oj-i0-qUA" customClass="View" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="76.5" width="97" height="63.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-l1-Tdu">
+                                    <rect key="frame" x="20" y="12" width="57" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal" title="计时">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63.5" id="Eva-6I-LQc"/>
+                                <constraint firstAttribute="trailing" secondItem="M9H-l1-Tdu" secondAttribute="trailing" constant="20" id="HD1-sv-cGC"/>
+                                <constraint firstItem="M9H-l1-Tdu" firstAttribute="centerY" secondItem="7oj-i0-qUA" secondAttribute="centerY" id="JrM-iN-luU"/>
+                                <constraint firstItem="M9H-l1-Tdu" firstAttribute="leading" secondItem="7oj-i0-qUA" secondAttribute="leading" constant="20" id="Kyl-bJ-Fjz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLK-RN-d6k" customClass="View" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="137" y="76" width="97" height="63.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-uL-DxZ">
+                                    <rect key="frame" x="20" y="12" width="57" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal" title="计数">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="kZL-uL-DxZ" firstAttribute="leading" secondItem="nLK-RN-d6k" secondAttribute="leading" constant="20" id="L1U-m2-JKD"/>
+                                <constraint firstAttribute="height" constant="63.5" id="Lak-Y9-tEr"/>
+                                <constraint firstItem="kZL-uL-DxZ" firstAttribute="centerY" secondItem="nLK-RN-d6k" secondAttribute="centerY" id="htz-bW-mDH"/>
+                                <constraint firstAttribute="trailing" secondItem="kZL-uL-DxZ" secondAttribute="trailing" constant="20" id="k1g-ms-Yre"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xQ-9C-Vun" customClass="View" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="160" width="214" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usq-zk-Hky">
+                                    <rect key="frame" x="53.5" y="12" width="57" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal" title="10000">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bb-m6-yxP">
+                                    <rect key="frame" x="20" y="12" width="174" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo6-cp-qmv">
+                                    <rect key="frame" x="118.5" y="18" width="40" height="28"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="usq-zk-Hky" firstAttribute="centerY" secondItem="0xQ-9C-Vun" secondAttribute="centerY" id="7Rf-iB-HvT"/>
+                                <constraint firstAttribute="height" constant="63.5" id="CUk-Jp-nbE"/>
+                                <constraint firstItem="1Bb-m6-yxP" firstAttribute="centerY" secondItem="0xQ-9C-Vun" secondAttribute="centerY" id="MnN-Za-rqL"/>
+                                <constraint firstItem="eo6-cp-qmv" firstAttribute="centerY" secondItem="usq-zk-Hky" secondAttribute="centerY" id="RiC-9R-iyf"/>
+                                <constraint firstAttribute="trailing" secondItem="1Bb-m6-yxP" secondAttribute="trailing" constant="20" id="WCV-Mr-63t"/>
+                                <constraint firstItem="usq-zk-Hky" firstAttribute="centerX" secondItem="0xQ-9C-Vun" secondAttribute="centerX" constant="-25" id="mhW-Af-doL"/>
+                                <constraint firstItem="eo6-cp-qmv" firstAttribute="leading" secondItem="usq-zk-Hky" secondAttribute="trailing" constant="8" id="tCb-34-OQi"/>
+                                <constraint firstItem="1Bb-m6-yxP" firstAttribute="leading" secondItem="0xQ-9C-Vun" secondAttribute="leading" constant="20" id="vsj-99-yer"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cj5-ll-BgW" customClass="View" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="301" width="214" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH3-uD-L6p">
+                                    <rect key="frame" x="52" y="12" width="30" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal" title="60">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIX-pe-RiA">
+                                    <rect key="frame" x="20" y="12" width="174" height="40"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分钟 / 天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-HO-WX5">
+                                    <rect key="frame" x="90" y="18" width="84" height="28"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="KIX-pe-RiA" firstAttribute="centerY" secondItem="Cj5-ll-BgW" secondAttribute="centerY" id="BHx-kE-QPD"/>
+                                <constraint firstItem="KIX-pe-RiA" firstAttribute="leading" secondItem="Cj5-ll-BgW" secondAttribute="leading" constant="20" id="Dac-G2-5sa"/>
+                                <constraint firstItem="eH3-uD-L6p" firstAttribute="centerY" secondItem="Cj5-ll-BgW" secondAttribute="centerY" id="Mx6-fE-ihg"/>
+                                <constraint firstAttribute="trailing" secondItem="KIX-pe-RiA" secondAttribute="trailing" constant="20" id="Ojj-Gh-scc"/>
+                                <constraint firstItem="ynd-HO-WX5" firstAttribute="centerY" secondItem="eH3-uD-L6p" secondAttribute="centerY" id="Upm-bb-Veq"/>
+                                <constraint firstItem="ynd-HO-WX5" firstAttribute="leading" secondItem="eH3-uD-L6p" secondAttribute="trailing" constant="8" id="Xsd-q1-nzZ"/>
+                                <constraint firstAttribute="height" constant="63.5" id="eBe-VU-MJ6"/>
+                                <constraint firstItem="eH3-uD-L6p" firstAttribute="centerX" secondItem="Cj5-ll-BgW" secondAttribute="centerX" constant="-40" id="n5P-5W-FuY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="频率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-un-dLG">
+                            <rect key="frame" x="20" y="244" width="53" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7oj-i0-qUA" firstAttribute="top" secondItem="OJk-JF-YWu" secondAttribute="bottom" constant="20" id="4lX-wH-Ekt"/>
+                        <constraint firstItem="FaE-un-dLG" firstAttribute="top" secondItem="0xQ-9C-Vun" secondAttribute="bottom" constant="20" id="6av-H5-htb"/>
+                        <constraint firstItem="7oj-i0-qUA" firstAttribute="leading" secondItem="naD-fu-h5A" secondAttribute="leading" constant="20" id="Edi-c1-msE"/>
+                        <constraint firstItem="nLK-RN-d6k" firstAttribute="leading" secondItem="7oj-i0-qUA" secondAttribute="trailing" constant="20" id="FAr-bD-ViR"/>
+                        <constraint firstItem="naD-fu-h5A" firstAttribute="trailing" secondItem="0xQ-9C-Vun" secondAttribute="trailing" constant="20" id="GbS-BU-xhZ"/>
+                        <constraint firstItem="nLK-RN-d6k" firstAttribute="top" secondItem="7oj-i0-qUA" secondAttribute="top" id="HLs-w0-Vxg"/>
+                        <constraint firstItem="0xQ-9C-Vun" firstAttribute="top" secondItem="7oj-i0-qUA" secondAttribute="bottom" constant="20" id="Syl-yN-fzH"/>
+                        <constraint firstItem="OJk-JF-YWu" firstAttribute="leading" secondItem="naD-fu-h5A" secondAttribute="leading" constant="20" id="YjM-db-GsM"/>
+                        <constraint firstItem="naD-fu-h5A" firstAttribute="trailing" secondItem="Cj5-ll-BgW" secondAttribute="trailing" constant="20" id="caE-fe-PQw"/>
+                        <constraint firstItem="OJk-JF-YWu" firstAttribute="top" secondItem="naD-fu-h5A" secondAttribute="top" constant="20" id="dBI-lj-EFK"/>
+                        <constraint firstItem="nLK-RN-d6k" firstAttribute="width" secondItem="7oj-i0-qUA" secondAttribute="width" id="dfX-IS-CBt"/>
+                        <constraint firstItem="FaE-un-dLG" firstAttribute="leading" secondItem="naD-fu-h5A" secondAttribute="leading" constant="20" id="jqB-u0-iIg"/>
+                        <constraint firstItem="Cj5-ll-BgW" firstAttribute="leading" secondItem="naD-fu-h5A" secondAttribute="leading" constant="20" id="nfV-6S-ZWe"/>
+                        <constraint firstItem="Cj5-ll-BgW" firstAttribute="top" secondItem="FaE-un-dLG" secondAttribute="bottom" constant="20" id="r7b-Kf-Qfx"/>
+                        <constraint firstItem="naD-fu-h5A" firstAttribute="trailing" secondItem="nLK-RN-d6k" secondAttribute="trailing" constant="20" id="x2w-hz-obK"/>
+                        <constraint firstItem="0xQ-9C-Vun" firstAttribute="leading" secondItem="naD-fu-h5A" secondAttribute="leading" constant="20" id="zpF-1N-a9I"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="naD-fu-h5A"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Goal"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" id="y1v-v7-lRY" customClass="HabitEditUICard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="311" height="147"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naR-ty-BzB">
+                            <rect key="frame" x="67" y="20" width="53" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq3-d0-MOp">
+                            <rect key="frame" x="191" y="20" width="53" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-bS-Oo2" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="68.5" y="77" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="jSJ-rw-yUG"/>
+                                <constraint firstAttribute="width" secondItem="Lko-bS-Oo2" secondAttribute="height" id="t4y-tI-9G4"/>
+                            </constraints>
+                            <connections>
+                                <action selector="image_action:" destination="y1v-v7-lRY" eventType="touchUpInside" id="N2s-xZ-a2q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOx-MS-332" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="192" y="77" width="50" height="50"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="color_action:" destination="y1v-v7-lRY" eventType="touchUpInside" id="5vQ-Ba-cGl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zq3-d0-MOp" firstAttribute="centerX" secondItem="QyL-qZ-z07" secondAttribute="centerX" multiplier="1.4" id="8XU-fq-Zfb"/>
+                        <constraint firstItem="naR-ty-BzB" firstAttribute="centerX" secondItem="QyL-qZ-z07" secondAttribute="centerX" multiplier="0.6" id="BS2-q0-rRL"/>
+                        <constraint firstItem="Lko-bS-Oo2" firstAttribute="centerX" secondItem="naR-ty-BzB" secondAttribute="centerX" id="GcS-nw-PCo"/>
+                        <constraint firstItem="Lko-bS-Oo2" firstAttribute="top" secondItem="naR-ty-BzB" secondAttribute="bottom" constant="20" id="QUm-t8-Zc5"/>
+                        <constraint firstItem="naR-ty-BzB" firstAttribute="top" secondItem="QyL-qZ-z07" secondAttribute="top" constant="20" id="Qvw-XE-XVC"/>
+                        <constraint firstItem="sOx-MS-332" firstAttribute="width" secondItem="Lko-bS-Oo2" secondAttribute="width" id="Vnr-Co-afu"/>
+                        <constraint firstItem="sOx-MS-332" firstAttribute="centerY" secondItem="Lko-bS-Oo2" secondAttribute="centerY" id="dbJ-4V-2Uy"/>
+                        <constraint firstItem="sOx-MS-332" firstAttribute="height" secondItem="Lko-bS-Oo2" secondAttribute="height" id="fZ4-hf-WSY"/>
+                        <constraint firstItem="zq3-d0-MOp" firstAttribute="top" secondItem="naR-ty-BzB" secondAttribute="top" id="kFu-oY-JDo"/>
+                        <constraint firstItem="sOx-MS-332" firstAttribute="centerX" secondItem="zq3-d0-MOp" secondAttribute="centerX" id="xo6-Ir-l5n"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="QyL-qZ-z07"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="UI"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="color" destination="sOx-MS-332" id="EOe-JG-6vV"/>
+                        <outlet property="image" destination="Lko-bS-Oo2" id="ASC-aa-XPj"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="34" y="20"/>
+        </scene>
+        <!--Color-->
+        <scene sceneID="8F7-2F-RGf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Color" id="BoU-bq-VWA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiW-YZ-Fda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-106"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="Y8g-61-YPs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Image" id="W8k-mo-mnf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxj-TW-h5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="but_error" width="60" height="60"/>
+        <image name="but_success" width="60" height="60"/>
+    </resources>
+</document>
