@@ -8,8 +8,10 @@
 
 import UIKit
 
-class HabitEditController: ViewController {
-
+class HabitEditController: ViewController, HabitObject {
+    
+    var habit: Habit!
+    
     // MARK: - Load
     
     override func viewDidLoad() {
@@ -24,12 +26,14 @@ class HabitEditController: ViewController {
         super.viewDidAppear(animated)
         if let color = messages.removeValue(forKey: "Color") as? Int {
             if let ui = cards.card(id: "UI") as? HabitEditUICard {
-                ui.color.normal_color = UIColor(UInt(color))
+                habit.value.color = color
+                ui.reload()
             }
         }
-        if let image = messages.removeValue(forKey: "Image") as? Int {
+        if let image = messages.removeValue(forKey: "Image") as? String {
             if let ui = cards.card(id: "UI") as? HabitEditUICard {
-                ui.image.setImage(UIImage(contentsOfFile: ""), for: .normal)
+                habit.value.image = image
+                ui.reload()
             }
         }
     }
@@ -37,5 +41,13 @@ class HabitEditController: ViewController {
     // MARK: - Cards
     
     @IBOutlet weak var cards: CardTable!
+    
+    // MARK: - Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let image = segue.controller as? ImageController {
+            image.color = habit.value.color
+        }
+    }
     
 }

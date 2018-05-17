@@ -17,8 +17,8 @@ class ColorCell: UICollectionViewCell {
     
     func select_animate(complete: @escaping () -> Void) {
         select_view.isHidden = false
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 30, options: .curveEaseOut, animations: {
-            self.select_layout.constant = self.frame.height
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 30, options: .curveEaseOut, animations: {
+            self.select_layout.constant = self.frame.height - 10
             self.layoutIfNeeded()
         }, completion: { _ in
             complete()

@@ -9,11 +9,17 @@
 import UIKit
 
 protocol KeyboardInputDelegate: class {
-    func keyboard_input(save value: String)
+    func keyboard_input(input: KeyboardInput, save value: String)
 }
 
 // 117 + 43 = 160
 class KeyboardInput: View, UITextViewDelegate {
+    
+    var id: String = ""
+    
+    deinit {
+        print("KeyboardInput is deinit.")
+    }
     
     // MARK: - Window
     
@@ -22,6 +28,7 @@ class KeyboardInput: View, UITextViewDelegate {
     // MARK: - Deploy
     
     override func view_deploy() {
+        print("KeyboardInput is view deploy.")
         mask_window.backgroundColor = UIColor.white.withAlphaComponent(window_alpha)
         mask_window.windowLevel = UIWindowLevelStatusBar
         mask_window.alpha = 1
@@ -89,7 +96,7 @@ class KeyboardInput: View, UITextViewDelegate {
     
     @IBAction func save(_ sender: UIButton) {
         input.resignFirstResponder()
-        delegate?.keyboard_input(save: value)
+        delegate?.keyboard_input(input: self, save: value)
     }
     
     // MARK: - Keyboard Observer

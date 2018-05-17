@@ -15,9 +15,8 @@ class ImageCell: UICollectionViewCell {
     @IBOutlet weak var select_layout: NSLayoutConstraint!
     
     func select_animate(complete: @escaping () -> Void) {
-        self.backgroundColor = UIColor(240,240,240,1)
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 30, options: .autoreverse, animations: {
-            self.select_layout.constant = 30
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 30, options: .allowAnimatedContent, animations: {
+            self.select_layout.constant = -10
             self.layoutIfNeeded()
         }, completion: { _ in
             complete()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C01676220AC896B00D99ED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676120AC896B00D99ED5 /* Color.swift */; };
 		9CB3918D20ABBFC60076D600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3918C20ABBFC60076D600 /* AppDelegate.swift */; };
 		9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919020ABBFC60076D600 /* Main.storyboard */; };
 		9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919320ABBFC80076D600 /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C01676120AC896B00D99ED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9CB3918920ABBFC60076D600 /* Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB3918C20ABBFC60076D600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB3919120ABBFC60076D600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 			children = (
 				9CB3923E20AC12350076D600 /* KeyboardInput.swift */,
 				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
+				9C01676120AC896B00D99ED5 /* Color.swift */,
 			);
 			path = ToolViews;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				9CB3924220AC21D90076D600 /* HabitEditGoalCard.swift in Sources */,
 				9CB3920820ABC0560076D600 /* InputTextView.swift in Sources */,
 				9CB391E920ABC0560076D600 /* CardView.swift in Sources */,
+				9C01676220AC896B00D99ED5 /* Color.swift in Sources */,
 				9CB3920420ABC0560076D600 /* CalendarCell.swift in Sources */,
 				9CB3920320ABC0560076D600 /* Ex_UITextView.swift in Sources */,
 				9CB3922420ABC7A90076D600 /* Habit_SQlite.swift in Sources */,

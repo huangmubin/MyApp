@@ -8,6 +8,16 @@
 
 import Foundation
 
+protocol HabitObject {
+    var habit: Habit! { get set }
+}
+
+extension CardView {
+    var habit: Habit {
+        return (table.controller as! HabitObject).habit
+    }
+}
+
 /** Habit Object */
 class Habit {
     
@@ -18,6 +28,10 @@ class Habit {
     
     init(_ value: SQLite.Habit) {
         self.value = value
+    }
+    
+    init() {
+        self.value = SQLite.Habit()
     }
     
 }

@@ -36,6 +36,9 @@
                                             <constraint firstAttribute="height" constant="60" id="D7u-st-8hh"/>
                                         </constraints>
                                         <state key="normal" image="nav_back"/>
+                                        <connections>
+                                            <action selector="back_aciton:" destination="zN1-z1-ugM" eventType="touchUpInside" id="6m7-Ww-2WL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +60,7 @@
                                     <inset key="sectionInset" minX="20" minY="10" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Image" id="PPi-FS-5gl" customClass="ImageCell" customModule="Days" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="PPi-FS-5gl" customClass="ImageCell" customModule="Days" customModuleProvider="target">
                                         <rect key="frame" x="20" y="10" width="126" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

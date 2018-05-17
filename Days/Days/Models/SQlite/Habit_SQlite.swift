@@ -44,12 +44,18 @@ extension SQLite {
         }
         
         /** 状态，0: 进行中; 1: 归档; */
-        private var state: Int = 5
+        private var state: Int = 0
         /** 检测该习惯的状态是进行中，还是归档 */
         var is_runing: Bool {
             set { state = (newValue ?  0 : 1) }
             get { return state == 0 }
         }
+        
+        /** 图标名称 */
+        var image: String = "alarm-clock"
+        
+        /** 颜色 */
+        var color: Int = 0x3DAFFD
         
     }
     

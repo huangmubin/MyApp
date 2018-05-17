@@ -10,8 +10,17 @@ import UIKit
 
 class ImageController: ViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    func image(name: String, color: Int) -> UIImage? {
-        return UIImage(contentsOfFile: "\(NSHomeDirectory())/Document/Images/\(value)_\(color).png")
+    /** 获取颜色对应的 */
+    class func image(name: String, color: Int) -> UIImage {
+        let path = "\(NSHomeDirectory())/Documents/Images/\(name)_\(color).png"
+        if let image = UIImage(contentsOfFile: path) {
+            return image
+        }
+        let image = UIImage(named: name)!
+        let color_image = image.change(color: UIColor(UInt(color)))!
+        let data = UIImagePNGRepresentation(color_image)!
+        try! data.write(to: URL(fileURLWithPath: path))
+        return color_image
     }
     
     // MARK: - Value
@@ -19,6 +28,38 @@ class ImageController: ViewController, UICollectionViewDataSource, UICollectionV
     var color: Int = 0
     
     var values: [String] = [
+        "alarm-clock",
+        "bicycle",
+        "book",
+        "computer",
+        "cooking",
+        "improvement",
+        "karaoke",
+        "wallet",
+        "alarm-clock",
+        "bicycle",
+        "book",
+        "computer",
+        "cooking",
+        "improvement",
+        "karaoke",
+        "wallet",
+        "alarm-clock",
+        "bicycle",
+        "book",
+        "computer",
+        "cooking",
+        "improvement",
+        "karaoke",
+        "wallet",
+        "alarm-clock",
+        "bicycle",
+        "book",
+        "computer",
+        "cooking",
+        "improvement",
+        "karaoke",
+        "wallet",
     ]
     var images: [UIImage] = []
     
@@ -26,20 +67,25 @@ class ImageController: ViewController, UICollectionViewDataSource, UICollectionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let color_data = UIColor(UInt(color))
         for value in values {
-            let path = "\(NSHomeDirectory())/Document/Images/\(value)_\(color).png"
-            if let image = UIImage(contentsOfFile: path) {
-                images.append(image)
-            } else if let image = UIImage(named: value) {
-                let color_image = image.change(color: color_data)!
-                let data = UIImagePNGRepresentation(color_image)!
-                try! data.write(to: URL(fileURLWithPath: path))
-                images.append(color_image)
-            }
+            print("image = \(value); color = \(color);")
+             images.append(
+                ImageController.image(name: value, color: color)
+            )
         }
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collection.reloadData()
+    }
+    
+    // MARK: - Back
+    
+    @IBAction func back_aciton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Collection
     
     @IBOutlet weak var collection: UICollectionView!
@@ -55,7 +101,7 @@ class ImageController: ViewController, UICollectionViewDataSource, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let s = (UIScreen.main.bounds.width - 100) / 4
+        let s = min((UIScreen.main.bounds.width - 100) / 4, 60)
         return CGSize(width: s, height: s)
     }
 

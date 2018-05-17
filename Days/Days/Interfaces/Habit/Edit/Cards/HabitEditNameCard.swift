@@ -37,7 +37,7 @@ class HabitEditNameCard: CardView, KeyboardInputDelegate {
     
     // MARK: - Keyboard
     
-    func keyboard_input(save value: String) {
+    func keyboard_input(input: KeyboardInput, save value: String) {
         update_name_button(value: value)
     }
     

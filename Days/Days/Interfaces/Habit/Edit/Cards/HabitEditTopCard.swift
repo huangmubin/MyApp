@@ -10,10 +10,17 @@ import UIKit
 
 class HabitEditTopCard: CardTopView {
 
+    /**  */
+    override func reload() {
+        title.text = habit.value.name.isEmpty ? "新习惯" : habit.value.name
+    }
+    
+    /** Cancel */
     override func cancel_action() {
         table.controller?.dismiss(animated: true, completion: nil)
     }
     
+    /** Save */
     override func save_action() {
         table.controller?.dismiss(animated: true, completion: nil)
     }

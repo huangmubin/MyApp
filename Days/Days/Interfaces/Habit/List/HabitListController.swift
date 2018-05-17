@@ -10,6 +10,10 @@ import UIKit
 
 class HabitListController: ViewController {
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let edit = segue.controller as? HabitEditController {
+            edit.habit = Habit()
+        }
+    }
     
 }
