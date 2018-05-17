@@ -10,13 +10,22 @@ import UIKit
 
 class HabitEditNameCard: CardView, KeyboardInputDelegate {
     
-    // MARK: - Name Button
-    
-    @IBOutlet weak var name_button: UIButton! {
-        didSet {
-            update_name_button(value: "")
+    override func reload() {
+        if habit.value.name.isEmpty {
+            name_button.setTitleColor(UIColor(155,155,155,1), for: .normal)
+            name_button.setTitle("新习惯", for: .normal)
+        } else {
+            name_button.setTitleColor(UIColor(30,30,30,1), for: .normal)
+            name_button.setTitle(habit.value.name, for: .normal)
+        }
+        if let top = table.card(id: "Top") as? HabitEditTopCard {
+            top.right.isHidden = habit.value.name.isEmpty
         }
     }
+    
+    // MARK: - Name Button
+    
+    @IBOutlet weak var name_button: UIButton!
     
     @IBAction func name_action(_ sender: UIButton) {
         if let view = KeyboardInput.load(nib: nil) {
@@ -25,20 +34,11 @@ class HabitEditNameCard: CardView, KeyboardInputDelegate {
         }
     }
     
-    func update_name_button(value: String) {
-        if value.isEmpty {
-            name_button.setTitleColor(UIColor(155,155,155,1), for: .normal)
-            name_button.setTitle("新习惯", for: .normal)
-        } else {
-            name_button.setTitleColor(UIColor(30,30,30,1), for: .normal)
-            name_button.setTitle(value, for: .normal)
-        }
-    }
-    
     // MARK: - Keyboard
     
     func keyboard_input(input: KeyboardInput, save value: String) {
-        update_name_button(value: value)
+        habit.value.name = value
+        reload()
     }
     
 }

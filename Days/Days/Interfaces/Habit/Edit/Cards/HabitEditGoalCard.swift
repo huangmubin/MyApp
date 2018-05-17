@@ -113,8 +113,13 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
     /**  */
     @IBAction func goal_action(_ sender: UIButton) {
         if let view = KeyboardInput.load(nib: nil) {
-            view.title.text = habit.value.is_time ? "计划时间" : "计划次数"
-            view.input.text = "\(habit.value.goal)"
+            if habit.value.is_time {
+                view.title.text = "计划时间"
+                view.input.text = "\(habit.value.goal / 3600)"
+            } else {
+                view.title.text = "计划次数"
+                view.input.text = "\(habit.value.goal)"
+            }
             view.input.keyboardType = .numberPad
             view.delegate = self
             view.id = "Goal"
@@ -130,8 +135,13 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
     
     @IBAction func frequency_action(_ sender: UIButton) {
         if let view = KeyboardInput.load(nib: nil) {
-            view.title.text = habit.value.is_time ? "分钟 / 天" : "次数 / 天"
-            view.input.text = "\(habit.value.length)"
+            if habit.value.is_time {
+                view.title.text = "分钟 / 天"
+                view.input.text = "\(habit.value.length / 60)"
+            } else {
+                view.title.text = "次数 / 天"
+                view.input.text = "\(habit.value.length)"
+            }
             view.input.keyboardType = .numberPad
             view.delegate = self
             view.id = "Frequency"

@@ -16,7 +16,7 @@ extension SQLite {
         required init() {}
         
         /** table name */
-        static var table: String = "Habit_SQlite"
+        static var table: String = "Log_SQlite"
         
         /** id */
         var id: Int = 0

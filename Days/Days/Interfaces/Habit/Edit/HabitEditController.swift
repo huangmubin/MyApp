@@ -29,6 +29,9 @@ class HabitEditController: ViewController, HabitObject {
                 habit.value.color = color
                 ui.reload()
             }
+            if let goal = cards.card(id: "Goal") as? HabitEditGoalCard {
+                goal.reload_type()
+            }
         }
         if let image = messages.removeValue(forKey: "Image") as? String {
             if let ui = cards.card(id: "UI") as? HabitEditUICard {

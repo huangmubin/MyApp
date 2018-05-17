@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Myron. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol HabitObject {
     var habit: Habit! { get set }
@@ -32,6 +32,97 @@ class Habit {
     
     init() {
         self.value = SQLite.Habit()
+    }
+    
+    // MARK: - Logs
+    
+    /** Logs Cache */
+    private var _logs: [Int: [Log]] = [:]
+    
+    /** Logs */
+    func logs(date: Int) -> [Log] {
+        if let logs = _logs[date] {
+            return logs
+        } else {
+            let logs = Log.find(habit: self, date: date)
+            _logs[date] = logs
+            return logs
+        }
+    }
+    
+    /** Append log to cache */
+    func append(log: Log, date: Int) {
+        var logs = self.logs(date: date)
+        logs.append(log)
+        _logs[date] = logs
+    }
+    
+    // MARK: - Length
+    
+    /** 某一天已经完成的长度，秒或次数 */
+    func length(at_date date: Int) -> Int {
+        return logs(date: date).count(value: { $0.value.length })
+    }
+    
+    /** 某一天已经完成的长度文本，秒或次数 */
+    func length_str(at_date date: Int) -> String {
+        let length = self.length(at_date: date)
+        var text = ""
+        if value.is_time {
+            switch length {
+            case 0 ..< 60:
+                text = "\(length)秒"
+            case 60 ..< 3600:
+                if length % 60 == 0 {
+                    text = "\(length / 60)分钟"
+                } else {
+                    text = String(format: "%.1f分钟", Double(length) / 60)
+                }
+            default:
+                if length % 3600 == 0 || length < 3960 {
+                    text = "\(length / 3600)小时"
+                } else {
+                    text = String(format: "%.1f小时", Double(length) / 3600)
+                }
+            }
+        } else {
+            text = "\(length)次"
+        }
+        return text
+    }
+    
+    // MARK: - Progress
+    
+    /** Progress at date */
+    func progress(at_date date: Int) -> CGFloat {
+        let did = CGFloat(length(at_date: date))
+        let wil = CGFloat(value.length)
+        return did / wil
+    }
+    
+    // MARK: - UI
+    
+    /** UIImage */
+    func image() -> UIImage {
+        return ImageController.image(name: value.image, color: value.color)
+    }
+    
+    /** Color */
+    func color() -> UIColor {
+        return UIColor(value.color)
+    }
+    
+    // MARK: - Step
+    
+    /** Count the step on length */
+    func step() -> Int {
+        if value.is_time {
+            let i = value.length / 60 / 3
+            return max(i / 5 * 5, 1)
+        } else {
+            let i = value.length / 3
+            return max(i / 5 * 5, 1)
+        }
     }
     
 }
