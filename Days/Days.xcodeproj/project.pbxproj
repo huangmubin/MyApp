@@ -84,6 +84,15 @@
 		9CB3925220AC37150076D600 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3925120AC37150076D600 /* Image.storyboard */; };
 		9CB3925420AC378F0076D600 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925320AC378F0076D600 /* ImageCell.swift */; };
 		9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925520AC39110076D600 /* Ex_UIImage.swift */; };
+		9CF257B120AD19D60060C8C6 /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257B020AD19D60060C8C6 /* HabitListCell.swift */; };
+		9CF257B420AD841C0060C8C6 /* HabitShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257B320AD841C0060C8C6 /* HabitShowController.swift */; };
+		9CF257B620AD84240060C8C6 /* HabitShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF257B520AD84240060C8C6 /* HabitShow.storyboard */; };
+		9CF257B920AD85320060C8C6 /* HabitShowTopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257B820AD85320060C8C6 /* HabitShowTopCard.swift */; };
+		9CF257BB20AD85620060C8C6 /* HabitShowCalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257BA20AD85620060C8C6 /* HabitShowCalendarCard.swift */; };
+		9CF257BD20AD856D0060C8C6 /* HabitShowEventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257BC20AD856D0060C8C6 /* HabitShowEventCard.swift */; };
+		9CF257BF20AD85D30060C8C6 /* HabitShowChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */; };
+		9CF257C120AD85F40060C8C6 /* HabitShowDiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */; };
+		9CF257C320AD86250060C8C6 /* HabitShowMenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257C220AD86250060C8C6 /* HabitShowMenuCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +175,15 @@
 		9CB3925120AC37150076D600 /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
 		9CB3925320AC378F0076D600 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		9CB3925520AC39110076D600 /* Ex_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UIImage.swift; sourceTree = "<group>"; };
+		9CF257B020AD19D60060C8C6 /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
+		9CF257B320AD841C0060C8C6 /* HabitShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowController.swift; sourceTree = "<group>"; };
+		9CF257B520AD84240060C8C6 /* HabitShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitShow.storyboard; sourceTree = "<group>"; };
+		9CF257B820AD85320060C8C6 /* HabitShowTopCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowTopCard.swift; sourceTree = "<group>"; };
+		9CF257BA20AD85620060C8C6 /* HabitShowCalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCalendarCard.swift; sourceTree = "<group>"; };
+		9CF257BC20AD856D0060C8C6 /* HabitShowEventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowEventCard.swift; sourceTree = "<group>"; };
+		9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowChartCard.swift; sourceTree = "<group>"; };
+		9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowDiaryCard.swift; sourceTree = "<group>"; };
+		9CF257C220AD86250060C8C6 /* HabitShowMenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowMenuCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +445,7 @@
 		9CB3921920ABC0E70076D600 /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				9CF257B220AD828D0060C8C6 /* Show */,
 				9CB3922C20ABD4BD0076D600 /* Edit */,
 				9CB3921B20ABC31B0076D600 /* List */,
 			);
@@ -447,6 +466,7 @@
 			children = (
 				9CB3921C20ABC5090076D600 /* HabitList.storyboard */,
 				9CB3922020ABC5250076D600 /* HabitListController.swift */,
+				9CF257B020AD19D60060C8C6 /* HabitListCell.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -521,6 +541,29 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		9CF257B220AD828D0060C8C6 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				9CF257B520AD84240060C8C6 /* HabitShow.storyboard */,
+				9CF257B320AD841C0060C8C6 /* HabitShowController.swift */,
+				9CF257B720AD85010060C8C6 /* Cards */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		9CF257B720AD85010060C8C6 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9CF257B820AD85320060C8C6 /* HabitShowTopCard.swift */,
+				9CF257BA20AD85620060C8C6 /* HabitShowCalendarCard.swift */,
+				9CF257BC20AD856D0060C8C6 /* HabitShowEventCard.swift */,
+				9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */,
+				9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */,
+				9CF257C220AD86250060C8C6 /* HabitShowMenuCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -588,6 +631,7 @@
 				9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */,
 				9CB3920720ABC0560076D600 /* CalendarView.xib in Resources */,
 				9CB3920D20ABC0560076D600 /* VarlenaInput.xib in Resources */,
+				9CF257B620AD84240060C8C6 /* HabitShow.storyboard in Resources */,
 				9CB391EB20ABC0560076D600 /* CardTextView.xib in Resources */,
 				9CB3925220AC37150076D600 /* Image.storyboard in Resources */,
 				9CB3920520ABC0560076D600 /* CalendarCell.xib in Resources */,
@@ -611,6 +655,7 @@
 				9CB3920C20ABC0560076D600 /* VarlenaInput.swift in Sources */,
 				9CB3920020ABC0560076D600 /* Ex_UIScreen.swift in Sources */,
 				9CB391F320ABC0560076D600 /* SQLite.swift in Sources */,
+				9CF257BD20AD856D0060C8C6 /* HabitShowEventCard.swift in Sources */,
 				9CB3921620ABC0560076D600 /* Operator.swift in Sources */,
 				9CB3923F20AC12880076D600 /* KeyboardInput.swift in Sources */,
 				9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */,
@@ -627,6 +672,7 @@
 				9CB391F420ABC0560076D600 /* SQLiteProtocol.swift in Sources */,
 				9CB391EE20ABC0560076D600 /* TableView.swift in Sources */,
 				9CB3921320ABC0560076D600 /* KeyValue.swift in Sources */,
+				9CF257C320AD86250060C8C6 /* HabitShowMenuCard.swift in Sources */,
 				9CB3920220ABC0560076D600 /* Ex_UITextField.swift in Sources */,
 				9CB391E720ABC0560076D600 /* CardSeparator.swift in Sources */,
 				9CB3920E20ABC0560076D600 /* ProgressView.swift in Sources */,
@@ -638,11 +684,14 @@
 				9CB3921520ABC0560076D600 /* Notifiable.swift in Sources */,
 				9CB391F920ABC0560076D600 /* Ex_DateFormatter.swift in Sources */,
 				9CB391EC20ABC0560076D600 /* CardTopView.swift in Sources */,
+				9CF257B420AD841C0060C8C6 /* HabitShowController.swift in Sources */,
 				9CB391E620ABC0560076D600 /* ImageView.swift in Sources */,
+				9CF257BB20AD85620060C8C6 /* HabitShowCalendarCard.swift in Sources */,
 				9CB3924B20AC33970076D600 /* HabitEditUICard.swift in Sources */,
 				9CB3922120ABC5250076D600 /* HabitListController.swift in Sources */,
 				9CB3920A20ABC0560076D600 /* InputView.swift in Sources */,
 				9CB3920F20ABC0560076D600 /* RoundProgress.swift in Sources */,
+				9CF257B920AD85320060C8C6 /* HabitShowTopCard.swift in Sources */,
 				9CB3924920AC27290076D600 /* ColorCell.swift in Sources */,
 				9CB391FA20ABC0560076D600 /* Ex_IndexPath.swift in Sources */,
 				9CB3925020AC36FE0076D600 /* ImageController.swift in Sources */,
@@ -655,13 +704,16 @@
 				9CB3922B20ABD15C0076D600 /* Log.swift in Sources */,
 				9CB3923320ABD6010076D600 /* HabitEditNameCard.swift in Sources */,
 				9CB3922920ABCFF50076D600 /* Log_SQlite.swift in Sources */,
+				9CF257BF20AD85D30060C8C6 /* HabitShowChartCard.swift in Sources */,
 				9CB391F020ABC0560076D600 /* TableViewController.swift in Sources */,
 				9CB391E520ABC0560076D600 /* Button.swift in Sources */,
+				9CF257B120AD19D60060C8C6 /* HabitListCell.swift in Sources */,
 				9CB391E820ABC0560076D600 /* CardTable.swift in Sources */,
 				9CB391F720ABC0560076D600 /* Ex_Calendar.swift in Sources */,
 				9CB3920120ABC0560076D600 /* Ex_UIStoryboardSegue.swift in Sources */,
 				9CB3918D20ABBFC60076D600 /* AppDelegate.swift in Sources */,
 				9CB3924520AC24C90076D600 /* ColorController.swift in Sources */,
+				9CF257C120AD85F40060C8C6 /* HabitShowDiaryCard.swift in Sources */,
 				9CB391F820ABC0560076D600 /* Ex_Date.swift in Sources */,
 				9CB3921020ABC0560076D600 /* iDateSelector.swift in Sources */,
 				9CB3923520ABDB6D0076D600 /* HabitEditTopCard.swift in Sources */,
@@ -812,7 +864,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BBKEKP879;
 				INFOPLIST_FILE = "$(SRCROOT)/Days/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -831,7 +883,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BBKEKP879;
 				INFOPLIST_FILE = "$(SRCROOT)/Days/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

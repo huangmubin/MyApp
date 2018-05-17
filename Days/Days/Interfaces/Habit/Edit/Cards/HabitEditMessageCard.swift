@@ -8,14 +8,38 @@
 
 import UIKit
 
-class HabitEditMessageCard: CardView {
+// 160 - 43 = 117
+class HabitEditMessageCard: CardView, KeyboardInputDelegate {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // MARK: - Reload
+    
+    override func reload() {
+        message.text = habit.value.message
+        let height = max(message.sizeThatFits(message.bounds.size).height + 117, 160)
+        if self.frame.height != height {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.frame.size.height = height
+                self.table.update_content_size()
+                self.layoutIfNeeded()
+            })
+        }
     }
-    */
-
+    
+    // MARK: - Message
+    
+    @IBOutlet weak var message: UILabel!
+    
+    @IBAction func input_action(_ sender: UIButton) {
+        if let view = KeyboardInput.load(nib: nil) {
+            view.delegate = self
+            view.title.text = "告诉自己"
+            view.push()
+        }
+    }
+    
+    func keyboard_input(input: KeyboardInput, save value: String) {
+        habit.value.message = value
+        reload()
+    }
+    
 }

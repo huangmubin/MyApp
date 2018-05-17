@@ -13,16 +13,33 @@ class HabitEditTopCard: CardTopView {
     /**  */
     override func reload() {
         title.text = habit.value.name.isEmpty ? "新习惯" : habit.value.name
+        right.isHidden = habit.value.name.isEmpty
     }
     
     /** Cancel */
     override func cancel_action() {
-        table.controller?.dismiss(animated: true, completion: nil)
+        table.controller?.dismiss(
+            animated: true,
+            completion: nil
+        )
     }
     
     /** Save */
     override func save_action() {
-        table.controller?.dismiss(animated: true, completion: nil)
+        if habit.value.id == 0 {
+            table.vc?.toSuperController(
+                object: ["HabitAdd": habit]
+            )
+        } else {
+            table.vc?.toSuperController(
+                object: ["HabitUpdate": habit]
+            )
+            habit.value.update()
+        }
+        table.controller?.dismiss(
+            animated: true,
+            completion: nil
+        )
     }
 
 }

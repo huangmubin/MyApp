@@ -23,4 +23,20 @@ class Log {
         self.habit = habit
     }
     
+    init(_ habit: Habit) {
+        self.habit = habit
+        self.value = SQLite.Log()
+        self.value.date = Date().date
+        self.value.start = Date().time1970 - habit.value.length
+        self.value.habit = habit.value.id
+        self.value.length = habit.value.length
+    }
+    
+    // MARK: - Find
+    
+    /** find log with habit and date */
+    class func find(habit: Habit, date: Int) -> [Log] {
+        return SQLite.Log.find(where: "habit = \(habit.value.id) and date = \(date)").map({ Log($0, habit) })
+    }
+    
 }
