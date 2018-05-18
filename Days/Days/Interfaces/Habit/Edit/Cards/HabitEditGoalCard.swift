@@ -62,11 +62,20 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
     
     func reload_frequency() {
         if habit.value.is_time {
-            frequency_button.setTitle(
-                "\(habit.value.length / 60)",
-                for: .normal
-            )
-            frequency_unit_label.text = "分钟 / 天"
+            let value = habit.value.length / 60
+            if value >= 60 {
+                frequency_button.setTitle(
+                    String(format: "%.1f", Double(value) / 60),
+                    for: .normal
+                )
+                frequency_unit_label.text = "小时 / 天"
+            } else {
+                frequency_button.setTitle(
+                    "\(value)",
+                    for: .normal
+                )
+                frequency_unit_label.text = "分钟 / 天"
+            }
         } else {
             frequency_button.setTitle(
                 "\(habit.value.length)",
@@ -161,7 +170,7 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
             reload_goal()
         } else {
             if habit.value.is_time {
-                habit.value.length = Int(value)! * 60
+                habit.value.length = min(Int(value)! * 60, 1440)
             } else {
                 habit.value.length = Int(value)!
             }

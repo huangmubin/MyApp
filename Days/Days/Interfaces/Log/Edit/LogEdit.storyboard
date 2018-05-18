@@ -24,6 +24,7 @@
                                 <connections>
                                     <outletCollection property="cards" destination="wja-IZ-gXm" collectionClass="NSMutableArray" id="MTt-EZ-4e7"/>
                                     <outletCollection property="cards" destination="Jeg-Ks-x2T" collectionClass="NSMutableArray" id="oWh-7M-6Qc"/>
+                                    <outletCollection property="cards" destination="HjZ-9g-oSJ" collectionClass="NSMutableArray" id="iV6-MX-tid"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -296,6 +297,157 @@
                         <outlet property="calendar" destination="l0C-SM-x8S" id="yzM-0f-EcC"/>
                         <outlet property="change_button" destination="x3b-V6-Xyj" id="oNq-Oa-aAx"/>
                         <outlet property="date_button" destination="0c0-Jj-4jF" id="LjA-pe-fJ1"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="HjZ-9g-oSJ" customClass="LogEditTimeCard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="388" height="217"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlv-Fc-BhK">
+                            <rect key="frame" x="20" y="20" width="53" height="37"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtc-TB-f3h" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="77" width="157" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="CAc-bX-urk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="10:20">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                    <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="start_action:" destination="HjZ-9g-oSJ" eventType="touchUpInside" id="0Hh-1E-w66"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKw-Nm-UxZ" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="211" y="77" width="157" height="60"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="10:20">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                    <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="end_action:" destination="HjZ-9g-oSJ" eventType="touchUpInside" id="r5L-XZ-Ky7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4m-6A-jEg">
+                            <rect key="frame" x="187" y="97" width="14" height="20"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1小时30分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL7-Q2-Ds6">
+                            <rect key="frame" x="289" y="37" width="79" height="20"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                            <color key="textColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="600" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acb-sy-J9e" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="20" y="157" width="102.5" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="10分钟">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                    <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="normal_actions:" destination="HjZ-9g-oSJ" eventType="touchUpInside" id="H2h-rj-wZg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1800" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wA5-he-5cJ" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="142.5" y="157" width="103" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="30分钟">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                    <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="normal_actions:" destination="HjZ-9g-oSJ" eventType="touchUpInside" id="fQ5-3s-7DH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3600" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-F9-a5m" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="265.5" y="157" width="102.5" height="40"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                            <state key="normal" title="1小时">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normal_color">
+                                    <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="normal_actions:" destination="HjZ-9g-oSJ" eventType="touchUpInside" id="iyT-uf-ONl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="acb-sy-J9e" firstAttribute="top" secondItem="gtc-TB-f3h" secondAttribute="bottom" constant="20" id="0iH-rh-b1n"/>
+                        <constraint firstItem="kOk-F9-a5m" firstAttribute="width" secondItem="acb-sy-J9e" secondAttribute="width" id="22S-Ts-CsB"/>
+                        <constraint firstItem="DKw-Nm-UxZ" firstAttribute="centerY" secondItem="gtc-TB-f3h" secondAttribute="centerY" id="4nD-Vh-E3S"/>
+                        <constraint firstItem="WL7-Q2-Ds6" firstAttribute="bottom" secondItem="tlv-Fc-BhK" secondAttribute="bottom" id="52P-2f-UFD"/>
+                        <constraint firstItem="tlv-Fc-BhK" firstAttribute="leading" secondItem="iwV-AK-bSR" secondAttribute="leading" constant="20" id="ELy-JA-2HT"/>
+                        <constraint firstItem="wA5-he-5cJ" firstAttribute="centerY" secondItem="acb-sy-J9e" secondAttribute="centerY" id="HFt-Bl-7v9"/>
+                        <constraint firstItem="kOk-F9-a5m" firstAttribute="centerY" secondItem="acb-sy-J9e" secondAttribute="centerY" id="NhB-bV-IKI"/>
+                        <constraint firstItem="kOk-F9-a5m" firstAttribute="leading" secondItem="wA5-he-5cJ" secondAttribute="trailing" constant="20" id="O5W-40-gIr"/>
+                        <constraint firstItem="iwV-AK-bSR" firstAttribute="trailing" secondItem="DKw-Nm-UxZ" secondAttribute="trailing" constant="20" id="QjY-39-kEA"/>
+                        <constraint firstItem="wA5-he-5cJ" firstAttribute="leading" secondItem="acb-sy-J9e" secondAttribute="trailing" constant="20" id="TUf-XD-uXs"/>
+                        <constraint firstItem="DKw-Nm-UxZ" firstAttribute="width" secondItem="gtc-TB-f3h" secondAttribute="width" id="Ymp-zZ-fnH"/>
+                        <constraint firstItem="tlv-Fc-BhK" firstAttribute="top" secondItem="iwV-AK-bSR" secondAttribute="top" constant="20" id="a5v-if-8uG"/>
+                        <constraint firstItem="gtc-TB-f3h" firstAttribute="top" secondItem="tlv-Fc-BhK" secondAttribute="bottom" constant="20" id="bbb-ha-hdj"/>
+                        <constraint firstItem="iwV-AK-bSR" firstAttribute="trailing" secondItem="kOk-F9-a5m" secondAttribute="trailing" constant="20" id="gA0-0k-IIX"/>
+                        <constraint firstItem="P4m-6A-jEg" firstAttribute="centerY" secondItem="gtc-TB-f3h" secondAttribute="centerY" id="h7u-4R-1ow"/>
+                        <constraint firstItem="DKw-Nm-UxZ" firstAttribute="leading" secondItem="P4m-6A-jEg" secondAttribute="trailing" constant="10" id="hlk-Ji-Gwa"/>
+                        <constraint firstItem="gtc-TB-f3h" firstAttribute="leading" secondItem="iwV-AK-bSR" secondAttribute="leading" constant="20" id="iya-xM-yn1"/>
+                        <constraint firstItem="acb-sy-J9e" firstAttribute="leading" secondItem="iwV-AK-bSR" secondAttribute="leading" constant="20" id="kdP-AU-3ge"/>
+                        <constraint firstItem="P4m-6A-jEg" firstAttribute="leading" secondItem="gtc-TB-f3h" secondAttribute="trailing" constant="10" id="klt-R3-xh8"/>
+                        <constraint firstItem="DKw-Nm-UxZ" firstAttribute="height" secondItem="gtc-TB-f3h" secondAttribute="height" id="nmm-IZ-pe9"/>
+                        <constraint firstItem="wA5-he-5cJ" firstAttribute="width" secondItem="acb-sy-J9e" secondAttribute="width" id="tRR-lC-mGO"/>
+                        <constraint firstItem="iwV-AK-bSR" firstAttribute="trailing" secondItem="WL7-Q2-Ds6" secondAttribute="trailing" constant="20" id="vps-FA-DAp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="iwV-AK-bSR"/>
+                    <connections>
+                        <outlet property="end_button" destination="DKw-Nm-UxZ" id="ygL-SH-5LG"/>
+                        <outlet property="length" destination="WL7-Q2-Ds6" id="etN-FX-YtB"/>
+                        <outlet property="start_button" destination="gtc-TB-f3h" id="gz0-0o-rvc"/>
+                        <outletCollection property="normal_buttons" destination="acb-sy-J9e" collectionClass="NSMutableArray" id="iky-kE-PH1"/>
+                        <outletCollection property="normal_buttons" destination="wA5-he-5cJ" collectionClass="NSMutableArray" id="ayQ-zM-oVn"/>
+                        <outletCollection property="normal_buttons" destination="kOk-F9-a5m" collectionClass="NSMutableArray" id="fIW-DS-MOr"/>
                     </connections>
                 </view>
             </objects>

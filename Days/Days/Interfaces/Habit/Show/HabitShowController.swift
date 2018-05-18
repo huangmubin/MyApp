@@ -51,6 +51,10 @@ class HabitShowController: ViewController, HabitObject {
         if let edit = segue.controller as? HabitEditController {
             edit.habit = habit
         }
+        if let edit = segue.controller as? LogEditController {
+            edit.log = Log(habit)
+            edit.log.value.is_sick = (segue.identifier == "Sick")
+        }
     }
     
 }

@@ -19,7 +19,7 @@ extension CardView {
 
 class LogEditController: ViewController {
 
-    var log: Log = Log(Habit())
+    var log: Log!
     
     // MARK: - Cards
     

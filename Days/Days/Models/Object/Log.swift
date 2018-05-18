@@ -39,4 +39,19 @@ class Log {
         return SQLite.Log.find(where: "habit = \(habit.value.id) and date = \(date)").map({ Log($0, habit) })
     }
     
+    // MARK: - Length
+    
+    var length_text: String {
+        let v = value.length / 60
+        if v >= 60 {
+            if v % 60 == 0 {
+                return "\(v / 60)小时"
+            } else {
+                return "\(v / 60)小时\(v % 60)分钟"
+            }
+        } else {
+            return "\(v % 60)分钟"
+        }
+    }
+    
 }

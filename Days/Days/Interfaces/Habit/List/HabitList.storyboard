@@ -90,10 +90,7 @@
                                                     <rect key="frame" x="365" y="10" width="295" height="70"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOh-Zo-rqF" customClass="Button" customModule="Days" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="0.0" width="70" height="70"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="JOh-Zo-rqF" secondAttribute="height" id="1It-BB-90D"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="10" y="0.0" width="97.5" height="70"/>
                                                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="40"/>
                                                             <state key="normal" title="100">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,10 +108,7 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edr-Nn-Yrf" customClass="Button" customModule="Days" customModuleProvider="target">
-                                                            <rect key="frame" x="117.5" y="0.0" width="70" height="70"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="Edr-Nn-Yrf" secondAttribute="height" id="fkv-bX-CEV"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="117.5" y="0.0" width="97.5" height="70"/>
                                                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="40"/>
                                                             <state key="normal" title="100">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,10 +153,12 @@
                                                         <constraint firstItem="JOh-Zo-rqF" firstAttribute="leading" secondItem="4R7-bw-1iT" secondAttribute="leading" constant="10" id="BTH-zX-wyN"/>
                                                         <constraint firstItem="JOh-Zo-rqF" firstAttribute="top" secondItem="4R7-bw-1iT" secondAttribute="top" id="N13-kw-fYe"/>
                                                         <constraint firstItem="Xdj-Tf-Ifg" firstAttribute="centerY" secondItem="4R7-bw-1iT" secondAttribute="centerY" id="Qe8-fe-BPG"/>
+                                                        <constraint firstItem="Edr-Nn-Yrf" firstAttribute="leading" secondItem="JOh-Zo-rqF" secondAttribute="trailing" constant="10" id="Rm2-AN-bid"/>
                                                         <constraint firstItem="JOh-Zo-rqF" firstAttribute="centerY" secondItem="4R7-bw-1iT" secondAttribute="centerY" id="b5m-Fs-ofY"/>
                                                         <constraint firstItem="Edr-Nn-Yrf" firstAttribute="top" secondItem="4R7-bw-1iT" secondAttribute="top" id="en4-iP-dCD"/>
                                                         <constraint firstItem="Xdj-Tf-Ifg" firstAttribute="top" secondItem="4R7-bw-1iT" secondAttribute="top" id="gtj-bO-gv0"/>
-                                                        <constraint firstItem="Edr-Nn-Yrf" firstAttribute="centerX" secondItem="4R7-bw-1iT" secondAttribute="centerX" constant="5" id="ki2-RL-sls"/>
+                                                        <constraint firstItem="Xdj-Tf-Ifg" firstAttribute="leading" secondItem="Edr-Nn-Yrf" secondAttribute="trailing" constant="10" id="hLi-Rb-zUb"/>
+                                                        <constraint firstItem="Edr-Nn-Yrf" firstAttribute="width" secondItem="JOh-Zo-rqF" secondAttribute="width" id="m16-3o-4dQ"/>
                                                         <constraint firstItem="Edr-Nn-Yrf" firstAttribute="centerY" secondItem="4R7-bw-1iT" secondAttribute="centerY" id="pIP-So-LDH"/>
                                                     </constraints>
                                                 </view>

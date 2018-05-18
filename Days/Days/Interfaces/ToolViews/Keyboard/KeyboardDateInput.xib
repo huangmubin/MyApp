@@ -139,7 +139,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份不能为 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d70-XV-1sQ">
-                    <rect key="frame" x="133" y="20" width="152" height="48"/>
+                    <rect key="frame" x="133" y="20" width="152" height="49"/>
                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
                     <color key="textColor" red="1" green="0.38418834860000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
                 <constraint firstItem="Rj6-P8-yPZ" firstAttribute="leading" secondItem="vyH-c4-MN0" secondAttribute="leading" constant="20" id="fJJ-nw-12V"/>
                 <constraint firstItem="d70-XV-1sQ" firstAttribute="trailing" secondItem="Rj6-P8-yPZ" secondAttribute="trailing" id="gBh-Pk-9gc"/>
                 <constraint firstItem="d70-XV-1sQ" firstAttribute="top" secondItem="jfy-IA-YfE" secondAttribute="top" id="hXg-4m-6KY"/>
-                <constraint firstItem="Rj6-P8-yPZ" firstAttribute="top" secondItem="d70-XV-1sQ" secondAttribute="bottom" constant="9" id="ltc-WV-h0u"/>
+                <constraint firstItem="Rj6-P8-yPZ" firstAttribute="top" secondItem="d70-XV-1sQ" secondAttribute="bottom" constant="8" id="ltc-WV-h0u"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vyH-c4-MN0"/>

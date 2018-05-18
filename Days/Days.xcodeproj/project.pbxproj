@@ -10,6 +10,8 @@
 		9C01676220AC896B00D99ED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676120AC896B00D99ED5 /* Color.swift */; };
 		9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */; };
 		9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */; };
+		9C01676820AF028800D99ED5 /* KeyboardTimeInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */; };
+		9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */; };
 		9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */; };
 		9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25020AEB1FA0016E035 /* LogEditController.swift */; };
 		9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA25220AEB2080016E035 /* LogEdit.storyboard */; };
@@ -116,6 +118,8 @@
 		9C01676120AC896B00D99ED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDateInput.swift; sourceTree = "<group>"; };
 		9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardDateInput.xib; sourceTree = "<group>"; };
+		9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardTimeInput.xib; sourceTree = "<group>"; };
+		9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTimeInput.swift; sourceTree = "<group>"; };
 		9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowLogCard.swift; sourceTree = "<group>"; };
 		9C2EA25020AEB1FA0016E035 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
 		9C2EA25220AEB2080016E035 /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
 				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
 				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
+				9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */,
+				9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -531,8 +537,8 @@
 		9CB3921720ABC0A30076D600 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				9C2EA24E20AEB1D20016E035 /* Log */,
 				9CB3923A20ABE2F90076D600 /* ToolViews */,
+				9C2EA24E20AEB1D20016E035 /* Log */,
 				9CB3924E20AC36E60076D600 /* Image */,
 				9CB3924320AC24B20076D600 /* Color */,
 				9CB3921920ABC0E70076D600 /* Habit */,
@@ -729,6 +735,7 @@
 				9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */,
 				9CB3921D20ABC5090076D600 /* HabitList.storyboard in Resources */,
 				9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */,
+				9C01676820AF028800D99ED5 /* KeyboardTimeInput.xib in Resources */,
 				9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */,
 				9CB3920720ABC0560076D600 /* CalendarView.xib in Resources */,
 				9CB3920D20ABC0560076D600 /* VarlenaInput.xib in Resources */,
@@ -799,6 +806,7 @@
 				9CB391E620ABC0560076D600 /* ImageView.swift in Sources */,
 				9CF257BB20AD85620060C8C6 /* HabitShowCalendarCard.swift in Sources */,
 				9CB3924B20AC33970076D600 /* HabitEditUICard.swift in Sources */,
+				9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */,
 				9CB3922120ABC5250076D600 /* HabitListController.swift in Sources */,
 				9CB3920A20ABC0560076D600 /* InputView.swift in Sources */,
 				9C2EA25820AEB22A0016E035 /* LogListController.swift in Sources */,

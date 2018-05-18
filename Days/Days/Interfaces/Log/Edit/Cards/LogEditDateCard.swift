@@ -12,7 +12,8 @@ class LogEditDateCard: CardDateView {
 
     override func update_date() {
         log.value.date = value.date
-        print("update date = \(value)")
+        let time = log.value.date_s.first(.day).time1970 - log.value.start
+        log.value.start = value.first(.day).time1970 + time
     }
 
 }
