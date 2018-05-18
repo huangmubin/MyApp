@@ -10,6 +10,21 @@
 		9C01676220AC896B00D99ED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676120AC896B00D99ED5 /* Color.swift */; };
 		9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */; };
 		9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */; };
+		9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */; };
+		9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25020AEB1FA0016E035 /* LogEditController.swift */; };
+		9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA25220AEB2080016E035 /* LogEdit.storyboard */; };
+		9C2EA25620AEB21D0016E035 /* LogList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA25520AEB21D0016E035 /* LogList.storyboard */; };
+		9C2EA25820AEB22A0016E035 /* LogListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25720AEB22A0016E035 /* LogListController.swift */; };
+		9C2EA25A20AEB23F0016E035 /* LogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25920AEB23F0016E035 /* LogListCell.swift */; };
+		9C2EA25C20AEB2490016E035 /* LogListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25B20AEB2490016E035 /* LogListHeader.swift */; };
+		9C2EA25F20AEB28D0016E035 /* LogEditTopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25E20AEB28D0016E035 /* LogEditTopCard.swift */; };
+		9C2EA26120AEB29E0016E035 /* LogEditDateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26020AEB29E0016E035 /* LogEditDateCard.swift */; };
+		9C2EA26320AEB2AE0016E035 /* LogEditTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26220AEB2AE0016E035 /* LogEditTimeCard.swift */; };
+		9C2EA26520AEB2C90016E035 /* LogEditStatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26420AEB2C90016E035 /* LogEditStatusCard.swift */; };
+		9C2EA26720AEB2DE0016E035 /* LogEditMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26620AEB2DE0016E035 /* LogEditMessageCard.swift */; };
+		9C2EA26920AECACA0016E035 /* CardDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26820AECACA0016E035 /* CardDateView.swift */; };
+		9C2EA26D20AECAED0016E035 /* CardDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA26C20AECAED0016E035 /* CardDateView.xib */; };
+		9C2EA27120AECCE50016E035 /* CalendarCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA27020AECCE50016E035 /* CalendarCollection.swift */; };
 		9CB3918D20ABBFC60076D600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3918C20ABBFC60076D600 /* AppDelegate.swift */; };
 		9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919020ABBFC60076D600 /* Main.storyboard */; };
 		9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919320ABBFC80076D600 /* Assets.xcassets */; };
@@ -101,6 +116,21 @@
 		9C01676120AC896B00D99ED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDateInput.swift; sourceTree = "<group>"; };
 		9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardDateInput.xib; sourceTree = "<group>"; };
+		9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowLogCard.swift; sourceTree = "<group>"; };
+		9C2EA25020AEB1FA0016E035 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
+		9C2EA25220AEB2080016E035 /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
+		9C2EA25520AEB21D0016E035 /* LogList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogList.storyboard; sourceTree = "<group>"; };
+		9C2EA25720AEB22A0016E035 /* LogListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListController.swift; sourceTree = "<group>"; };
+		9C2EA25920AEB23F0016E035 /* LogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListCell.swift; sourceTree = "<group>"; };
+		9C2EA25B20AEB2490016E035 /* LogListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListHeader.swift; sourceTree = "<group>"; };
+		9C2EA25E20AEB28D0016E035 /* LogEditTopCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditTopCard.swift; sourceTree = "<group>"; };
+		9C2EA26020AEB29E0016E035 /* LogEditDateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditDateCard.swift; sourceTree = "<group>"; };
+		9C2EA26220AEB2AE0016E035 /* LogEditTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditTimeCard.swift; sourceTree = "<group>"; };
+		9C2EA26420AEB2C90016E035 /* LogEditStatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditStatusCard.swift; sourceTree = "<group>"; };
+		9C2EA26620AEB2DE0016E035 /* LogEditMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditMessageCard.swift; sourceTree = "<group>"; };
+		9C2EA26820AECACA0016E035 /* CardDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDateView.swift; sourceTree = "<group>"; };
+		9C2EA26C20AECAED0016E035 /* CardDateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDateView.xib; sourceTree = "<group>"; };
+		9C2EA27020AECCE50016E035 /* CalendarCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollection.swift; sourceTree = "<group>"; };
 		9CB3918920ABBFC60076D600 /* Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB3918C20ABBFC60076D600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB3919120ABBFC60076D600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,6 +231,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2EA24E20AEB1D20016E035 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA25420AEB20F0016E035 /* List */,
+				9C2EA24F20AEB1DA0016E035 /* Edit */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		9C2EA24F20AEB1DA0016E035 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA25220AEB2080016E035 /* LogEdit.storyboard */,
+				9C2EA25020AEB1FA0016E035 /* LogEditController.swift */,
+				9C2EA25D20AEB2540016E035 /* Cards */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		9C2EA25420AEB20F0016E035 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA25520AEB21D0016E035 /* LogList.storyboard */,
+				9C2EA25720AEB22A0016E035 /* LogListController.swift */,
+				9C2EA25920AEB23F0016E035 /* LogListCell.swift */,
+				9C2EA25B20AEB2490016E035 /* LogListHeader.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		9C2EA25D20AEB2540016E035 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA25E20AEB28D0016E035 /* LogEditTopCard.swift */,
+				9C2EA26020AEB29E0016E035 /* LogEditDateCard.swift */,
+				9C2EA26220AEB2AE0016E035 /* LogEditTimeCard.swift */,
+				9C2EA26420AEB2C90016E035 /* LogEditStatusCard.swift */,
+				9C2EA26620AEB2DE0016E035 /* LogEditMessageCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		9C2EA26E20AECAF00016E035 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CB3923E20AC12350076D600 /* KeyboardInput.swift */,
+				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
+				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
+				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		9C2EA26F20AECB020016E035 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA26820AECACA0016E035 /* CardDateView.swift */,
+				9C2EA26C20AECAED0016E035 /* CardDateView.xib */,
+				9C2EA27020AECCE50016E035 /* CalendarCollection.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		9CB3918020ABBFC60076D600 = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +531,7 @@
 		9CB3921720ABC0A30076D600 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				9C2EA24E20AEB1D20016E035 /* Log */,
 				9CB3923A20ABE2F90076D600 /* ToolViews */,
 				9CB3924E20AC36E60076D600 /* Image */,
 				9CB3924320AC24B20076D600 /* Color */,
@@ -518,11 +612,9 @@
 		9CB3923A20ABE2F90076D600 /* ToolViews */ = {
 			isa = PBXGroup;
 			children = (
-				9CB3923E20AC12350076D600 /* KeyboardInput.swift */,
-				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
-				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
-				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
 				9C01676120AC896B00D99ED5 /* Color.swift */,
+				9C2EA26E20AECAF00016E035 /* Keyboard */,
+				9C2EA26F20AECB020016E035 /* Cards */,
 			);
 			path = ToolViews;
 			sourceTree = "<group>";
@@ -566,6 +658,7 @@
 				9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */,
 				9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */,
 				9CF257C220AD86250060C8C6 /* HabitShowMenuCard.swift */,
+				9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -629,9 +722,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB3919720ABBFC80076D600 /* LaunchScreen.storyboard in Resources */,
+				9C2EA26D20AECAED0016E035 /* CardDateView.xib in Resources */,
 				9CB391ED20ABC0560076D600 /* CardTopView.xib in Resources */,
 				9CB3920920ABC0560076D600 /* InputTextView.xib in Resources */,
 				9CB3924020AC12E90076D600 /* KeyboardInput.xib in Resources */,
+				9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */,
 				9CB3921D20ABC5090076D600 /* HabitList.storyboard in Resources */,
 				9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */,
 				9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */,
@@ -642,6 +737,7 @@
 				9CB3925220AC37150076D600 /* Image.storyboard in Resources */,
 				9CB3920520ABC0560076D600 /* CalendarCell.xib in Resources */,
 				9CB3921220ABC0560076D600 /* iSelector.xib in Resources */,
+				9C2EA25620AEB21D0016E035 /* LogList.storyboard in Resources */,
 				9CB3920B20ABC0560076D600 /* InputView.xib in Resources */,
 				9CB3924720AC24D90076D600 /* Color.storyboard in Resources */,
 				9CB3922E20ABD4CA0076D600 /* HabitEdit.storyboard in Resources */,
@@ -663,6 +759,7 @@
 				9CB3920020ABC0560076D600 /* Ex_UIScreen.swift in Sources */,
 				9CB391F320ABC0560076D600 /* SQLite.swift in Sources */,
 				9CF257BD20AD856D0060C8C6 /* HabitShowEventCard.swift in Sources */,
+				9C2EA26320AEB2AE0016E035 /* LogEditTimeCard.swift in Sources */,
 				9CB3921620ABC0560076D600 /* Operator.swift in Sources */,
 				9CB3923F20AC12880076D600 /* KeyboardInput.swift in Sources */,
 				9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */,
@@ -670,14 +767,19 @@
 				9CB391FB20ABC0560076D600 /* Ex_Int.swift in Sources */,
 				9CB3924220AC21D90076D600 /* HabitEditGoalCard.swift in Sources */,
 				9CB3920820ABC0560076D600 /* InputTextView.swift in Sources */,
+				9C2EA26920AECACA0016E035 /* CardDateView.swift in Sources */,
 				9CB391E920ABC0560076D600 /* CardView.swift in Sources */,
+				9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */,
 				9C01676220AC896B00D99ED5 /* Color.swift in Sources */,
+				9C2EA26120AEB29E0016E035 /* LogEditDateCard.swift in Sources */,
 				9CB3920420ABC0560076D600 /* CalendarCell.swift in Sources */,
 				9CB3920320ABC0560076D600 /* Ex_UITextView.swift in Sources */,
+				9C2EA25C20AEB2490016E035 /* LogListHeader.swift in Sources */,
 				9CB3922420ABC7A90076D600 /* Habit_SQlite.swift in Sources */,
 				9CB391FC20ABC0560076D600 /* Ex_String.swift in Sources */,
 				9CB391F420ABC0560076D600 /* SQLiteProtocol.swift in Sources */,
 				9CB391EE20ABC0560076D600 /* TableView.swift in Sources */,
+				9C2EA26720AEB2DE0016E035 /* LogEditMessageCard.swift in Sources */,
 				9CB3921320ABC0560076D600 /* KeyValue.swift in Sources */,
 				9CF257C320AD86250060C8C6 /* HabitShowMenuCard.swift in Sources */,
 				9CB3920220ABC0560076D600 /* Ex_UITextField.swift in Sources */,
@@ -689,6 +791,7 @@
 				9CB391FF20ABC0560076D600 /* Ex_UILabel.swift in Sources */,
 				9CB3920620ABC0560076D600 /* CalendarView.swift in Sources */,
 				9CB3921520ABC0560076D600 /* Notifiable.swift in Sources */,
+				9C2EA25A20AEB23F0016E035 /* LogListCell.swift in Sources */,
 				9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */,
 				9CB391F920ABC0560076D600 /* Ex_DateFormatter.swift in Sources */,
 				9CB391EC20ABC0560076D600 /* CardTopView.swift in Sources */,
@@ -698,16 +801,20 @@
 				9CB3924B20AC33970076D600 /* HabitEditUICard.swift in Sources */,
 				9CB3922120ABC5250076D600 /* HabitListController.swift in Sources */,
 				9CB3920A20ABC0560076D600 /* InputView.swift in Sources */,
+				9C2EA25820AEB22A0016E035 /* LogListController.swift in Sources */,
 				9CB3920F20ABC0560076D600 /* RoundProgress.swift in Sources */,
 				9CF257B920AD85320060C8C6 /* HabitShowTopCard.swift in Sources */,
 				9CB3924920AC27290076D600 /* ColorCell.swift in Sources */,
 				9CB391FA20ABC0560076D600 /* Ex_IndexPath.swift in Sources */,
 				9CB3925020AC36FE0076D600 /* ImageController.swift in Sources */,
 				9CB391E420ABC0560076D600 /* Animation.swift in Sources */,
+				9C2EA26520AEB2C90016E035 /* LogEditStatusCard.swift in Sources */,
+				9C2EA27120AECCE50016E035 /* CalendarCollection.swift in Sources */,
 				9CB3921120ABC0560076D600 /* iSelector.swift in Sources */,
 				9CB3923020ABD5070076D600 /* HabitEditController.swift in Sources */,
 				9CB3921420ABC0560076D600 /* NibLoable.swift in Sources */,
 				9CB391FD20ABC0560076D600 /* Ex_UIColor.swift in Sources */,
+				9C2EA25F20AEB28D0016E035 /* LogEditTopCard.swift in Sources */,
 				9CB391EF20ABC0560076D600 /* TableViewCell.swift in Sources */,
 				9CB3922B20ABD15C0076D600 /* Log.swift in Sources */,
 				9CB3923320ABD6010076D600 /* HabitEditNameCard.swift in Sources */,
@@ -725,6 +832,7 @@
 				9CB391F820ABC0560076D600 /* Ex_Date.swift in Sources */,
 				9CB3921020ABC0560076D600 /* iDateSelector.swift in Sources */,
 				9CB3923520ABDB6D0076D600 /* HabitEditTopCard.swift in Sources */,
+				9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */,
 				9CB391EA20ABC0560076D600 /* CardTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

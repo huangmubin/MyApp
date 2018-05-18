@@ -20,6 +20,7 @@
                     <rect key="frame" x="20" y="20" width="105" height="37"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="CNX-D2-LRQ"/>
+                        <constraint firstAttribute="width" constant="105" id="qdD-ZC-Rtp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
                     <nil key="textColor"/>
@@ -28,8 +29,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj6-P8-yPZ" customClass="View" customModule="Days" customModuleProvider="target">
                     <rect key="frame" x="20" y="77" width="265" height="63"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="2018" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bYL-eF-6OC" customClass="DateTextView" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="10" y="10" width="71.5" height="43"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="2018" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYL-eF-6OC" customClass="DateTextView" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="91" height="43"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
@@ -47,7 +48,7 @@
                             </connections>
                         </textView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-9N-Jst">
-                            <rect key="frame" x="91" y="13" width="26.5" height="37"/>
+                            <rect key="frame" x="101" y="13" width="26.5" height="37"/>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -58,8 +59,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="12" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aDT-W9-pze" customClass="DateTextView" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="215" y="10" width="40" height="43"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="12" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDT-W9-pze" customClass="DateTextView" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="205" y="10" width="50" height="43"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
@@ -76,8 +77,8 @@
                                 <outlet property="delegate" destination="v1V-pG-Ccq" id="fSW-ZY-ZDs"/>
                             </connections>
                         </textView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="12" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oar-Gc-Mcc" customClass="DateTextView" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="127.5" y="10" width="40.5" height="43"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="12" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oar-Gc-Mcc" customClass="DateTextView" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="127.5" y="10" width="50.5" height="43"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
@@ -98,17 +99,17 @@
                     <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="aDT-W9-pze" secondAttribute="bottom" constant="10" id="H9c-sU-h6L"/>
-                        <constraint firstItem="pY1-9N-Jst" firstAttribute="leading" secondItem="bYL-eF-6OC" secondAttribute="trailing" constant="10" id="I32-JN-6RA"/>
+                        <constraint firstItem="pY1-9N-Jst" firstAttribute="leading" secondItem="bYL-eF-6OC" secondAttribute="trailing" id="I32-JN-6RA"/>
                         <constraint firstAttribute="bottom" secondItem="bYL-eF-6OC" secondAttribute="bottom" constant="10" id="ITi-sX-TOS"/>
                         <constraint firstItem="Oar-Gc-Mcc" firstAttribute="width" secondItem="aDT-W9-pze" secondAttribute="width" id="Jxn-KG-q3q"/>
-                        <constraint firstItem="Oar-Gc-Mcc" firstAttribute="leading" secondItem="pY1-9N-Jst" secondAttribute="trailing" constant="10" id="Kpi-aL-Pir"/>
+                        <constraint firstItem="Oar-Gc-Mcc" firstAttribute="leading" secondItem="pY1-9N-Jst" secondAttribute="trailing" id="Kpi-aL-Pir"/>
                         <constraint firstAttribute="trailing" secondItem="aDT-W9-pze" secondAttribute="trailing" constant="10" id="N1D-Cv-g9Y"/>
-                        <constraint firstItem="aDT-W9-pze" firstAttribute="leading" secondItem="VeX-QY-HRc" secondAttribute="trailing" constant="10" id="Nb7-aw-WJ8"/>
+                        <constraint firstItem="aDT-W9-pze" firstAttribute="leading" secondItem="VeX-QY-HRc" secondAttribute="trailing" id="Nb7-aw-WJ8"/>
                         <constraint firstAttribute="bottom" secondItem="Oar-Gc-Mcc" secondAttribute="bottom" constant="10" id="OnN-cR-dM5"/>
                         <constraint firstItem="Oar-Gc-Mcc" firstAttribute="top" secondItem="Rj6-P8-yPZ" secondAttribute="top" constant="10" id="U2e-Ac-03O"/>
                         <constraint firstItem="VeX-QY-HRc" firstAttribute="centerY" secondItem="Rj6-P8-yPZ" secondAttribute="centerY" id="YBM-4M-elc"/>
                         <constraint firstItem="bYL-eF-6OC" firstAttribute="top" secondItem="Rj6-P8-yPZ" secondAttribute="top" constant="10" id="dXw-wP-jPz"/>
-                        <constraint firstItem="VeX-QY-HRc" firstAttribute="leading" secondItem="Oar-Gc-Mcc" secondAttribute="trailing" constant="10" id="gGk-2u-Yv5"/>
+                        <constraint firstItem="VeX-QY-HRc" firstAttribute="leading" secondItem="Oar-Gc-Mcc" secondAttribute="trailing" id="gGk-2u-Yv5"/>
                         <constraint firstItem="aDT-W9-pze" firstAttribute="top" secondItem="Rj6-P8-yPZ" secondAttribute="top" constant="10" id="mD9-6v-fbt"/>
                         <constraint firstItem="pY1-9N-Jst" firstAttribute="centerY" secondItem="Rj6-P8-yPZ" secondAttribute="centerY" id="oY7-NE-xgs"/>
                         <constraint firstItem="bYL-eF-6OC" firstAttribute="width" secondItem="Oar-Gc-Mcc" secondAttribute="width" multiplier="1.8" id="pMA-KN-Eo1"/>
@@ -137,8 +138,8 @@
                         <action selector="save:" destination="v1V-pG-Ccq" eventType="touchUpInside" id="plb-Jv-IuN"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份不能为 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d70-XV-1sQ">
-                    <rect key="frame" x="133" y="20" width="152" height="22.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份不能为 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d70-XV-1sQ">
+                    <rect key="frame" x="133" y="20" width="152" height="48"/>
                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
                     <color key="textColor" red="1" green="0.38418834860000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -159,6 +160,7 @@
                 <constraint firstItem="Rj6-P8-yPZ" firstAttribute="leading" secondItem="vyH-c4-MN0" secondAttribute="leading" constant="20" id="fJJ-nw-12V"/>
                 <constraint firstItem="d70-XV-1sQ" firstAttribute="trailing" secondItem="Rj6-P8-yPZ" secondAttribute="trailing" id="gBh-Pk-9gc"/>
                 <constraint firstItem="d70-XV-1sQ" firstAttribute="top" secondItem="jfy-IA-YfE" secondAttribute="top" id="hXg-4m-6KY"/>
+                <constraint firstItem="Rj6-P8-yPZ" firstAttribute="top" secondItem="d70-XV-1sQ" secondAttribute="bottom" constant="9" id="ltc-WV-h0u"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vyH-c4-MN0"/>

@@ -91,6 +91,16 @@ class Habit {
         return text
     }
     
+    /** nil is sick, 0 ~ 1 is progress */
+    func status(at_date date: Int) -> CGFloat? {
+        let logs = self.logs(date: date)
+        if logs.contains(where: { $0.value.is_sick }) {
+            return nil
+        } else {
+            return CGFloat(logs.count(value: { $0.value.length })) / CGFloat(value.length)
+        }
+    }
+    
     // MARK: - Progress
     
     /** Progress at date */
