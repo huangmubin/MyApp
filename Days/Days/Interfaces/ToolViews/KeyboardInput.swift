@@ -57,7 +57,7 @@ class KeyboardInput: View, UITextViewDelegate {
     /** Push in windown */
     func push() {
         self.mask_window.makeKeyAndVisible()
-        self.input.becomeFirstResponder()
+        self.input?.becomeFirstResponder()
     }
     
     // MARK: - IBOutlet

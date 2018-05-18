@@ -8,14 +8,28 @@
 
 import UIKit
 
-class HabitShowCalendarCard: CardView {
+class HabitShowCalendarCard: CardView, KeyboardDateInputDelegate {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // MARK: - Date
+    
+    @IBAction func date_action(_ sender: UIButton) {
+        if let view = KeyboardDateInput.load(nib: nil) {
+            view.date_delegate = self
+            view.year_view.text = date.year.description
+            view.month_view.text = date.month.description
+            view.day_view.text = date.day.description
+            view.year_view.old = date.year.description
+            view.month_view.old = date.month.description
+            view.day_view.old = date.day.description
+            view.day_view.max = date.days(.month)
+            print(view.day_view.max)
+            view.push()
+        }
     }
-    */
+    
+    func keyboard_date(_ view: KeyboardDateInput, year: Int, month: Int, day: Int) {
+        
+    }
+    
 
 }

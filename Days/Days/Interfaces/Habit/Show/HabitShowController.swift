@@ -8,9 +8,23 @@
 
 import UIKit
 
+extension CardView {
+    
+    var date: Date {
+        get {
+            return (table.controller as! HabitShowController).date
+        }
+        set {
+            (table.controller as! HabitShowController).date = newValue
+        }
+    }
+    
+}
+
 class HabitShowController: ViewController, HabitObject {
 
     var habit: Habit!
+    var date: Date = Date()
 
     // MARK: - View
     

@@ -21,6 +21,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <outletCollection property="cards" destination="zzl-Av-Fep" collectionClass="NSMutableArray" id="AAB-9H-2o0"/>
+                                    <outletCollection property="cards" destination="R7b-nY-x56" collectionClass="NSMutableArray" id="eK9-OE-zbT"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -83,6 +84,47 @@
                         <outlet property="title" destination="B9B-yw-j3W" id="Jaw-Ad-qnM"/>
                     </connections>
                 </view>
+                <view contentMode="scaleToFill" id="R7b-nY-x56" customClass="HabitShowCalendarCard" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjA-bg-ADZ">
+                            <rect key="frame" x="75.5" y="0.0" width="221" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="K3a-uD-Tng"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                            <state key="normal" title="2018 年 12 月 8 号">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="date_action:" destination="R7b-nY-x56" eventType="touchUpInside" id="rhr-tx-fq9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2C-zM-LKB" customClass="Button" customModule="Days" customModuleProvider="target">
+                            <rect key="frame" x="296.5" y="0.0" width="60" height="60"/>
+                            <state key="normal" image="but_detail">
+                                <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="X2C-zM-LKB" firstAttribute="top" secondItem="bCo-bv-fDr" secondAttribute="top" id="DUJ-jB-3qk"/>
+                        <constraint firstItem="X2C-zM-LKB" firstAttribute="leading" secondItem="CjA-bg-ADZ" secondAttribute="trailing" id="VIf-Yo-pKy"/>
+                        <constraint firstItem="CjA-bg-ADZ" firstAttribute="top" secondItem="bCo-bv-fDr" secondAttribute="top" id="hRW-pt-kXb"/>
+                        <constraint firstItem="CjA-bg-ADZ" firstAttribute="centerX" secondItem="bCo-bv-fDr" secondAttribute="centerX" id="m1V-vf-Ryi"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="bCo-bv-fDr"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Calendar"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </objects>
             <point key="canvasLocation" x="593" y="246"/>
         </scene>
@@ -96,6 +138,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="but_detail" width="60" height="60"/>
         <image name="but_edit" width="60" height="60"/>
         <image name="but_error" width="60" height="60"/>
     </resources>

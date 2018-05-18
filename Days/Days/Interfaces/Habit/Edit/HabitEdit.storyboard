@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -156,7 +155,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oj-i0-qUA" customClass="View" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="20" y="76.5" width="97" height="63.5"/>
+                            <rect key="frame" x="20" y="76.5" width="97" height="64"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-l1-Tdu">
                                     <rect key="frame" x="0.0" y="0.0" width="97" height="63.5"/>
@@ -172,7 +171,7 @@
                             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="M9H-l1-Tdu" firstAttribute="top" secondItem="7oj-i0-qUA" secondAttribute="top" id="EN5-vE-yGC"/>
-                                <constraint firstAttribute="height" constant="63.5" id="Eva-6I-LQc"/>
+                                <constraint firstAttribute="height" constant="64" id="Eva-6I-LQc"/>
                                 <constraint firstAttribute="trailing" secondItem="M9H-l1-Tdu" secondAttribute="trailing" id="FsQ-dp-4EP"/>
                                 <constraint firstItem="M9H-l1-Tdu" firstAttribute="leading" secondItem="7oj-i0-qUA" secondAttribute="leading" id="vWv-8V-8mZ"/>
                                 <constraint firstAttribute="bottom" secondItem="M9H-l1-Tdu" secondAttribute="bottom" id="xYB-YH-qwk"/>
@@ -184,7 +183,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLK-RN-d6k" customClass="View" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="137" y="76" width="97" height="63.5"/>
+                            <rect key="frame" x="137" y="76" width="97" height="64"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-uL-DxZ">
                                     <rect key="frame" x="0.0" y="0.0" width="97" height="63.5"/>
@@ -200,7 +199,7 @@
                             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="kZL-uL-DxZ" secondAttribute="bottom" id="1fM-tP-k4o"/>
-                                <constraint firstAttribute="height" constant="63.5" id="Lak-Y9-tEr"/>
+                                <constraint firstAttribute="height" constant="64" id="Lak-Y9-tEr"/>
                                 <constraint firstItem="kZL-uL-DxZ" firstAttribute="top" secondItem="nLK-RN-d6k" secondAttribute="top" id="MJa-Ty-J9d"/>
                                 <constraint firstItem="kZL-uL-DxZ" firstAttribute="leading" secondItem="nLK-RN-d6k" secondAttribute="leading" id="RRH-RL-0PU"/>
                                 <constraint firstAttribute="trailing" secondItem="kZL-uL-DxZ" secondAttribute="trailing" id="o2m-7o-dvh"/>

@@ -14,11 +14,11 @@ class HabitShowTopCard: CardTopView {
         title.text = habit.value.name
     }
     
-    override func left_action() {
+    override func cancel_action() {
         table.controller?.dismiss(animated: true, completion: nil)
     }
     
-    override func rigth_action() {
+    override func save_action() {
         
     }
 }

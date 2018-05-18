@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C01676220AC896B00D99ED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676120AC896B00D99ED5 /* Color.swift */; };
+		9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */; };
+		9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */; };
 		9CB3918D20ABBFC60076D600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3918C20ABBFC60076D600 /* AppDelegate.swift */; };
 		9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919020ABBFC60076D600 /* Main.storyboard */; };
 		9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3919320ABBFC80076D600 /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 
 /* Begin PBXFileReference section */
 		9C01676120AC896B00D99ED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDateInput.swift; sourceTree = "<group>"; };
+		9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardDateInput.xib; sourceTree = "<group>"; };
 		9CB3918920ABBFC60076D600 /* Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB3918C20ABBFC60076D600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB3919120ABBFC60076D600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -516,6 +520,8 @@
 			children = (
 				9CB3923E20AC12350076D600 /* KeyboardInput.swift */,
 				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
+				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
+				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
 				9C01676120AC896B00D99ED5 /* Color.swift */,
 			);
 			path = ToolViews;
@@ -639,6 +645,7 @@
 				9CB3920B20ABC0560076D600 /* InputView.xib in Resources */,
 				9CB3924720AC24D90076D600 /* Color.storyboard in Resources */,
 				9CB3922E20ABD4CA0076D600 /* HabitEdit.storyboard in Resources */,
+				9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +689,7 @@
 				9CB391FF20ABC0560076D600 /* Ex_UILabel.swift in Sources */,
 				9CB3920620ABC0560076D600 /* CalendarView.swift in Sources */,
 				9CB3921520ABC0560076D600 /* Notifiable.swift in Sources */,
+				9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */,
 				9CB391F920ABC0560076D600 /* Ex_DateFormatter.swift in Sources */,
 				9CB391EC20ABC0560076D600 /* CardTopView.swift in Sources */,
 				9CF257B420AD841C0060C8C6 /* HabitShowController.swift in Sources */,
