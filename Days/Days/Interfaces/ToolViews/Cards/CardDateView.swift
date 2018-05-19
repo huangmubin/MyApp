@@ -31,7 +31,7 @@ class CardDateView: CardView, CalendarCollectionDelegate, KeyboardDateInputDeleg
     
     func update_date_button() {
         date_button.setTitle(
-            DateFormatter("yyyy 年 M 月 d 号").string(from: value),
+            DateFormatter("yyyy 年 MM 月 dd 日").string(from: value),
             for: .normal
         )
     }

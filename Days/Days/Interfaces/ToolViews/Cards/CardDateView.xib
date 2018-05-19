@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ7-HS-UMm">
-                    <rect key="frame" x="77" y="0.0" width="221" height="60"/>
+                    <rect key="frame" x="20" y="0.0" width="221" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="Dol-pF-5BJ"/>
                     </constraints>
@@ -31,7 +31,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE0-4J-uO7" customClass="Button" customModule="Days" customModuleProvider="target">
-                    <rect key="frame" x="298" y="0.0" width="60" height="60"/>
+                    <rect key="frame" x="241" y="0.0" width="60" height="60"/>
                     <state key="normal" image="but_detail">
                         <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -210,11 +210,11 @@
             <constraints>
                 <constraint firstItem="nE0-4J-uO7" firstAttribute="leading" secondItem="zZ7-HS-UMm" secondAttribute="trailing" id="UFm-Yn-sn4"/>
                 <constraint firstItem="8X1-qC-PEh" firstAttribute="trailing" secondItem="EeQ-f1-hT3" secondAttribute="trailing" constant="20" id="af3-EW-ufm"/>
-                <constraint firstItem="zZ7-HS-UMm" firstAttribute="centerX" secondItem="8X1-qC-PEh" secondAttribute="centerX" id="c1g-e4-7sy"/>
                 <constraint firstItem="EeQ-f1-hT3" firstAttribute="leading" secondItem="8X1-qC-PEh" secondAttribute="leading" constant="20" id="cZp-s3-yel"/>
                 <constraint firstItem="nE0-4J-uO7" firstAttribute="top" secondItem="8X1-qC-PEh" secondAttribute="top" id="kZg-C9-L7p"/>
                 <constraint firstItem="EeQ-f1-hT3" firstAttribute="top" secondItem="zZ7-HS-UMm" secondAttribute="bottom" id="nIN-Li-lGu"/>
                 <constraint firstItem="zZ7-HS-UMm" firstAttribute="top" secondItem="8X1-qC-PEh" secondAttribute="top" id="to4-8g-cxI"/>
+                <constraint firstItem="zZ7-HS-UMm" firstAttribute="leading" secondItem="8X1-qC-PEh" secondAttribute="leading" constant="20" id="z22-pj-J6L"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="8X1-qC-PEh"/>

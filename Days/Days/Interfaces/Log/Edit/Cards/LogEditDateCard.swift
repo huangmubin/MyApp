@@ -10,10 +10,26 @@ import UIKit
 
 class LogEditDateCard: CardDateView {
 
+    override func reload() {
+        value = log.value.date_s
+        super.reload()
+        if log.value.id == 0 {
+            date_button.setTitleColor(Color.dark, for: .normal)
+            date_button.isEnabled = true
+            change_button.isEnabled = true
+        } else {
+            date_button.setTitleColor(Color.gray_dark, for: .normal)
+            date_button.isEnabled = false
+            change_button.isEnabled = false
+        }
+        //print("LogEditDateCard reload - \(value)")
+    }
+    
     override func update_date() {
+        //print("update_date = \(value) - \(value.time1970); \(log.value.date_s) - \(log.value.start)")
         log.value.date = value.date
-        let time = log.value.date_s.first(.day).time1970 - log.value.start
-        log.value.start = value.first(.day).time1970 + time
+        log.value.start = value.first(.day).time1970 + log.value.date_s.time
+        //print("end_date = \(value) - \(value.time1970); \(log.value.date_s) - \(log.value.start)")
     }
 
 }

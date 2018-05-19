@@ -68,18 +68,27 @@
                             <state key="normal" image="but_edit"/>
                             <connections>
                                 <action selector="rigth_action" destination="zzl-Av-Fep" eventType="touchUpInside" id="r5d-l5-uLK"/>
-                                <segue destination="idK-2f-gtK" kind="show" id="UuG-6g-kRP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="100" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SY-iQ-akl">
+                            <rect key="frame" x="78" y="8" width="134" height="44"/>
+                            <connections>
+                                <segue destination="idK-2f-gtK" kind="show" identifier="HabitEdit" id="QlI-5P-len"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="oGL-xg-vzI" firstAttribute="leading" secondItem="5SY-iQ-akl" secondAttribute="trailing" constant="8" id="55Z-FF-73h"/>
                         <constraint firstItem="B9B-yw-j3W" firstAttribute="centerY" secondItem="SvM-Pn-Zcr" secondAttribute="centerY" id="8i7-up-VzH"/>
+                        <constraint firstItem="SvM-Pn-Zcr" firstAttribute="bottom" secondItem="5SY-iQ-akl" secondAttribute="bottom" constant="8" id="JBN-WY-7BL"/>
                         <constraint firstItem="ycW-KT-qKh" firstAttribute="centerY" secondItem="SvM-Pn-Zcr" secondAttribute="centerY" id="O3q-ZE-TeP"/>
+                        <constraint firstItem="5SY-iQ-akl" firstAttribute="leading" secondItem="ycW-KT-qKh" secondAttribute="trailing" constant="8" id="Ti2-8F-pSP"/>
                         <constraint firstItem="ycW-KT-qKh" firstAttribute="leading" secondItem="SvM-Pn-Zcr" secondAttribute="leading" constant="10" id="a7E-xw-UsK"/>
                         <constraint firstItem="B9B-yw-j3W" firstAttribute="centerX" secondItem="SvM-Pn-Zcr" secondAttribute="centerX" id="b8i-BC-f9G"/>
                         <constraint firstItem="SvM-Pn-Zcr" firstAttribute="trailing" secondItem="oGL-xg-vzI" secondAttribute="trailing" constant="10" id="brQ-bI-qsa"/>
                         <constraint firstItem="oGL-xg-vzI" firstAttribute="centerY" secondItem="SvM-Pn-Zcr" secondAttribute="centerY" id="fvl-Cm-Y1X"/>
+                        <constraint firstItem="5SY-iQ-akl" firstAttribute="top" secondItem="SvM-Pn-Zcr" secondAttribute="top" constant="8" id="sJp-7c-fYi"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="SvM-Pn-Zcr"/>
                     <userDefinedRuntimeAttributes>
@@ -525,11 +534,14 @@
                     <viewLayoutGuide key="safeArea" id="pMC-RT-RDo"/>
                 </view>
                 <view contentMode="scaleToFill" id="wZo-dq-Ybk" customClass="HabitShowMenuCard" customModule="Days" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqw-B6-N0E" customClass="Button" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="130" y="0.0" width="90" height="40"/>
+                            <rect key="frame" x="130" y="20" width="90" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5H4-kf-cIv"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
                             <state key="normal" title="删除">
                                 <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -544,7 +556,10 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7O-GP-F8t" customClass="Button" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="20" y="0.0" width="90" height="40"/>
+                            <rect key="frame" x="20" y="20" width="90" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="SWW-6w-R32"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
                             <state key="normal" title="闲置">
                                 <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>

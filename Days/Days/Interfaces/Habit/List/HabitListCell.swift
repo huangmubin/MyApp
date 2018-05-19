@@ -85,7 +85,8 @@ class HabitListCell: TableViewCell {
     func insert_log(time: Int) {
         let log = Log(habit)
         log.value.id = SQLite.Log.new_id
-        log.value.start = Date().time1970 - time
+        let date = Date()
+        log.value.start = date.time1970 - date.second - time
         log.value.length = time
         log.value.insert()
         habit.append(log: log, date: date.date)

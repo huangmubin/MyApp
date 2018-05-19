@@ -26,10 +26,26 @@ class Log {
     init(_ habit: Habit) {
         self.habit = habit
         self.value = SQLite.Log()
-        self.value.date = Date().date
-        self.value.start = Date().time1970 - habit.value.length
+        let date = Date()
+        self.value.date = date.date
+        self.value.start = date.time1970 - date.second - habit.value.length
         self.value.habit = habit.value.id
         self.value.length = habit.value.length
+    }
+    
+    // MARK: - Type
+    
+    /** is time or count */
+    var is_time: Bool {
+        return habit.value.is_time
+    }
+    
+    // MARK: - format
+    
+    private static let date_format: DateFormatter = DateFormatter("yyyyMMdd")
+    /** 20180101 */
+    class func date(at: Int) -> Date {
+        return date_format.date(from: "\(at)")!
     }
     
     // MARK: - Find

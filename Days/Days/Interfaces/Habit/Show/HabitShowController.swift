@@ -39,6 +39,15 @@ class HabitShowController: ViewController, HabitObject {
         if let habit = messages.removeValue(forKey: "HabitUpdate") as? Habit {
             habit.value.update()
         }
+        if let log = messages.removeValue(forKey: "LogAdd") as? Log {
+            log.value.id = SQLite.Log.new_id
+            log.value.insert()
+            habit.append(log: log, date: log.value.date)
+        }
+        if let log = messages.removeValue(forKey: "LogUpdate") as? Log {
+            log.value.update()
+        }
+        cards.reload()
     }
     
     // MARK: - Card
@@ -53,7 +62,14 @@ class HabitShowController: ViewController, HabitObject {
         }
         if let edit = segue.controller as? LogEditController {
             edit.log = Log(habit)
+            edit.log.value.date = date.date
+            edit.log.value.start = date.first(.day).time1970 + Date().time
             edit.log.value.is_sick = (segue.identifier == "Sick")
+            //print("<Segue> ShowController Open LogEditController, id = \(String(describing: segue.identifier)); log.date = \(edit.log.value.date); log.date_s \(edit.log.value.date_s);")
+            //print("date = \(date); time = \(date.time1970); Date = \(Date().time)")
+        }
+        if let edit = segue.controller as? LogListController {
+            edit.habit = habit
         }
     }
     

@@ -30,6 +30,7 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
             habits.append(habit)
             table.insertRows(at: [IndexPath(habits)], with: .bottom)
         }
+        table.reloadData()
     }
     
     // MARK: - UITableView

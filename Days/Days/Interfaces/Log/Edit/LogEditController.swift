@@ -30,6 +30,11 @@ class LogEditController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cards.controller = self
+        if log.is_time {
+            cards.card(remove: "Count")
+        } else {
+            cards.card(remove: "Time")
+        }
         cards.reload()
     }
 

@@ -61,22 +61,6 @@ class KeyboardDateInput: KeyboardInput {
     @IBOutlet weak var month_view: DateTextView!
     @IBOutlet weak var day_view: DateTextView!
     
-    // MARK: - Error
-    
-    @IBOutlet weak var error_label: UILabel!
-    
-    func update_error(text: String) {
-        error_label.text = text
-        error_label.alpha = 0
-        UIView.animate(withDuration: 0.25, animations: {
-            self.error_label.alpha = 1
-        }, completion: { _ in
-            UIView.animate(withDuration: 0.25, delay: 2, options: .curveEaseIn, animations: {
-                self.error_label.alpha = 0
-            }, completion: { _ in })
-        })
-    }
-    
     // MARK: - Text View Delegate
     
     override func textViewDidChange(_ textView: UITextView) {

@@ -103,6 +103,9 @@
 		9CB3925220AC37150076D600 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3925120AC37150076D600 /* Image.storyboard */; };
 		9CB3925420AC378F0076D600 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925320AC378F0076D600 /* ImageCell.swift */; };
 		9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925520AC39110076D600 /* Ex_UIImage.swift */; };
+		9CCCA5BF20AFC66A00393433 /* LogEditCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCA5BE20AFC66A00393433 /* LogEditCountCard.swift */; };
+		9CCCA5C320B0224600393433 /* LogListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCCA5C220B0224600393433 /* LogListHeader.xib */; };
+		9CCCA5C520B0229500393433 /* TableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCA5C420B0229500393433 /* TableViewHeaderFooter.swift */; };
 		9CF257B120AD19D60060C8C6 /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257B020AD19D60060C8C6 /* HabitListCell.swift */; };
 		9CF257B420AD841C0060C8C6 /* HabitShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF257B320AD841C0060C8C6 /* HabitShowController.swift */; };
 		9CF257B620AD84240060C8C6 /* HabitShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF257B520AD84240060C8C6 /* HabitShow.storyboard */; };
@@ -213,6 +216,9 @@
 		9CB3925120AC37150076D600 /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
 		9CB3925320AC378F0076D600 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		9CB3925520AC39110076D600 /* Ex_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UIImage.swift; sourceTree = "<group>"; };
+		9CCCA5BE20AFC66A00393433 /* LogEditCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditCountCard.swift; sourceTree = "<group>"; };
+		9CCCA5C220B0224600393433 /* LogListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogListHeader.xib; sourceTree = "<group>"; };
+		9CCCA5C420B0229500393433 /* TableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderFooter.swift; sourceTree = "<group>"; };
 		9CF257B020AD19D60060C8C6 /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
 		9CF257B320AD841C0060C8C6 /* HabitShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowController.swift; sourceTree = "<group>"; };
 		9CF257B520AD84240060C8C6 /* HabitShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitShow.storyboard; sourceTree = "<group>"; };
@@ -261,6 +267,7 @@
 				9C2EA25720AEB22A0016E035 /* LogListController.swift */,
 				9C2EA25920AEB23F0016E035 /* LogListCell.swift */,
 				9C2EA25B20AEB2490016E035 /* LogListHeader.swift */,
+				9CCCA5C220B0224600393433 /* LogListHeader.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 				9C2EA25E20AEB28D0016E035 /* LogEditTopCard.swift */,
 				9C2EA26020AEB29E0016E035 /* LogEditDateCard.swift */,
 				9C2EA26220AEB2AE0016E035 /* LogEditTimeCard.swift */,
+				9CCCA5BE20AFC66A00393433 /* LogEditCountCard.swift */,
 				9C2EA26420AEB2C90016E035 /* LogEditStatusCard.swift */,
 				9C2EA26620AEB2DE0016E035 /* LogEditMessageCard.swift */,
 			);
@@ -410,6 +418,7 @@
 			children = (
 				9CB391B020ABC0560076D600 /* TableView.swift */,
 				9CB391B120ABC0560076D600 /* TableViewCell.swift */,
+				9CCCA5C420B0229500393433 /* TableViewHeaderFooter.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -744,6 +753,7 @@
 				9CB3925220AC37150076D600 /* Image.storyboard in Resources */,
 				9CB3920520ABC0560076D600 /* CalendarCell.xib in Resources */,
 				9CB3921220ABC0560076D600 /* iSelector.xib in Resources */,
+				9CCCA5C320B0224600393433 /* LogListHeader.xib in Resources */,
 				9C2EA25620AEB21D0016E035 /* LogList.storyboard in Resources */,
 				9CB3920B20ABC0560076D600 /* InputView.xib in Resources */,
 				9CB3924720AC24D90076D600 /* Color.storyboard in Resources */,
@@ -763,6 +773,7 @@
 				9CB391FE20ABC0560076D600 /* Ex_UIDevice.swift in Sources */,
 				9CB391F120ABC0560076D600 /* View.swift in Sources */,
 				9CB3920C20ABC0560076D600 /* VarlenaInput.swift in Sources */,
+				9CCCA5C520B0229500393433 /* TableViewHeaderFooter.swift in Sources */,
 				9CB3920020ABC0560076D600 /* Ex_UIScreen.swift in Sources */,
 				9CB391F320ABC0560076D600 /* SQLite.swift in Sources */,
 				9CF257BD20AD856D0060C8C6 /* HabitShowEventCard.swift in Sources */,
@@ -791,6 +802,7 @@
 				9CF257C320AD86250060C8C6 /* HabitShowMenuCard.swift in Sources */,
 				9CB3920220ABC0560076D600 /* Ex_UITextField.swift in Sources */,
 				9CB391E720ABC0560076D600 /* CardSeparator.swift in Sources */,
+				9CCCA5BF20AFC66A00393433 /* LogEditCountCard.swift in Sources */,
 				9CB3920E20ABC0560076D600 /* ProgressView.swift in Sources */,
 				9CB3925420AC378F0076D600 /* ImageCell.swift in Sources */,
 				9CB391F220ABC0560076D600 /* ViewController.swift in Sources */,

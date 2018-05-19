@@ -49,7 +49,10 @@ class KeyboardInput: View, UITextViewDelegate {
     /** input Values */
     var value: String {
         get { return input.text }
-        set { input.text = newValue }
+        set {
+            input.text = newValue
+            textViewDidChange(input)
+        }
     }
     
     weak var delegate: KeyboardInputDelegate?
@@ -58,6 +61,22 @@ class KeyboardInput: View, UITextViewDelegate {
     func push() {
         self.mask_window.makeKeyAndVisible()
         self.input?.becomeFirstResponder()
+    }
+    
+    // MARK: - Error
+    
+    @IBOutlet weak var error_label: UILabel!
+    
+    func update_error(text: String) {
+        error_label.text = text
+        error_label.alpha = 0
+        UIView.animate(withDuration: 0.25, animations: {
+            self.error_label.alpha = 1
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.25, delay: 2, options: .curveEaseIn, animations: {
+                self.error_label.alpha = 0
+            }, completion: { _ in })
+        })
     }
     
     // MARK: - IBOutlet
@@ -127,4 +146,14 @@ class KeyboardInput: View, UITextViewDelegate {
             })
         }
     }
+    
+    // MARK: - Title Layout
+    
+    @IBOutlet weak var title_layout: NSLayoutConstraint!
+    
+    func update_title_layout() {
+        title_layout.constant = title.sizeThatFits(title.bounds.size).width
+        layoutIfNeeded()
+    }
+    
 }

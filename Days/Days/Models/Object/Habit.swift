@@ -50,11 +50,35 @@ class Habit {
         }
     }
     
+    /** remove and delete */
+    func logs(remove index: IndexPath) -> Log {
+        let date = dates[index.section]
+        var logs = self.logs(date: date)
+        let log = logs.remove(at: index.row)
+        _logs[date] = logs
+        return log
+    }
+    
     /** Append log to cache */
     func append(log: Log, date: Int) {
         var logs = self.logs(date: date)
         logs.append(log)
+        logs.sort(by: { $0.value.start < $1.value.start })
         _logs[date] = logs
+    }
+    
+    // MARK: - Dates
+    
+    /** Dates */
+    var dates: [Int] = []
+    
+    func update_dates() {
+        dates.removeAll(keepingCapacity: true)
+        SQLite.default.find(
+            sql: "select distinct date from \(SQLite.Log.table) where habit = \(value.id);",
+            default: 0,
+            datas: { dates.append($0) }
+        )
     }
     
     // MARK: - Length
