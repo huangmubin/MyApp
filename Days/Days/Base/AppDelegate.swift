@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SQLite.default.open()
         SQLite.Habit.create()
         SQLite.Log.create()
+        SQLite.Chart.create()
+        SQLite.ChartUnit.create()
         return true
     }
 

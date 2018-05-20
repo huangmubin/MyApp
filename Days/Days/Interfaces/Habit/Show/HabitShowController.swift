@@ -31,6 +31,7 @@ class HabitShowController: ViewController, HabitObject {
     override func viewDidLoad() {
         super.viewDidLoad()
         cards.controller = self
+        load_log_chart()
         cards.reload()
     }
     
@@ -53,6 +54,19 @@ class HabitShowController: ViewController, HabitObject {
     // MARK: - Card
     
     @IBOutlet weak var cards: CardTable!
+    
+    func load_log_chart() {
+        if let chart_view = HabitShowChartCard.load(nib: "CardChartView") {
+            chart_view.identifier = "ChartLog"
+            chart_view.index = 10
+            cards.cards.append(chart_view)
+            cards.cards.sort(by: { $0.index < $1.index })
+            
+            let chart = habit.chart_log_find()
+            chart.update(date: date)
+            chart_view.chart = chart
+        }
+    }
     
     // MARK: - Segue
     

@@ -159,4 +159,22 @@ class Habit {
         }
     }
     
+    // MARK: - Chart
+    
+    /** Insert Log chart */
+    func chart_log_create() {
+        let chart = Chart()
+        chart.value.habit = value.id
+        chart.value.name  = "图表"
+        chart.value.goal  = value.goal
+        chart.value.note  = "每日打卡记录分析"
+        chart.value.is_custom = false
+        chart.value.insert()
+    }
+    
+    func chart_log_find() -> Chart {
+        return Chart(SQLite.Chart.find(where: "habit = \(value.id)").find(condition: {
+            !$0.is_custom })!)
+    }
+    
 }

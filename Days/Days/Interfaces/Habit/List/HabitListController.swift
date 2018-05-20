@@ -27,6 +27,7 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
         if let habit = messages.removeValue(forKey: "HabitAdd") as? Habit {
             habit.value.id = SQLite.Habit.new_id
             habit.value.insert()
+            habit.chart_log_create()
             habits.append(habit)
             table.insertRows(at: [IndexPath(habits)], with: .bottom)
         }

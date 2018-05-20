@@ -26,7 +26,6 @@
                                     <outletCollection property="cards" destination="R7b-nY-x56" collectionClass="NSMutableArray" id="eK9-OE-zbT"/>
                                     <outletCollection property="cards" destination="WHa-fw-cau" collectionClass="NSMutableArray" id="nOZ-uI-Nj7"/>
                                     <outletCollection property="cards" destination="hNu-OR-7fX" collectionClass="NSMutableArray" id="2I9-ei-i3T"/>
-                                    <outletCollection property="cards" destination="Vbc-zV-OeA" collectionClass="NSMutableArray" id="xGn-nT-E8w"/>
                                     <outletCollection property="cards" destination="4Np-rM-JkH" collectionClass="NSMutableArray" id="7n9-Gy-ESx"/>
                                     <outletCollection property="cards" destination="wZo-dq-Ybk" collectionClass="NSMutableArray" id="gF2-1m-bsD"/>
                                 </connections>
@@ -93,6 +92,9 @@
                     <viewLayoutGuide key="safeArea" id="SvM-Pn-Zcr"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Top"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="left" destination="ycW-KT-qKh" id="R8c-aL-DLi"/>
@@ -303,6 +305,9 @@
                     <viewLayoutGuide key="safeArea" id="bCo-bv-fDr"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Calendar"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="calender_button" destination="X2C-zM-LKB" id="okT-Mq-1OH"/>
@@ -384,6 +389,9 @@
                     <viewLayoutGuide key="safeArea" id="RZn-IB-Jg6"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Log"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" id="hNu-OR-7fX" customClass="HabitShowEventCard" customModule="Days" customModuleProvider="target">
@@ -458,37 +466,12 @@
                         <constraint firstItem="Ig9-0W-OQ0" firstAttribute="leading" secondItem="EuS-vs-n2K" secondAttribute="leading" constant="20" id="kUi-gQ-A3s"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="EuS-vs-n2K"/>
-                </view>
-                <view contentMode="scaleToFill" id="Vbc-zV-OeA" customClass="HabitShowChartCard" customModule="Days" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="271" height="246"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOF-N5-Loq">
-                            <rect key="frame" x="20" y="20" width="53" height="37"/>
-                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
-                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ge1-KY-p4w" customClass="View" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="20" y="77" width="231" height="149"/>
-                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                    <real key="value" value="10"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="PDf-Zi-yQj" firstAttribute="trailing" secondItem="ge1-KY-p4w" secondAttribute="trailing" constant="20" id="CsP-9V-IW3"/>
-                        <constraint firstItem="ZOF-N5-Loq" firstAttribute="leading" secondItem="PDf-Zi-yQj" secondAttribute="leading" constant="20" id="J4A-oq-81c"/>
-                        <constraint firstItem="ge1-KY-p4w" firstAttribute="leading" secondItem="PDf-Zi-yQj" secondAttribute="leading" constant="20" id="R05-Av-UjQ"/>
-                        <constraint firstItem="ge1-KY-p4w" firstAttribute="top" secondItem="ZOF-N5-Loq" secondAttribute="bottom" constant="20" id="UPS-KO-Uzx"/>
-                        <constraint firstItem="ZOF-N5-Loq" firstAttribute="top" secondItem="PDf-Zi-yQj" secondAttribute="top" constant="20" id="eu6-ta-Oi3"/>
-                        <constraint firstItem="PDf-Zi-yQj" firstAttribute="bottom" secondItem="ge1-KY-p4w" secondAttribute="bottom" constant="20" id="h0s-Kk-Kry"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="PDf-Zi-yQj"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Event"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="899"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" id="4Np-rM-JkH" customClass="HabitShowDiaryCard" customModule="Days" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="217"/>
@@ -532,6 +515,12 @@
                         <constraint firstItem="Our-MD-wVF" firstAttribute="top" secondItem="5sM-77-ZIe" secondAttribute="bottom" constant="20" id="vH6-y9-tPy"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="pMC-RT-RDo"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Diary"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="900"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" id="wZo-dq-Ybk" customClass="HabitShowMenuCard" customModule="Days" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
@@ -584,6 +573,12 @@
                         <constraint firstItem="cqw-B6-N0E" firstAttribute="centerY" secondItem="g1y-Jc-80N" secondAttribute="centerY" id="pMT-4x-UCK"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="g1y-Jc-80N"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Menu"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="index">
+                            <integer key="value" value="1000"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </objects>
             <point key="canvasLocation" x="593" y="246"/>
