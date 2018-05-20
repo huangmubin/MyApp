@@ -100,6 +100,7 @@
                 <outlet property="input" destination="36O-YV-3vX" id="qU5-YM-B3r"/>
                 <outlet property="title" destination="Kao-pu-TeQ" id="gg9-vW-qqY"/>
                 <outlet property="title_layout" destination="fOp-BS-0UF" id="HXt-hi-Hf5"/>
+                <outlet property="title_width" destination="fOp-BS-0UF" id="iMJ-cr-YAK"/>
             </connections>
             <point key="canvasLocation" x="-222.5" y="124"/>
         </view>

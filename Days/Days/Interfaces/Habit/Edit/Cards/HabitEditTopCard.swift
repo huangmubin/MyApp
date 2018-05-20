@@ -34,7 +34,7 @@ class HabitEditTopCard: CardTopView {
             table.vc?.toSuperController(
                 object: ["HabitUpdate": habit]
             )
-            habit.value.update()
+            //habit.value.update()
         }
         table.controller?.dismiss(
             animated: true,

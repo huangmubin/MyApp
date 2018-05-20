@@ -64,10 +64,17 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
         if habit.value.is_time {
             let value = habit.value.length / 60
             if value >= 60 {
-                frequency_button.setTitle(
-                    String(format: "%.1f", Double(value) / 60),
-                    for: .normal
-                )
+                if value % 60 == 0 {
+                    frequency_button.setTitle(
+                        "\(value / 60)",
+                        for: .normal
+                    )
+                } else {
+                    frequency_button.setTitle(
+                        String(format: "%.1f", Double(value) / 60),
+                        for: .normal
+                    )
+                }
                 frequency_unit_label.text = "小时 / 天"
             } else {
                 frequency_button.setTitle(
@@ -145,10 +152,12 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
     @IBAction func frequency_action(_ sender: UIButton) {
         if let view = KeyboardInput.load(nib: nil) {
             if habit.value.is_time {
-                view.title.text = "分钟 / 天"
+                //view.title.text = "分钟 / 天"
+                view.update_title(title: "分钟 / 天")
                 view.input.text = "\(habit.value.length / 60)"
             } else {
-                view.title.text = "次数 / 天"
+                //view.title.text = "次数 / 天"
+                view.update_title(title: "次数 / 天")
                 view.input.text = "\(habit.value.length)"
             }
             view.input.keyboardType = .numberPad
@@ -170,7 +179,7 @@ class HabitEditGoalCard: CardView, KeyboardInputDelegate {
             reload_goal()
         } else {
             if habit.value.is_time {
-                habit.value.length = min(Int(value)! * 60, 1440)
+                habit.value.length = min(Int(value)! * 60, 86400)
             } else {
                 habit.value.length = Int(value)!
             }

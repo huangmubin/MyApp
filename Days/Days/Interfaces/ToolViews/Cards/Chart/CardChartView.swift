@@ -10,91 +10,120 @@ import UIKit
 
 class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    // MARK: - Data
+    
+    /** Chart */
     var chart: Chart!
     
-    // MARK: - Formatter
+    // MARK: Format
     
+    /** Date format yyyy.MM.dd */
     static let format = DateFormatter("yyyy.MM.dd")
+    /** Date format yyyy.MM.dd */
     var format: DateFormatter { return CardChartView.format }
+
+    // MARK: Height
+    
+    /** Height */
+    static let height_collection: CGFloat = 160
+    /** Height */
+    static let height_top: CGFloat = 90
+    /** Height */
+    static let height_bottom: CGFloat = 60
+    
+    // MARK: Size
+    
+    /** Size */
+    var size: CGSize {
+        return CGSize(
+            width: (bounds.width - 40) / CGFloat(chart.units.count),
+            height: CardChartView.height_collection
+        )
+    }
     
     // MARK: - Reload
     
+    /**  */
     override func reload() {
         name_label.text = chart.value.name
         note_label.text = chart.value.note
-        goal_label.text = chart.value.goal.description
-        goal_layout.constant = -collection.bounds.height / 2
-        update_date_label()
+        let height_top = max(CardChartView.height_top, note_label.sizeThatFits(note_label.bounds.size).height)
         
-        let h = max(note_label.sizeThatFits(note_label.bounds.size).height, 20) + 90
-        if navigation_layout.constant != h {
-            UIView.animate(withDuration: 0.25, animations: {
-                self.navigation_layout.constant = h
-                self.frame.size.height = 160 + h
-                self.layoutIfNeeded()
-                self.table.update_content_size()
-            })
+        if chart.habit.value.is_time {
+            goal_label.text = Habit.format(time: chart.value.goal)
+        } else {
+            goal_label.text = "\(chart.value.goal)次"
         }
+        goal_center_layout.constant = (collection.bounds.height - 14) / 3 * 2 + 14
+        
+        update_date_range_label()
+        
+        if self.frame.height != height_top + CardChartView.height_collection + CardChartView.height_bottom {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.top_height_layout.constant = height_top
+                self.frame.size.height = height_top + CardChartView.height_collection + CardChartView.height_bottom
+                self.table.update_content_size()
+                self.layoutIfNeeded()
+            }, completion: nil)
+        }
+        
+        collection.reloadData()
     }
     
-    // MARK: - Navigation
+    // MARK: - Top
     
-    @IBOutlet weak var navigation_layout: NSLayoutConstraint!
-    
+    @IBOutlet weak var top_height_layout: NSLayoutConstraint!
     @IBOutlet weak var name_label: UILabel!
-    
     @IBOutlet weak var note_label: UILabel!
-    
-    @IBAction func log_action(_ sender: UIButton) {
-        append_action()
-    }
+    @IBOutlet weak var append_button: UIButton!
     
     /** Override */
-    func append_action() {}
+    @IBAction func append_action(_ sender: UIButton) { }
     
+    /** Override */
     @IBAction func edit_action(_ sender: UIButton) {
-        open_edit_action()
     }
     
-    /** Override */
-    func open_edit_action() {}
     
-    // MARK: - Goal
-    
-    @IBOutlet weak var goal_image: UIImageView!
-    
-    @IBOutlet weak var goal_label: UILabel!
-    @IBOutlet weak var goal_layout: NSLayoutConstraint!
     
     // MARK: - Collections
     
-    @IBOutlet weak var collection: UICollectionView! {
-        didSet {
-            collection.register(UINib(nibName: "CardChartCollectionCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
-        }
-    }
+    @IBOutlet weak var collection: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chart?.units.count ?? 0
+        return chart.units.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CardChartCollectionCell
         let unit = chart.units[indexPath.row]
+        let title_show = (chart.units.count > 10) ? (indexPath.row % 2 == 0) : true
         cell.update(
-            title: "\(unit.value.date % 100)",
-            progress: max(CGFloat(unit.value.length) / CGFloat(chart.value.goal), 1.5)
+            title: title_show ? "\(unit.value.date % 100)" : "",
+            progress: min(CGFloat(unit.value.length) / CGFloat(chart.value.goal), 1.5),
+            size: size
         )
+        print("\(unit.value.date) : \(unit.value.length) - \(chart.value.goal)")
         return cell
     }
     
-    // MARK: - Date
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return size
+    }
     
-    @IBOutlet weak var date_label: UILabel!
+    // MARK: - Goal Image
     
-    func update_date_label() {
+    @IBOutlet weak var goal_label: UILabel!
+    @IBOutlet weak var goal_center_layout: NSLayoutConstraint!
+    
+    // MARK: - Bottom
+    
+    @IBOutlet weak var date_range_label: UILabel!
+    
+    /** 更新范围图标 */
+    func update_date_range_label() {
         if let range = chart?.date_range() {
-            date_label.text = "\(format.string(from: range.0)) - \(format.string(from: range.1))"
+            date_range_label.text = "\(format.string(from: range.0)) - \(format.string(from: range.1))"
         }
     }
     
@@ -102,14 +131,17 @@ class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDeleg
         chart.update(
             date: chart.date.advance(chart.value.is_month ? .month : .weekday, -1)
         )
-        update_date_label()
+        collection.reloadData()
+        update_date_range_label()
     }
+    
     @IBAction func next_date_action(_ sender: UIButton) {
         chart.update(
             date: chart.date.advance(chart.value.is_month ? .month : .weekday, 1)
         )
-        update_date_label()
+        collection.reloadData()
+        update_date_range_label()
     }
-    
+
     
 }

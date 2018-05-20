@@ -93,22 +93,7 @@ class Habit {
         let length = self.length(at_date: date)
         var text = ""
         if value.is_time {
-            switch length {
-            case 0 ..< 60:
-                text = "\(length)秒"
-            case 60 ..< 3600:
-                if length % 60 == 0 {
-                    text = "\(length / 60)分钟"
-                } else {
-                    text = String(format: "%.1f分钟", Double(length) / 60)
-                }
-            default:
-                if length % 3600 == 0 || length < 3960 {
-                    text = "\(length / 3600)小时"
-                } else {
-                    text = String(format: "%.1f小时", Double(length) / 3600)
-                }
-            }
+            text = Habit.format(time: length)
         } else {
             text = "\(length)次"
         }
@@ -166,15 +151,45 @@ class Habit {
         let chart = Chart()
         chart.value.habit = value.id
         chart.value.name  = "图表"
-        chart.value.goal  = value.goal
+        chart.value.goal  = value.length
         chart.value.note  = "每日打卡记录分析"
         chart.value.is_custom = false
         chart.value.insert()
     }
     
+    /** 查找 Log 图标数据 */
     func chart_log_find() -> Chart {
-        return Chart(SQLite.Chart.find(where: "habit = \(value.id)").find(condition: {
+        let chart = Chart(SQLite.Chart.find(where: "habit = \(value.id)").find(condition: {
             !$0.is_custom })!)
+        chart.value.goal = value.length
+        chart.habit = self
+        return chart
+    }
+    
+}
+
+// MARK: - Format
+
+extension Habit {
+    
+    /** Time to Text */
+    class func format(time: Int) -> String {
+        switch time {
+        case 0 ..< 60:
+            return "\(time)秒"
+        case 60 ..< 3600:
+            if time % 60 == 0 {
+                return "\(time / 60)分钟"
+            } else {
+                return String(format: "%.1f分钟", Double(time) / 60)
+            }
+        default:
+            if time % 3600 == 0 || time < 3960 {
+                return "\(time / 3600)小时"
+            } else {
+                return String(format: "%.1f小时", Double(time) / 3600)
+            }
+        }
     }
     
 }

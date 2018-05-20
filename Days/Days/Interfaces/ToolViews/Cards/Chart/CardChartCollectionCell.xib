@@ -9,11 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardChartCollectionCell" customModule="Days" customModuleProvider="target">
-            <connections>
-                <outlet property="height_layout" destination="MZx-iL-PZB" id="XXv-Ts-PLL"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardChartCollectionCell" customModule="Days" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CardChartCollectionCell" customModule="Days" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="50" height="208"/>
@@ -60,6 +56,8 @@
             <size key="customSize" width="50" height="208"/>
             <connections>
                 <outlet property="container_view" destination="PcW-mn-mK8" id="KRS-ta-e6n"/>
+                <outlet property="height_layout" destination="MZx-iL-PZB" id="KXd-MQ-b1g"/>
+                <outlet property="leading_layout" destination="sD9-jN-5xO" id="d37-f9-MBt"/>
                 <outlet property="progress_view" destination="BTD-A2-dSy" id="B9J-MT-0In"/>
                 <outlet property="title_label" destination="DOq-nq-ONc" id="OaA-F9-7MZ"/>
             </connections>

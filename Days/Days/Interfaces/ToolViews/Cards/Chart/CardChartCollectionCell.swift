@@ -10,39 +10,17 @@ import UIKit
 
 class CardChartCollectionCell: UICollectionViewCell {
 
-    @IBOutlet weak var height_layout: NSLayoutConstraint!
+    @IBOutlet weak var progress_height_layout: NSLayoutConstraint!
+    @IBOutlet weak var progress_leading_layout: NSLayoutConstraint!
     
-    @IBOutlet weak var container_view: View!
     @IBOutlet weak var progress_view: View!
-    
     @IBOutlet weak var title_label: UILabel!
     
-    func update(title: String, progress: CGFloat) {
+    func update(title: String, progress: CGFloat, size: CGSize) {
         title_label.text = title
-        height_layout.constant = container_view.bounds.height * progress
-    }
-    
-    
-    // MARK: - Size
-    
-    override public var frame: CGRect {
-        didSet{
-            if frame.size != oldValue.size {
-                view_bounds()
-            }
-        }
-    }
-    override public var bounds: CGRect {
-        didSet {
-            if bounds.size != oldValue.size {
-                view_bounds()
-            }
-        }
-    }
-    
-    /** 大小变化 */
-    public func view_bounds() {
-        self.progress_view.corner = min(4, self.bounds.width / 2)
+        progress_height_layout.constant = (size.height - 14) / 3 * 2 * progress
+        progress_leading_layout.constant = size.width * 0.2
+        progress_view.corner = min(size.width * 0.4, 2)
     }
     
 }

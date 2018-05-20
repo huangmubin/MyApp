@@ -88,8 +88,6 @@ class KeyboardInput: View, UITextViewDelegate {
         }
     }
     
-    @IBOutlet weak var title: UILabel!
-    
     @IBOutlet weak var input: UITextView!
     
     func textViewDidChange(_ textView: UITextView) {
@@ -105,6 +103,18 @@ class KeyboardInput: View, UITextViewDelegate {
                 self.layoutIfNeeded()
             })
         }
+    }
+    
+    // MARK: - Title
+    
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var title_width: NSLayoutConstraint!
+    
+    func update_title(title: String) {
+        self.title.text = title
+        title_width.constant = self.title.sizeThatFits(self.title.bounds.size).width
+        self.layoutIfNeeded()
     }
     
     // MARK: - Save

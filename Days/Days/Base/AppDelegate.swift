@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SQLite.Log.create()
         SQLite.Chart.create()
         SQLite.ChartUnit.create()
+        SQLite.Event.create()
         return true
     }
 

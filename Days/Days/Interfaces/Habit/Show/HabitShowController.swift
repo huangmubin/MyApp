@@ -31,7 +31,7 @@ class HabitShowController: ViewController, HabitObject {
     override func viewDidLoad() {
         super.viewDidLoad()
         cards.controller = self
-        load_log_chart()
+        cards.cards.sort(by: { $0.index < $1.index })
         cards.reload()
     }
     
@@ -39,34 +39,23 @@ class HabitShowController: ViewController, HabitObject {
         super.viewDidAppear(animated)
         if let habit = messages.removeValue(forKey: "HabitUpdate") as? Habit {
             habit.value.update()
+            cards.reload()
         }
         if let log = messages.removeValue(forKey: "LogAdd") as? Log {
             log.value.id = SQLite.Log.new_id
             log.value.insert()
             habit.append(log: log, date: log.value.date)
+            cards.reload()
         }
         if let log = messages.removeValue(forKey: "LogUpdate") as? Log {
             log.value.update()
+            cards.reload()
         }
-        cards.reload()
     }
     
     // MARK: - Card
     
     @IBOutlet weak var cards: CardTable!
-    
-    func load_log_chart() {
-        if let chart_view = HabitShowChartCard.load(nib: "CardChartView") {
-            chart_view.identifier = "ChartLog"
-            chart_view.index = 10
-            cards.cards.append(chart_view)
-            cards.cards.sort(by: { $0.index < $1.index })
-            
-            let chart = habit.chart_log_find()
-            chart.update(date: date)
-            chart_view.chart = chart
-        }
-    }
     
     // MARK: - Segue
     
@@ -79,8 +68,6 @@ class HabitShowController: ViewController, HabitObject {
             edit.log.value.date = date.date
             edit.log.value.start = date.first(.day).time1970 + Date().time
             edit.log.value.is_sick = (segue.identifier == "Sick")
-            //print("<Segue> ShowController Open LogEditController, id = \(String(describing: segue.identifier)); log.date = \(edit.log.value.date); log.date_s \(edit.log.value.date_s);")
-            //print("date = \(date); time = \(date.time1970); Date = \(Date().time)")
         }
         if let edit = segue.controller as? LogListController {
             edit.habit = habit
