@@ -12,6 +12,8 @@
 		9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */; };
 		9C01676820AF028800D99ED5 /* KeyboardTimeInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */; };
 		9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */; };
+		9C01676D20B30D9900D99ED5 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676C20B30D9900D99ED5 /* HintView.swift */; };
+		9C01676F20B30DA200D99ED5 /* HintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676E20B30DA200D99ED5 /* HintView.xib */; };
 		9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */; };
 		9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25020AEB1FA0016E035 /* LogEditController.swift */; };
 		9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA25220AEB2080016E035 /* LogEdit.storyboard */; };
@@ -135,6 +137,8 @@
 		9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardDateInput.xib; sourceTree = "<group>"; };
 		9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardTimeInput.xib; sourceTree = "<group>"; };
 		9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTimeInput.swift; sourceTree = "<group>"; };
+		9C01676C20B30D9900D99ED5 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
+		9C01676E20B30DA200D99ED5 /* HintView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HintView.xib; sourceTree = "<group>"; };
 		9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowLogCard.swift; sourceTree = "<group>"; };
 		9C2EA25020AEB1FA0016E035 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
 		9C2EA25220AEB2080016E035 /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
@@ -265,6 +269,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C01676B20B30D4900D99ED5 /* Hint */ = {
+			isa = PBXGroup;
+			children = (
+				9C01676C20B30D9900D99ED5 /* HintView.swift */,
+				9C01676E20B30DA200D99ED5 /* HintView.xib */,
+			);
+			path = Hint;
+			sourceTree = "<group>";
+		};
 		9C2EA24E20AEB1D20016E035 /* Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +692,7 @@
 		9CB3923A20ABE2F90076D600 /* ToolViews */ = {
 			isa = PBXGroup;
 			children = (
+				9C01676B20B30D4900D99ED5 /* Hint */,
 				9C01676120AC896B00D99ED5 /* Color.swift */,
 				9C2EA26E20AECAF00016E035 /* Keyboard */,
 				9C2EA26F20AECB020016E035 /* Cards */,
@@ -795,6 +809,7 @@
 				9CB3920920ABC0560076D600 /* InputTextView.xib in Resources */,
 				9CB3924020AC12E90076D600 /* KeyboardInput.xib in Resources */,
 				9CAC1BBB20B10BFF00A0FE3F /* CardChartCollectionCell.xib in Resources */,
+				9C01676F20B30DA200D99ED5 /* HintView.xib in Resources */,
 				9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */,
 				9CB3921D20ABC5090076D600 /* HabitList.storyboard in Resources */,
 				9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */,
@@ -878,6 +893,7 @@
 				9CB3924B20AC33970076D600 /* HabitEditUICard.swift in Sources */,
 				9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */,
 				9CAC1BBF20B1120F00A0FE3F /* Chart_SQlite.swift in Sources */,
+				9C01676D20B30D9900D99ED5 /* HintView.swift in Sources */,
 				9CB3922120ABC5250076D600 /* HabitListController.swift in Sources */,
 				9CB3920A20ABC0560076D600 /* InputView.swift in Sources */,
 				9C2EA25820AEB22A0016E035 /* LogListController.swift in Sources */,
