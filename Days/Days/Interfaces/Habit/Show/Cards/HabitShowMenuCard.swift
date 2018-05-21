@@ -10,12 +10,25 @@ import UIKit
 
 class HabitShowMenuCard: CardView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func reload() {
+        idle_button.selected_color = habit.color()
+        idle_button.status = habit.value.is_runing ? .normal : .selected
     }
-    */
-
+    
+    // MARK: - Idle
+    
+    @IBOutlet weak var idle_button: Button!
+    
+    @IBAction func idle_action(_ sender: Button) {
+        idle_button.status = idle_button.is_selected ? .normal : .selected
+        habit.value.is_runing = !idle_button.is_selected
+        habit.value.update()
+    }
+    
+    // MARK: - Delete
+    
+    @IBAction func delete_action(_ sender: Button) {
+        
+    }
+    
 }

@@ -84,6 +84,20 @@ class HabitShowEventCard: CardView, UITableViewDataSource, UITableViewDelegate, 
         return heights[indexPath.row]
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let event = events.remove(at: indexPath.row)
+            let height = heights.remove(at: indexPath.row)
+            event.value.delete()
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            UIView.animate(withDuration: 0.25, animations: {
+                self.frame.size.height -= height
+                self.layoutIfNeeded()
+                self.table.update_content_size()
+            })
+        }
+    }
+    
     // MARK: - height
     
     var heights: [CGFloat] = []

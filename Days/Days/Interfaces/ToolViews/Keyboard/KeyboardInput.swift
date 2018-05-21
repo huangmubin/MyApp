@@ -105,6 +105,20 @@ class KeyboardInput: View, UITextViewDelegate {
         }
     }
     
+    func update_input(text: String) {
+        input.text = text
+        let height = input.sizeThatFits(CGSize(width: UIScreen.main.bounds.width - 120, height: 1000)).height + 117
+        if frame.height != height {
+            self.frame = CGRect(
+                x: 0,
+                y: self.keyboard_minY - height,
+                width: UIScreen.main.bounds.width,
+                height: height
+            )
+            self.layoutIfNeeded()
+        }
+    }
+    
     // MARK: - Title
     
     @IBOutlet weak var title: UILabel!
@@ -113,7 +127,7 @@ class KeyboardInput: View, UITextViewDelegate {
     
     func update_title(title: String) {
         self.title.text = title
-        title_width.constant = self.title.sizeThatFits(self.title.bounds.size).width
+        title_width.constant = self.title.sizeThatFits(self.title.bounds.size).width + 2
         self.layoutIfNeeded()
     }
     

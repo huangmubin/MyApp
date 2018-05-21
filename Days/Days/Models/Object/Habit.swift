@@ -166,6 +166,32 @@ class Habit {
         return chart
     }
     
+    // MARK: - Diary
+    
+    var diaries: [Diary] = []
+    
+    /** Find the diary in date (20180101) */
+    func diary_find(date: Int) -> Diary {
+        if let i = diaries.index(where: { $0.value.date == date }) {
+            return diaries[i]
+        } else {
+            if let obj = SQLite.Diary.find(where: "habit = \(value.id) and date = \(date)").first {
+                let diary = Diary(obj)
+                diary.habit = self
+                diaries.append(diary)
+                return diary
+            }
+        }
+        let diary = Diary()
+        diary.habit = self
+        diary.value.habit = value.id
+        diary.value.date = date
+        diary.value.id = SQLite.Diary.new_id
+        diary.value.insert()
+        diaries.append(diary)
+        return diary
+    }
+    
 }
 
 // MARK: - Format

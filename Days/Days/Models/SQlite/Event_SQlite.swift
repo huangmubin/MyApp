@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Myron. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 extension SQLite {
     

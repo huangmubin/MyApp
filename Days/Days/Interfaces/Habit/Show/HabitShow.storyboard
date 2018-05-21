@@ -28,6 +28,8 @@
                                     <outletCollection property="cards" destination="WHa-fw-cau" collectionClass="NSMutableArray" id="nOZ-uI-Nj7"/>
                                     <outletCollection property="cards" destination="jcn-Be-rtE" collectionClass="NSMutableArray" id="GCu-5X-dYf"/>
                                     <outletCollection property="cards" destination="y85-Qj-je2" collectionClass="NSMutableArray" id="wOL-1M-b5j"/>
+                                    <outletCollection property="cards" destination="4Np-rM-JkH" collectionClass="NSMutableArray" id="Kb6-zt-2Wc"/>
+                                    <outletCollection property="cards" destination="wZo-dq-Ybk" collectionClass="NSMutableArray" id="isZ-IL-d81"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -768,7 +770,7 @@
                     </connections>
                 </view>
                 <view contentMode="scaleToFill" id="4Np-rM-JkH" customClass="HabitShowDiaryCard" customModule="Days" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="217"/>
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="190"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-77-ZIe">
@@ -778,7 +780,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Our-MD-wVF" customClass="Button" customModule="Days" customModuleProvider="target">
-                            <rect key="frame" x="20" y="76.5" width="200" height="120.5"/>
+                            <rect key="frame" x="20" y="76.5" width="230" height="93.5"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="corner">
                                     <real key="value" value="10"/>
@@ -787,10 +789,13 @@
                                     <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="edit_action:" destination="4Np-rM-JkH" eventType="touchUpInside" id="y1R-8G-oIl"/>
+                            </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="100" text="就是一些日记文字。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPs-XY-Tlk">
-                            <rect key="frame" x="30" y="86.5" width="180" height="100.5"/>
-                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="100" text="就是一些日记文字。dsajklfjdalkd " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPs-XY-Tlk">
+                            <rect key="frame" x="30" y="86.5" width="210" height="73.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
                             <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -812,9 +817,12 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Diary"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="index">
-                            <integer key="value" value="900"/>
+                            <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="text_label" destination="sPs-XY-Tlk" id="eg2-Be-PEn"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="wZo-dq-Ybk" customClass="HabitShowMenuCard" customModule="Days" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
@@ -837,6 +845,9 @@
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="delete_action:" destination="wZo-dq-Ybk" eventType="touchUpInside" id="5eB-bj-cle"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7O-GP-F8t" customClass="Button" customModule="Days" customModuleProvider="target">
                             <rect key="frame" x="20" y="20" width="90" height="60"/>
@@ -855,6 +866,9 @@
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="idle_action:" destination="wZo-dq-Ybk" eventType="touchUpInside" id="aKR-9w-ECn"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -873,6 +887,9 @@
                             <integer key="value" value="1000"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="idle_button" destination="y7O-GP-F8t" id="VZm-ac-yvP"/>
+                    </connections>
                 </view>
             </objects>
             <point key="canvasLocation" x="593" y="246"/>
