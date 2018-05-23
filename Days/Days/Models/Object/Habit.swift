@@ -24,6 +24,22 @@ class Habit {
     /** 数据 */
     let value: SQLite.Habit
     
+    /** Delete Dates */
+    func clear_sqlite() {
+        //delete from \(table) where id = \(id);
+        let _ = SQLite.default.execut(sql: "delete from \(SQLite.Log.table) where habit = \(value.id);")
+        
+        let charts = SQLite.Chart.find(where: "habit = \(value.id)")
+        for chart in charts {
+            let _ = SQLite.default.execut(sql: "delete from \(SQLite.ChartUnit.table) where chart = \(chart.id);")
+            let _ = chart.delete()
+        }
+        
+        let _ = SQLite.default.execut(sql: "delete from \(SQLite.Event.table) where habit = \(value.id);")
+        let _ = SQLite.default.execut(sql: "delete from \(SQLite.Diary.table) where habit = \(value.id);")
+        let _ = SQLite.default.execut(sql: "delete from \(SQLite.Log.table) where habit = \(value.id);")
+    }
+    
     // MARK: - Init
     
     init(_ value: SQLite.Habit) {
@@ -190,6 +206,33 @@ class Habit {
         diary.value.insert()
         diaries.append(diary)
         return diary
+    }
+    
+    // MARK: - Cards
+    
+    /** 创建默认的卡片 */
+    func cards_create() {
+        for data in [
+            ("日期选择", "显示并日期，让其他与时间有关的卡片可以进行时间轴定位。", 0),
+            ("打卡按钮", "请假，打卡，或查看你的所有打卡记录。", 1),
+            ("记录图表", "显示你每日的打卡记录时长或次数，让你最直观的看到自己最近一段时间是否达成。", 21),
+            ("里程碑", "将你的习惯分成一个个小目标，让自己不断达成，保持干劲。", 3),
+            ("日记", "用文字记录下这个习惯的经历，成为自己终身的记忆。", 4)
+        ] {
+            let card = SQLite.Card()
+            card.id = SQLite.Card.new_id
+            card.habit = value.id
+            card.sort = card.id
+            card.name = data.0
+            card.note = data.1
+            card.type = data.2
+            let _ = card.insert()
+        }
+    }
+    
+    /** Find the cards */
+    func cards_find() -> [Card] {
+        return SQLite.Card.find(where: "habit = \(value.id)").map({ Card($0) })
     }
     
 }

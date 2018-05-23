@@ -253,7 +253,7 @@
                 <viewControllerPlaceholder storyboardName="HabitShow" id="EeO-rM-p0i" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djt-Tx-yA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="-199"/>
+            <point key="canvasLocation" x="1259" y="-212"/>
         </scene>
         <!--HabitEdit-->
         <scene sceneID="X41-e1-wxv">

@@ -35,12 +35,15 @@ class HintView: View {
     
     override func view_deploy() {
         print("HintView is view deploy.")
-        mask_window.backgroundColor = UIColor.white.withAlphaComponent(window_alpha)
+        mask_window.backgroundColor = Color.dark.withAlphaComponent(window_alpha)
         mask_window.windowLevel = UIWindowLevelStatusBar
         mask_window.alpha = 1
         
-        self.frame = CGRect(x: 20, y: (UIScreen.main.bounds.height - 260) / 2, width: UIScreen.main.bounds.width - 40, height: 260)
+        self.frame = CGRect(x: 20, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width - 40, height: 300)
         mask_window.addSubview(self)
+        UIView.animate(withDuration: 0.25, animations: {
+            self.frame.origin.y = (UIScreen.main.bounds.height - 300) / 2
+        })
     }
     
     /** Push in windown */
@@ -63,12 +66,12 @@ class HintView: View {
     
     @IBAction func sure_action(_ sender: Button) {
         delegate?.hint_view(sure_action: self)
-        //self.mask_window.isHidden = true
-        self.mask_window.resignKey()
+        self.mask_window.isHidden = true
+        self.removeFromSuperview()
     }
     @IBAction func cancel_action(_ sender: Button) {
-        //self.mask_window.isHidden = true
-        self.mask_window.resignKey()
+        self.mask_window.isHidden = true
+        self.removeFromSuperview()
     }
     
 }

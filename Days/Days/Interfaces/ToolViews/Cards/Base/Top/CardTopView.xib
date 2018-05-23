@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardTopView" customModule="Daily" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oBD-3h-a6O" customClass="CardTopView" customModule="Daily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="习惯名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-rb-iph">
+                    <rect key="frame" x="146.5" y="18" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qau-VP-otr">
+                    <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                    <state key="normal" image="error_black"/>
+                    <connections>
+                        <action selector="left_action" destination="oBD-3h-a6O" eventType="touchUpInside" id="dat-z1-kbO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-q1-7he">
+                    <rect key="frame" x="305" y="0.0" width="60" height="60"/>
+                    <state key="normal" image="success_black"/>
+                    <connections>
+                        <action selector="rigth_action" destination="oBD-3h-a6O" eventType="touchUpInside" id="dQa-pC-OZT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qau-VP-otr" firstAttribute="leading" secondItem="GcZ-iq-iJ9" secondAttribute="leading" constant="10" id="1l9-wY-685"/>
+                <constraint firstItem="Uhs-q1-7he" firstAttribute="centerY" secondItem="GcZ-iq-iJ9" secondAttribute="centerY" id="BbW-07-YbF"/>
+                <constraint firstItem="TmF-rb-iph" firstAttribute="centerY" secondItem="GcZ-iq-iJ9" secondAttribute="centerY" id="b8s-WG-AHy"/>
+                <constraint firstItem="TmF-rb-iph" firstAttribute="centerX" secondItem="GcZ-iq-iJ9" secondAttribute="centerX" id="cjj-UG-Fna"/>
+                <constraint firstItem="GcZ-iq-iJ9" firstAttribute="trailing" secondItem="Uhs-q1-7he" secondAttribute="trailing" constant="10" id="tig-4N-fH9"/>
+                <constraint firstItem="qau-VP-otr" firstAttribute="centerY" secondItem="GcZ-iq-iJ9" secondAttribute="centerY" id="uK1-X1-ETb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="GcZ-iq-iJ9"/>
+            <connections>
+                <outlet property="left" destination="qau-VP-otr" id="Y5c-ib-Zt9"/>
+                <outlet property="right" destination="Uhs-q1-7he" id="SsS-6e-g0U"/>
+                <outlet property="title" destination="TmF-rb-iph" id="ywd-Zu-Y90"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="338.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error_black" width="60" height="60"/>
+        <image name="success_black" width="60" height="60"/>
+    </resources>
+</document>

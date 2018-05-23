@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CardChartView: DaysCardView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Data
     
@@ -43,6 +43,10 @@ class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     
     // MARK: - Reload
     
+    override func view_bounds() {
+        print("view_bounds = \(frame.height)")
+    }
+    
     /**  */
     override func reload() {
         name_label.text = chart.value.name
@@ -54,13 +58,15 @@ class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDeleg
         } else {
             goal_label.text = "\(chart.value.goal)次"
         }
-        goal_center_layout.constant = (collection.bounds.height - 14) / 3 * 2 + 14
+        goal_center_layout.constant = (CardChartView.height_collection - 14) / 3 * 2 + 14
         
         update_date_range_label()
-        
+        print("height_top = \(height_top) = \(height_top + CardChartView.height_collection + CardChartView.height_bottom) = \(goal_center_layout.constant)")
+        print("frame = \(self.frame.height)")
         if self.frame.height != height_top + CardChartView.height_collection + CardChartView.height_bottom {
             UIView.animate(withDuration: 0.25, animations: {
                 self.top_height_layout.constant = height_top
+                self.collection_height_layout.constant = CardChartView.height_collection
                 self.frame.size.height = height_top + CardChartView.height_collection + CardChartView.height_bottom
                 self.table.update_content_size()
                 self.layoutIfNeeded()
@@ -84,11 +90,10 @@ class CardChartView: CardView, UICollectionViewDataSource, UICollectionViewDeleg
     @IBAction func edit_action(_ sender: UIButton) {
     }
     
-    
-    
     // MARK: - Collections
     
     @IBOutlet weak var collection: UICollectionView!
+    @IBOutlet weak var collection_height_layout: NSLayoutConstraint!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return chart.units.count

@@ -28,8 +28,13 @@ class HabitListController: ViewController, UITableViewDataSource, UITableViewDel
             habit.value.id = SQLite.Habit.new_id
             habit.value.insert()
             habit.chart_log_create()
+            habit.cards_create()
             habits.append(habit)
             table.insertRows(at: [IndexPath(habits)], with: .bottom)
+        }
+        if let habit = messages.removeValue(forKey: "HabitDelete") as? Habit {
+            let index = habits.index(where: { $0 === habit })!
+            habits.remove(at: index)
         }
         table.reloadData()
     }

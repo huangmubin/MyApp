@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardTextView" customModule="Daily" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="acj-pw-HYp" customClass="CardTextView" customModule="Daily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-Fl-9jb">
+                    <rect key="frame" x="20" y="20" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rGQ-dn-rnJ">
+                    <rect key="frame" x="20" y="47" width="335" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="acj-pw-HYp" id="Whf-QB-RSy"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NDY-NR-eGz" firstAttribute="trailing" secondItem="Wlh-Fl-9jb" secondAttribute="trailing" constant="20" id="1u0-Uw-82r"/>
+                <constraint firstItem="NDY-NR-eGz" firstAttribute="trailing" secondItem="rGQ-dn-rnJ" secondAttribute="trailing" constant="20" id="JfP-AO-QIb"/>
+                <constraint firstItem="rGQ-dn-rnJ" firstAttribute="leading" secondItem="NDY-NR-eGz" secondAttribute="leading" constant="20" id="Msg-cf-mdc"/>
+                <constraint firstItem="Wlh-Fl-9jb" firstAttribute="leading" secondItem="NDY-NR-eGz" secondAttribute="leading" constant="20" id="P9a-Fx-NxG"/>
+                <constraint firstItem="Wlh-Fl-9jb" firstAttribute="top" secondItem="NDY-NR-eGz" secondAttribute="top" constant="20" id="Ys8-8z-wD0"/>
+                <constraint firstItem="rGQ-dn-rnJ" firstAttribute="top" secondItem="Wlh-Fl-9jb" secondAttribute="bottom" constant="10" id="aXd-ZN-D7p"/>
+                <constraint firstItem="NDY-NR-eGz" firstAttribute="bottom" secondItem="rGQ-dn-rnJ" secondAttribute="bottom" constant="20" id="uBm-SN-udP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NDY-NR-eGz"/>
+            <connections>
+                <outlet property="note" destination="rGQ-dn-rnJ" id="Gyr-KV-jxR"/>
+                <outlet property="title" destination="Wlh-Fl-9jb" id="Z3z-c7-f71"/>
+            </connections>
+            <point key="canvasLocation" x="-184.5" y="319"/>
+        </view>
+    </objects>
+</document>

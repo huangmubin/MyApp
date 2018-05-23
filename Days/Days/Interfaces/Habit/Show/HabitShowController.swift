@@ -8,15 +8,23 @@
 
 import UIKit
 
-extension CardView {
+extension Card {
     
-    var date: Date {
-        get {
-            return (table.controller as! HabitShowController).date
+    /** Card view */
+    func view() -> DaysCardView? {
+        var view: DaysCardView?
+        switch type {
+        case .date: view = HabitShowCalendarCard.load(nib: nil)
+        case .check: view = HabitShowLogCard.load(nib: nil)
+        case .chart_log: view = HabitShowChartCard.load(nib: nil)
+//        case .chart: view = HabitShowChartCard.load(nib: nil)
+//        case .diary: view = HabitShowDiaryCard.load(nib: nil)
+//        case .event: view = HabitShowEventCard.load(nib: nil)
+        default: break
         }
-        set {
-            (table.controller as! HabitShowController).date = newValue
-        }
+        view?.index = value.sort
+        view?.card = self
+        return view
     }
     
 }
@@ -31,6 +39,12 @@ class HabitShowController: ViewController, HabitObject {
     override func viewDidLoad() {
         super.viewDidLoad()
         cards.controller = self
+        let card_dates = habit.cards_find()
+        for card_data in card_dates {
+            if let view = card_data.view() {
+                cards.cards.append(view)
+            }
+        }
         cards.cards.sort(by: { $0.index < $1.index })
         cards.reload()
     }
@@ -70,6 +84,9 @@ class HabitShowController: ViewController, HabitObject {
             edit.log.value.is_sick = (segue.identifier == "Sick")
         }
         if let edit = segue.controller as? LogListController {
+            edit.habit = habit
+        }
+        if let edit = segue.controller as? HabitShowCardsEditController {
             edit.habit = habit
         }
     }

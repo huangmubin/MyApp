@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SQLite.ChartUnit.create()
         SQLite.Event.create()
         SQLite.Diary.create()
+        SQLite.Card.create()
         return true
     }
 

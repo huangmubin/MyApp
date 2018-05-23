@@ -49,10 +49,6 @@ class LogListCell: TableViewCell {
             length_label.text = "\(log.value.length) 次"
         }
         
-        if length_label.text == "0分钟" {
-            print("Error")
-        }
-        
         time_label.text = format.string(from: log.value.date_s)
         
         note_label.text = log.value.note

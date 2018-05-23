@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HabitShowEventCard" customModule="Days" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HabitShowEventCard" id="qqC-zZ-ZsT" customClass="HabitShowEventCard" customModule="Days" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nv-ST-Y8M">
+                    <rect key="frame" x="70" y="98.5" width="170" height="22.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUy-8Y-SvI">
+                    <rect key="frame" x="70" y="101.5" width="170" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="里程碑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcc-Sa-chQ">
+                    <rect key="frame" x="20" y="20" width="79" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3yC-UP-zT3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlQ-1S-552">
+                    <rect key="frame" x="295" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GVZ-1d-5T6"/>
+                        <constraint firstAttribute="width" constant="60" id="hHS-wg-anC"/>
+                    </constraints>
+                    <state key="normal" image="nav_add"/>
+                    <connections>
+                        <action selector="append_event_action:" destination="qqC-zZ-ZsT" eventType="touchUpInside" id="Bqf-ja-P4C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-Bc-c9J">
+                    <rect key="frame" x="20" y="10" width="267" height="60"/>
+                    <connections>
+                        <action selector="open_list_action:" destination="qqC-zZ-ZsT" eventType="touchUpInside" id="gxF-LZ-SdC"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-g4-Uoh" customClass="View" customModule="Days" customModuleProvider="target">
+                    <rect key="frame" x="20" y="80" width="335" height="235"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HPn-RG-hdj">
+                            <rect key="frame" x="10" y="10" width="315" height="215"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="separatorInset" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="qqC-zZ-ZsT" id="qWR-eD-kQR"/>
+                                <outlet property="delegate" destination="qqC-zZ-ZsT" id="xsZ-V6-rS9"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="HPn-RG-hdj" firstAttribute="top" secondItem="ksG-g4-Uoh" secondAttribute="top" constant="10" id="IGI-4a-40f"/>
+                        <constraint firstAttribute="bottom" secondItem="HPn-RG-hdj" secondAttribute="bottom" constant="10" id="KfE-Zg-PwJ"/>
+                        <constraint firstAttribute="trailing" secondItem="HPn-RG-hdj" secondAttribute="trailing" constant="10" id="euJ-BV-cz5"/>
+                        <constraint firstItem="HPn-RG-hdj" firstAttribute="leading" secondItem="ksG-g4-Uoh" secondAttribute="leading" constant="10" id="fEC-oY-b7O"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ivI-m7-wpP" firstAttribute="trailing" secondItem="NlQ-1S-552" secondAttribute="trailing" constant="20" id="0rV-6v-lbt"/>
+                <constraint firstItem="ivI-m7-wpP" firstAttribute="trailing" secondItem="ksG-g4-Uoh" secondAttribute="trailing" constant="20" id="0wK-IZ-ZXf"/>
+                <constraint firstItem="NlQ-1S-552" firstAttribute="leading" secondItem="wKH-Bc-c9J" secondAttribute="trailing" constant="8" id="8iY-b2-akf"/>
+                <constraint firstItem="ksG-g4-Uoh" firstAttribute="leading" secondItem="ivI-m7-wpP" secondAttribute="leading" constant="20" id="Aui-V1-e2F"/>
+                <constraint firstItem="ksG-g4-Uoh" firstAttribute="top" secondItem="Dcc-Sa-chQ" secondAttribute="bottom" constant="20" id="CCU-Ck-X0B"/>
+                <constraint firstItem="ivI-m7-wpP" firstAttribute="bottom" secondItem="ksG-g4-Uoh" secondAttribute="bottom" constant="20" id="MKn-g6-Gbw"/>
+                <constraint firstItem="wKH-Bc-c9J" firstAttribute="top" secondItem="ivI-m7-wpP" secondAttribute="top" constant="10" id="UnQ-uD-bfF"/>
+                <constraint firstItem="NlQ-1S-552" firstAttribute="centerY" secondItem="Dcc-Sa-chQ" secondAttribute="centerY" id="X45-D8-2Ec"/>
+                <constraint firstItem="Dcc-Sa-chQ" firstAttribute="top" secondItem="ivI-m7-wpP" secondAttribute="top" constant="20" id="gpc-Rq-2cO"/>
+                <constraint firstItem="Dcc-Sa-chQ" firstAttribute="leading" secondItem="ivI-m7-wpP" secondAttribute="leading" constant="20" id="oQi-yL-mkG"/>
+                <constraint firstItem="wKH-Bc-c9J" firstAttribute="leading" secondItem="ivI-m7-wpP" secondAttribute="leading" constant="20" id="sZm-Sp-wTy"/>
+                <constraint firstItem="wKH-Bc-c9J" firstAttribute="centerY" secondItem="Dcc-Sa-chQ" secondAttribute="centerY" id="wJ4-yb-cMb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ivI-m7-wpP"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Event"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="index">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="height_detail_label" destination="xUy-8Y-SvI" id="3Ps-Aw-LXD"/>
+                <outlet property="height_name_label" destination="5Nv-ST-Y8M" id="VSZ-ss-f1e"/>
+                <outlet property="table_view" destination="HPn-RG-hdj" id="AYh-ZK-6x0"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="141.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_add" width="30" height="30"/>
+    </resources>
+</document>

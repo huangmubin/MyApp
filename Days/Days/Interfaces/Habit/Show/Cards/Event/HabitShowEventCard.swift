@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HabitShowEventCard: CardView, UITableViewDataSource, UITableViewDelegate, KeyboardInputDelegate {
+class HabitShowEventCard: DaysCardView, UITableViewDataSource, UITableViewDelegate, KeyboardInputDelegate {
 
     // MARK: - Date
     
@@ -64,7 +64,11 @@ class HabitShowEventCard: CardView, UITableViewDataSource, UITableViewDelegate, 
     
     // MARK: - Table View
     
-    @IBOutlet weak var table_view: UITableView!
+    @IBOutlet weak var table_view: UITableView! {
+        didSet {
+            table_view.register(UINib(nibName: "HabitShowEventCardCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardChartCollectionCell" customModule="Days" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CardChartCollectionCell" customModule="Days" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="299"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="299"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dox-2o-53j">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="299"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-0b-Jy6">
+                                <rect key="frame" x="7" y="279" width="36" height="20"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vt-PD-Yha" customClass="View" customModule="Days" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="9" width="50" height="270"/>
+                                <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="AsY-zu-MAs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Vt-PD-Yha" firstAttribute="leading" secondItem="Dox-2o-53j" secondAttribute="leading" id="DlK-cM-2F2"/>
+                            <constraint firstAttribute="bottom" secondItem="7Vt-PD-Yha" secondAttribute="bottom" constant="20" id="E7W-IY-4ul"/>
+                            <constraint firstItem="vEL-0b-Jy6" firstAttribute="centerX" secondItem="Dox-2o-53j" secondAttribute="centerX" id="W2Z-o8-HiA"/>
+                            <constraint firstItem="7Vt-PD-Yha" firstAttribute="centerX" secondItem="Dox-2o-53j" secondAttribute="centerX" id="cqq-xC-Dcf"/>
+                            <constraint firstAttribute="bottom" secondItem="vEL-0b-Jy6" secondAttribute="bottom" id="dhP-ga-mPW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Dox-2o-53j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3II-sd-NAt"/>
+                <constraint firstAttribute="trailing" secondItem="Dox-2o-53j" secondAttribute="trailing" id="q0e-rQ-Hj6"/>
+                <constraint firstAttribute="bottom" secondItem="Dox-2o-53j" secondAttribute="bottom" id="sXb-OA-8lJ"/>
+                <constraint firstItem="Dox-2o-53j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uNm-wY-qfO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="50" height="299"/>
+            <connections>
+                <outlet property="back" destination="Dox-2o-53j" id="5Vy-oe-eNX"/>
+                <outlet property="progress_height_layout" destination="AsY-zu-MAs" id="77L-IW-FyJ"/>
+                <outlet property="progress_leading_layout" destination="DlK-cM-2F2" id="Sxc-8Q-Goo"/>
+                <outlet property="progress_view" destination="7Vt-PD-Yha" id="QJQ-an-dZH"/>
+                <outlet property="title_label" destination="vEL-0b-Jy6" id="wdK-Ty-d4o"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-70.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

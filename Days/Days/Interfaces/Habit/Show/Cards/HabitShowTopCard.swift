@@ -19,6 +19,7 @@ class HabitShowTopCard: CardTopView {
     }
     
     override func save_action() {
-        
+        table.controller?.performSegue(withIdentifier: "Edit", sender: nil)
     }
+    
 }

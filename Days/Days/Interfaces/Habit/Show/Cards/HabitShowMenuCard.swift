@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HabitShowMenuCard: CardView, HintViewDelegate {
-
+class HabitShowMenuCard: DaysCardView, HintViewDelegate {
+    
     override func reload() {
         idle_button.selected_color = habit.color()
         if habit.value.is_runing {
@@ -49,7 +49,9 @@ class HabitShowMenuCard: CardView, HintViewDelegate {
     }
     
     func hint_view(sure_action view: HintView) {
-        print("sure_action")
+        self.habit.clear_sqlite()
+        self.table.vc?.toSuperController(object: ["HabitDelete": habit])
+        self.table.controller?.dismiss(animated: true, completion: nil)
     }
     
 }

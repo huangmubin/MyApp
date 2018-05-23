@@ -13,7 +13,7 @@ class HabitShowChartCard: CardChartView {
     override func reload() {
         chart = habit.chart_log_find()
         chart.update(date: date)
-        append_button.isHidden = true
+        //append_button.isHidden = true
         super.reload()
     }
     

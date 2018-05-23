@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardDateView: CardView, CalendarCollectionDelegate, KeyboardDateInputDelegate {
+class CardDateView: DaysCardView, CalendarCollectionDelegate, KeyboardDateInputDelegate {
 
     // MARK: - Override
     
@@ -16,7 +16,7 @@ class CardDateView: CardView, CalendarCollectionDelegate, KeyboardDateInputDeleg
     
     // MARK: - Value
     
-    var value: Date = Date()
+    var value: Date = Date() 
     
     // MARK: - Reload
     

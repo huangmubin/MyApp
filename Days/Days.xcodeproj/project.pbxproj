@@ -14,6 +14,24 @@
 		9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */; };
 		9C01676D20B30D9900D99ED5 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01676C20B30D9900D99ED5 /* HintView.swift */; };
 		9C01676F20B30DA200D99ED5 /* HintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01676E20B30DA200D99ED5 /* HintView.xib */; };
+		9C115B7620B3AC36008AB650 /* HabitShowCardsEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B7520B3AC36008AB650 /* HabitShowCardsEditController.swift */; };
+		9C115B7820B3ADAA008AB650 /* HabitShowCardsEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B7720B3ADAA008AB650 /* HabitShowCardsEditCell.swift */; };
+		9C115B7A20B3ADC1008AB650 /* HabitShowCardEditHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B7920B3ADC1008AB650 /* HabitShowCardEditHeader.swift */; };
+		9C115B7C20B3BE90008AB650 /* HabitShowCardEditHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B7B20B3BE90008AB650 /* HabitShowCardEditHeader.xib */; };
+		9C115B7E20B3C434008AB650 /* Card_SQlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B7D20B3C434008AB650 /* Card_SQlite.swift */; };
+		9C115B8020B3C488008AB650 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B7F20B3C488008AB650 /* Card.swift */; };
+		9C115B8220B3E742008AB650 /* HabitShowCalendarCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8120B3E742008AB650 /* HabitShowCalendarCard.xib */; };
+		9C115B8420B3E74C008AB650 /* HabitShowEventCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8320B3E74C008AB650 /* HabitShowEventCard.xib */; };
+		9C115B8620B3E759008AB650 /* HabitShowChartCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8520B3E759008AB650 /* HabitShowChartCard.xib */; };
+		9C115B8820B3E766008AB650 /* HabitShowDiaryCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8720B3E766008AB650 /* HabitShowDiaryCard.xib */; };
+		9C115B8A20B3E778008AB650 /* HabitShowLogCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8920B3E778008AB650 /* HabitShowLogCard.xib */; };
+		9C115B8C20B3EA15008AB650 /* HabitShowEventCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B8B20B3EA15008AB650 /* HabitShowEventCardCell.xib */; };
+		9C115B9120B3EE72008AB650 /* DaysCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B9020B3EE72008AB650 /* DaysCardView.swift */; };
+		9C115B9B20B3F15C008AB650 /* CardTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B9520B3EFFA008AB650 /* CardTopView.swift */; };
+		9C115B9C20B3F160008AB650 /* CardTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B9820B3EFFB008AB650 /* CardTopView.xib */; };
+		9C115B9D20B3F164008AB650 /* CardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C115B9720B3EFFA008AB650 /* CardTextView.swift */; };
+		9C115B9E20B3F168008AB650 /* CardTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115B9620B3EFFA008AB650 /* CardTextView.xib */; };
+		9C115BA620B3F5A1008AB650 /* CalendarCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C115BA520B3F5A1008AB650 /* CalendarCollectionCell.xib */; };
 		9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */; };
 		9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA25020AEB1FA0016E035 /* LogEditController.swift */; };
 		9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA25220AEB2080016E035 /* LogEdit.storyboard */; };
@@ -29,10 +47,6 @@
 		9C2EA26920AECACA0016E035 /* CardDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA26820AECACA0016E035 /* CardDateView.swift */; };
 		9C2EA26D20AECAED0016E035 /* CardDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EA26C20AECAED0016E035 /* CardDateView.xib */; };
 		9C2EA27120AECCE50016E035 /* CalendarCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EA27020AECCE50016E035 /* CalendarCollection.swift */; };
-		9CAC1BB120B107DD00A0FE3F /* CardChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC1BB020B107DD00A0FE3F /* CardChartView.xib */; };
-		9CAC1BB520B1083900A0FE3F /* CardChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC1BB420B1083900A0FE3F /* CardChartView.swift */; };
-		9CAC1BBA20B10BFF00A0FE3F /* CardChartCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC1BB820B10BFF00A0FE3F /* CardChartCollectionCell.swift */; };
-		9CAC1BBB20B10BFF00A0FE3F /* CardChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC1BB920B10BFF00A0FE3F /* CardChartCollectionCell.xib */; };
 		9CAC1BBD20B111ED00A0FE3F /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC1BBC20B111ED00A0FE3F /* Chart.swift */; };
 		9CAC1BBF20B1120F00A0FE3F /* Chart_SQlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC1BBE20B1120F00A0FE3F /* Chart_SQlite.swift */; };
 		9CAC1BC120B1123300A0FE3F /* ChartUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC1BC020B1123300A0FE3F /* ChartUnit.swift */; };
@@ -49,10 +63,6 @@
 		9CB391E720ABC0560076D600 /* CardSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391A720ABC0560076D600 /* CardSeparator.swift */; };
 		9CB391E820ABC0560076D600 /* CardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391A820ABC0560076D600 /* CardTable.swift */; };
 		9CB391E920ABC0560076D600 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391A920ABC0560076D600 /* CardView.swift */; };
-		9CB391EA20ABC0560076D600 /* CardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391AB20ABC0560076D600 /* CardTextView.swift */; };
-		9CB391EB20ABC0560076D600 /* CardTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB391AC20ABC0560076D600 /* CardTextView.xib */; };
-		9CB391EC20ABC0560076D600 /* CardTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391AD20ABC0560076D600 /* CardTopView.swift */; };
-		9CB391ED20ABC0560076D600 /* CardTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB391AE20ABC0560076D600 /* CardTopView.xib */; };
 		9CB391EE20ABC0560076D600 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391B020ABC0560076D600 /* TableView.swift */; };
 		9CB391EF20ABC0560076D600 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391B120ABC0560076D600 /* TableViewCell.swift */; };
 		9CB391F020ABC0560076D600 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB391B220ABC0560076D600 /* TableViewController.swift */; };
@@ -115,6 +125,10 @@
 		9CB3925220AC37150076D600 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB3925120AC37150076D600 /* Image.storyboard */; };
 		9CB3925420AC378F0076D600 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925320AC378F0076D600 /* ImageCell.swift */; };
 		9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3925520AC39110076D600 /* Ex_UIImage.swift */; };
+		9CB799F420B40902007D555B /* CardChartCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB799F220B40902007D555B /* CardChartCollectionCell.swift */; };
+		9CB799F520B40902007D555B /* CardChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB799F320B40902007D555B /* CardChartCollectionCell.xib */; };
+		9CB799F720B40A9B007D555B /* CardChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB799F620B40A9B007D555B /* CardChartView.swift */; };
+		9CB799F920B40AA3007D555B /* CardChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB799F820B40AA3007D555B /* CardChartView.xib */; };
 		9CCCA5BF20AFC66A00393433 /* LogEditCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCA5BE20AFC66A00393433 /* LogEditCountCard.swift */; };
 		9CCCA5C320B0224600393433 /* LogListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCCA5C220B0224600393433 /* LogListHeader.xib */; };
 		9CCCA5C520B0229500393433 /* TableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCA5C420B0229500393433 /* TableViewHeaderFooter.swift */; };
@@ -139,6 +153,24 @@
 		9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTimeInput.swift; sourceTree = "<group>"; };
 		9C01676C20B30D9900D99ED5 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 		9C01676E20B30DA200D99ED5 /* HintView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HintView.xib; sourceTree = "<group>"; };
+		9C115B7520B3AC36008AB650 /* HabitShowCardsEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCardsEditController.swift; sourceTree = "<group>"; };
+		9C115B7720B3ADAA008AB650 /* HabitShowCardsEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCardsEditCell.swift; sourceTree = "<group>"; };
+		9C115B7920B3ADC1008AB650 /* HabitShowCardEditHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowCardEditHeader.swift; sourceTree = "<group>"; };
+		9C115B7B20B3BE90008AB650 /* HabitShowCardEditHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowCardEditHeader.xib; sourceTree = "<group>"; };
+		9C115B7D20B3C434008AB650 /* Card_SQlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_SQlite.swift; sourceTree = "<group>"; };
+		9C115B7F20B3C488008AB650 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9C115B8120B3E742008AB650 /* HabitShowCalendarCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowCalendarCard.xib; sourceTree = "<group>"; };
+		9C115B8320B3E74C008AB650 /* HabitShowEventCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowEventCard.xib; sourceTree = "<group>"; };
+		9C115B8520B3E759008AB650 /* HabitShowChartCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowChartCard.xib; sourceTree = "<group>"; };
+		9C115B8720B3E766008AB650 /* HabitShowDiaryCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowDiaryCard.xib; sourceTree = "<group>"; };
+		9C115B8920B3E778008AB650 /* HabitShowLogCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowLogCard.xib; sourceTree = "<group>"; };
+		9C115B8B20B3EA15008AB650 /* HabitShowEventCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitShowEventCardCell.xib; sourceTree = "<group>"; };
+		9C115B9020B3EE72008AB650 /* DaysCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCardView.swift; sourceTree = "<group>"; };
+		9C115B9520B3EFFA008AB650 /* CardTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTopView.swift; sourceTree = "<group>"; };
+		9C115B9620B3EFFA008AB650 /* CardTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTextView.xib; sourceTree = "<group>"; };
+		9C115B9720B3EFFA008AB650 /* CardTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextView.swift; sourceTree = "<group>"; };
+		9C115B9820B3EFFB008AB650 /* CardTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTopView.xib; sourceTree = "<group>"; };
+		9C115BA520B3F5A1008AB650 /* CalendarCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionCell.xib; sourceTree = "<group>"; };
 		9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitShowLogCard.swift; sourceTree = "<group>"; };
 		9C2EA25020AEB1FA0016E035 /* LogEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditController.swift; sourceTree = "<group>"; };
 		9C2EA25220AEB2080016E035 /* LogEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogEdit.storyboard; sourceTree = "<group>"; };
@@ -154,10 +186,6 @@
 		9C2EA26820AECACA0016E035 /* CardDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDateView.swift; sourceTree = "<group>"; };
 		9C2EA26C20AECAED0016E035 /* CardDateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDateView.xib; sourceTree = "<group>"; };
 		9C2EA27020AECCE50016E035 /* CalendarCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollection.swift; sourceTree = "<group>"; };
-		9CAC1BB020B107DD00A0FE3F /* CardChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardChartView.xib; sourceTree = "<group>"; };
-		9CAC1BB420B1083900A0FE3F /* CardChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChartView.swift; sourceTree = "<group>"; };
-		9CAC1BB820B10BFF00A0FE3F /* CardChartCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChartCollectionCell.swift; sourceTree = "<group>"; };
-		9CAC1BB920B10BFF00A0FE3F /* CardChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardChartCollectionCell.xib; sourceTree = "<group>"; };
 		9CAC1BBC20B111ED00A0FE3F /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		9CAC1BBE20B1120F00A0FE3F /* Chart_SQlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart_SQlite.swift; sourceTree = "<group>"; };
 		9CAC1BC020B1123300A0FE3F /* ChartUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUnit.swift; sourceTree = "<group>"; };
@@ -176,10 +204,6 @@
 		9CB391A720ABC0560076D600 /* CardSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSeparator.swift; sourceTree = "<group>"; };
 		9CB391A820ABC0560076D600 /* CardTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTable.swift; sourceTree = "<group>"; };
 		9CB391A920ABC0560076D600 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		9CB391AB20ABC0560076D600 /* CardTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTextView.swift; sourceTree = "<group>"; };
-		9CB391AC20ABC0560076D600 /* CardTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTextView.xib; sourceTree = "<group>"; };
-		9CB391AD20ABC0560076D600 /* CardTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTopView.swift; sourceTree = "<group>"; };
-		9CB391AE20ABC0560076D600 /* CardTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTopView.xib; sourceTree = "<group>"; };
 		9CB391B020ABC0560076D600 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		9CB391B120ABC0560076D600 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9CB391B220ABC0560076D600 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +266,10 @@
 		9CB3925120AC37150076D600 /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
 		9CB3925320AC378F0076D600 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		9CB3925520AC39110076D600 /* Ex_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_UIImage.swift; sourceTree = "<group>"; };
+		9CB799F220B40902007D555B /* CardChartCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChartCollectionCell.swift; sourceTree = "<group>"; };
+		9CB799F320B40902007D555B /* CardChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardChartCollectionCell.xib; sourceTree = "<group>"; };
+		9CB799F620B40A9B007D555B /* CardChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChartView.swift; sourceTree = "<group>"; };
+		9CB799F820B40AA3007D555B /* CardChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardChartView.xib; sourceTree = "<group>"; };
 		9CCCA5BE20AFC66A00393433 /* LogEditCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditCountCard.swift; sourceTree = "<group>"; };
 		9CCCA5C220B0224600393433 /* LogListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogListHeader.xib; sourceTree = "<group>"; };
 		9CCCA5C420B0229500393433 /* TableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderFooter.swift; sourceTree = "<group>"; };
@@ -276,6 +304,110 @@
 				9C01676E20B30DA200D99ED5 /* HintView.xib */,
 			);
 			path = Hint;
+			sourceTree = "<group>";
+		};
+		9C115B7420B3A87A008AB650 /* CardsEdit */ = {
+			isa = PBXGroup;
+			children = (
+				9C115B7520B3AC36008AB650 /* HabitShowCardsEditController.swift */,
+				9C115B7720B3ADAA008AB650 /* HabitShowCardsEditCell.swift */,
+				9C115B7920B3ADC1008AB650 /* HabitShowCardEditHeader.swift */,
+				9C115B7B20B3BE90008AB650 /* HabitShowCardEditHeader.xib */,
+			);
+			path = CardsEdit;
+			sourceTree = "<group>";
+		};
+		9C115B8D20B3ED00008AB650 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
+				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		9C115B8E20B3ED92008AB650 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */,
+				9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		9C115B8F20B3EDB1008AB650 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				9C115B8120B3E742008AB650 /* HabitShowCalendarCard.xib */,
+				9CF257BA20AD85620060C8C6 /* HabitShowCalendarCard.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		9C115B9220B3EFBA008AB650 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				9C115B9820B3EFFB008AB650 /* CardTopView.xib */,
+				9C115B9520B3EFFA008AB650 /* CardTopView.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		9C115B9920B3F057008AB650 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC1BB220B1080A00A0FE3F /* Date */,
+				9CAC1BB320B1081900A0FE3F /* Chart */,
+				9C115B9A20B3F0A1008AB650 /* Text */,
+				9C115B9220B3EFBA008AB650 /* Top */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9C115B9A20B3F0A1008AB650 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				9C115B9620B3EFFA008AB650 /* CardTextView.xib */,
+				9C115B9720B3EFFA008AB650 /* CardTextView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		9C115BA120B3F1A5008AB650 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */,
+				9C115B8720B3E766008AB650 /* HabitShowDiaryCard.xib */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		9C115BA220B3F1A5008AB650 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */,
+				9C115B8520B3E759008AB650 /* HabitShowChartCard.xib */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		9C115BA320B3F1A6008AB650 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */,
+				9C115B8920B3E778008AB650 /* HabitShowLogCard.xib */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		9C115BA420B3F1A7008AB650 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				9C115B8320B3E74C008AB650 /* HabitShowEventCard.xib */,
+				9C115B8B20B3EA15008AB650 /* HabitShowEventCardCell.xib */,
+				9CF257BC20AD856D0060C8C6 /* HabitShowEventCard.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		9C2EA24E20AEB1D20016E035 /* Log */ = {
@@ -327,10 +459,8 @@
 			children = (
 				9CB3923E20AC12350076D600 /* KeyboardInput.swift */,
 				9CB3923D20AC12350076D600 /* KeyboardInput.xib */,
-				9C01676320ADD24500D99ED5 /* KeyboardDateInput.swift */,
-				9C01676520ADD24F00D99ED5 /* KeyboardDateInput.xib */,
-				9C01676920AF029600D99ED5 /* KeyboardTimeInput.swift */,
-				9C01676720AF028800D99ED5 /* KeyboardTimeInput.xib */,
+				9C115B8E20B3ED92008AB650 /* Time */,
+				9C115B8D20B3ED00008AB650 /* Date */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -338,8 +468,8 @@
 		9C2EA26F20AECB020016E035 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				9CAC1BB320B1081900A0FE3F /* Chart */,
-				9CAC1BB220B1080A00A0FE3F /* Date */,
+				9C115B9020B3EE72008AB650 /* DaysCardView.swift */,
+				9C115B9920B3F057008AB650 /* Base */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -347,8 +477,9 @@
 		9CAC1BB220B1080A00A0FE3F /* Date */ = {
 			isa = PBXGroup;
 			children = (
-				9C2EA26820AECACA0016E035 /* CardDateView.swift */,
 				9C2EA26C20AECAED0016E035 /* CardDateView.xib */,
+				9C115BA520B3F5A1008AB650 /* CalendarCollectionCell.xib */,
+				9C2EA26820AECACA0016E035 /* CardDateView.swift */,
 				9C2EA27020AECCE50016E035 /* CalendarCollection.swift */,
 			);
 			path = Date;
@@ -357,10 +488,10 @@
 		9CAC1BB320B1081900A0FE3F /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				9CAC1BB020B107DD00A0FE3F /* CardChartView.xib */,
-				9CAC1BB420B1083900A0FE3F /* CardChartView.swift */,
-				9CAC1BB920B10BFF00A0FE3F /* CardChartCollectionCell.xib */,
-				9CAC1BB820B10BFF00A0FE3F /* CardChartCollectionCell.swift */,
+				9CB799F620B40A9B007D555B /* CardChartView.swift */,
+				9CB799F820B40AA3007D555B /* CardChartView.xib */,
+				9CB799F220B40902007D555B /* CardChartCollectionCell.swift */,
+				9CB799F320B40902007D555B /* CardChartCollectionCell.xib */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -454,20 +585,8 @@
 				9CB391A720ABC0560076D600 /* CardSeparator.swift */,
 				9CB391A820ABC0560076D600 /* CardTable.swift */,
 				9CB391A920ABC0560076D600 /* CardView.swift */,
-				9CB391AA20ABC0560076D600 /* CardViews */,
 			);
 			path = ScrollView;
-			sourceTree = "<group>";
-		};
-		9CB391AA20ABC0560076D600 /* CardViews */ = {
-			isa = PBXGroup;
-			children = (
-				9CB391AB20ABC0560076D600 /* CardTextView.swift */,
-				9CB391AC20ABC0560076D600 /* CardTextView.xib */,
-				9CB391AD20ABC0560076D600 /* CardTopView.swift */,
-				9CB391AE20ABC0560076D600 /* CardTopView.xib */,
-			);
-			path = CardViews;
 			sourceTree = "<group>";
 		};
 		9CB391AF20ABC0560076D600 /* TableView */ = {
@@ -650,6 +769,7 @@
 				9CAC1BC220B1123F00A0FE3F /* ChartUnit_SQlite.swift */,
 				9CAC1BC420B1A8E100A0FE3F /* Event_SQlite.swift */,
 				9CE00EBF20B258D6007291F1 /* Diary_SQlite.swift */,
+				9C115B7D20B3C434008AB650 /* Card_SQlite.swift */,
 			);
 			path = SQlite;
 			sourceTree = "<group>";
@@ -663,6 +783,7 @@
 				9CAC1BC020B1123300A0FE3F /* ChartUnit.swift */,
 				9CAC1BC620B1A8EB00A0FE3F /* Event.swift */,
 				9CE00EC120B258DF007291F1 /* Diary.swift */,
+				9C115B7F20B3C488008AB650 /* Card.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -725,6 +846,7 @@
 			children = (
 				9CF257B520AD84240060C8C6 /* HabitShow.storyboard */,
 				9CF257B320AD841C0060C8C6 /* HabitShowController.swift */,
+				9C115B7420B3A87A008AB650 /* CardsEdit */,
 				9CF257B720AD85010060C8C6 /* Cards */,
 			);
 			path = Show;
@@ -734,12 +856,12 @@
 			isa = PBXGroup;
 			children = (
 				9CF257B820AD85320060C8C6 /* HabitShowTopCard.swift */,
-				9CF257BA20AD85620060C8C6 /* HabitShowCalendarCard.swift */,
-				9CF257BC20AD856D0060C8C6 /* HabitShowEventCard.swift */,
-				9CF257BE20AD85D30060C8C6 /* HabitShowChartCard.swift */,
-				9CF257C020AD85F40060C8C6 /* HabitShowDiaryCard.swift */,
 				9CF257C220AD86250060C8C6 /* HabitShowMenuCard.swift */,
-				9C2EA24C20AEAE250016E035 /* HabitShowLogCard.swift */,
+				9C115B8F20B3EDB1008AB650 /* Calender */,
+				9C115BA120B3F1A5008AB650 /* Diary */,
+				9C115BA220B3F1A5008AB650 /* Chart */,
+				9C115BA320B3F1A6008AB650 /* Log */,
+				9C115BA420B3F1A7008AB650 /* Event */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -803,31 +925,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB3919720ABBFC80076D600 /* LaunchScreen.storyboard in Resources */,
-				9CAC1BB120B107DD00A0FE3F /* CardChartView.xib in Resources */,
 				9C2EA26D20AECAED0016E035 /* CardDateView.xib in Resources */,
-				9CB391ED20ABC0560076D600 /* CardTopView.xib in Resources */,
+				9C115BA620B3F5A1008AB650 /* CalendarCollectionCell.xib in Resources */,
 				9CB3920920ABC0560076D600 /* InputTextView.xib in Resources */,
 				9CB3924020AC12E90076D600 /* KeyboardInput.xib in Resources */,
-				9CAC1BBB20B10BFF00A0FE3F /* CardChartCollectionCell.xib in Resources */,
+				9C115B8820B3E766008AB650 /* HabitShowDiaryCard.xib in Resources */,
 				9C01676F20B30DA200D99ED5 /* HintView.xib in Resources */,
+				9C115B9C20B3F160008AB650 /* CardTopView.xib in Resources */,
+				9C115B8C20B3EA15008AB650 /* HabitShowEventCardCell.xib in Resources */,
 				9C2EA25320AEB2080016E035 /* LogEdit.storyboard in Resources */,
+				9C115B8A20B3E778008AB650 /* HabitShowLogCard.xib in Resources */,
+				9C115B7C20B3BE90008AB650 /* HabitShowCardEditHeader.xib in Resources */,
+				9CB799F520B40902007D555B /* CardChartCollectionCell.xib in Resources */,
 				9CB3921D20ABC5090076D600 /* HabitList.storyboard in Resources */,
 				9CB3919420ABBFC80076D600 /* Assets.xcassets in Resources */,
+				9C115B8620B3E759008AB650 /* HabitShowChartCard.xib in Resources */,
 				9C01676820AF028800D99ED5 /* KeyboardTimeInput.xib in Resources */,
 				9CB3919220ABBFC60076D600 /* Main.storyboard in Resources */,
 				9CB3920720ABC0560076D600 /* CalendarView.xib in Resources */,
+				9C115B8220B3E742008AB650 /* HabitShowCalendarCard.xib in Resources */,
 				9CB3920D20ABC0560076D600 /* VarlenaInput.xib in Resources */,
 				9CF257B620AD84240060C8C6 /* HabitShow.storyboard in Resources */,
-				9CB391EB20ABC0560076D600 /* CardTextView.xib in Resources */,
 				9CB3925220AC37150076D600 /* Image.storyboard in Resources */,
 				9CB3920520ABC0560076D600 /* CalendarCell.xib in Resources */,
+				9C115B9E20B3F168008AB650 /* CardTextView.xib in Resources */,
 				9CB3921220ABC0560076D600 /* iSelector.xib in Resources */,
 				9CCCA5C320B0224600393433 /* LogListHeader.xib in Resources */,
 				9C2EA25620AEB21D0016E035 /* LogList.storyboard in Resources */,
 				9CB3920B20ABC0560076D600 /* InputView.xib in Resources */,
 				9CB3924720AC24D90076D600 /* Color.storyboard in Resources */,
 				9CB3922E20ABD4CA0076D600 /* HabitEdit.storyboard in Resources */,
+				9C115B8420B3E74C008AB650 /* HabitShowEventCard.xib in Resources */,
 				9C01676620ADD24F00D99ED5 /* KeyboardDateInput.xib in Resources */,
+				9CB799F920B40AA3007D555B /* CardChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +975,7 @@
 				9CB3920C20ABC0560076D600 /* VarlenaInput.swift in Sources */,
 				9CCCA5C520B0229500393433 /* TableViewHeaderFooter.swift in Sources */,
 				9CB3920020ABC0560076D600 /* Ex_UIScreen.swift in Sources */,
+				9CB799F720B40A9B007D555B /* CardChartView.swift in Sources */,
 				9CB391F320ABC0560076D600 /* SQLite.swift in Sources */,
 				9CF257BD20AD856D0060C8C6 /* HabitShowEventCard.swift in Sources */,
 				9C2EA26320AEB2AE0016E035 /* LogEditTimeCard.swift in Sources */,
@@ -852,6 +983,7 @@
 				9CB3923F20AC12880076D600 /* KeyboardInput.swift in Sources */,
 				9CB3925620AC39110076D600 /* Ex_UIImage.swift in Sources */,
 				9CAC1BC720B1A8EB00A0FE3F /* Event.swift in Sources */,
+				9C115B7A20B3ADC1008AB650 /* HabitShowCardEditHeader.swift in Sources */,
 				9CB391F620ABC0560076D600 /* Ex_Array.swift in Sources */,
 				9CE00EC020B258D6007291F1 /* Diary_SQlite.swift in Sources */,
 				9CB391FB20ABC0560076D600 /* Ex_Int.swift in Sources */,
@@ -859,6 +991,8 @@
 				9CB3920820ABC0560076D600 /* InputTextView.swift in Sources */,
 				9C2EA26920AECACA0016E035 /* CardDateView.swift in Sources */,
 				9CB391E920ABC0560076D600 /* CardView.swift in Sources */,
+				9C115B7820B3ADAA008AB650 /* HabitShowCardsEditCell.swift in Sources */,
+				9C115B9B20B3F15C008AB650 /* CardTopView.swift in Sources */,
 				9C2EA24D20AEAE250016E035 /* HabitShowLogCard.swift in Sources */,
 				9C01676220AC896B00D99ED5 /* Color.swift in Sources */,
 				9C2EA26120AEB29E0016E035 /* LogEditDateCard.swift in Sources */,
@@ -867,6 +1001,7 @@
 				9C2EA25C20AEB2490016E035 /* LogListHeader.swift in Sources */,
 				9CB3922420ABC7A90076D600 /* Habit_SQlite.swift in Sources */,
 				9CB391FC20ABC0560076D600 /* Ex_String.swift in Sources */,
+				9CB799F420B40902007D555B /* CardChartCollectionCell.swift in Sources */,
 				9CB391F420ABC0560076D600 /* SQLiteProtocol.swift in Sources */,
 				9CB391EE20ABC0560076D600 /* TableView.swift in Sources */,
 				9C2EA26720AEB2DE0016E035 /* LogEditMessageCard.swift in Sources */,
@@ -880,13 +1015,15 @@
 				9CB391F220ABC0560076D600 /* ViewController.swift in Sources */,
 				9CB3924D20AC33A80076D600 /* HabitEditMessageCard.swift in Sources */,
 				9CB391FF20ABC0560076D600 /* Ex_UILabel.swift in Sources */,
+				9C115B8020B3C488008AB650 /* Card.swift in Sources */,
 				9CB3920620ABC0560076D600 /* CalendarView.swift in Sources */,
 				9CAC1BC320B1123F00A0FE3F /* ChartUnit_SQlite.swift in Sources */,
 				9CB3921520ABC0560076D600 /* Notifiable.swift in Sources */,
+				9C115B7E20B3C434008AB650 /* Card_SQlite.swift in Sources */,
 				9C2EA25A20AEB23F0016E035 /* LogListCell.swift in Sources */,
+				9C115B9D20B3F164008AB650 /* CardTextView.swift in Sources */,
 				9C01676420ADD24500D99ED5 /* KeyboardDateInput.swift in Sources */,
 				9CB391F920ABC0560076D600 /* Ex_DateFormatter.swift in Sources */,
-				9CB391EC20ABC0560076D600 /* CardTopView.swift in Sources */,
 				9CF257B420AD841C0060C8C6 /* HabitShowController.swift in Sources */,
 				9CB391E620ABC0560076D600 /* ImageView.swift in Sources */,
 				9CF257BB20AD85620060C8C6 /* HabitShowCalendarCard.swift in Sources */,
@@ -894,10 +1031,10 @@
 				9C01676A20AF029600D99ED5 /* KeyboardTimeInput.swift in Sources */,
 				9CAC1BBF20B1120F00A0FE3F /* Chart_SQlite.swift in Sources */,
 				9C01676D20B30D9900D99ED5 /* HintView.swift in Sources */,
+				9C115B7620B3AC36008AB650 /* HabitShowCardsEditController.swift in Sources */,
 				9CB3922120ABC5250076D600 /* HabitListController.swift in Sources */,
 				9CB3920A20ABC0560076D600 /* InputView.swift in Sources */,
 				9C2EA25820AEB22A0016E035 /* LogListController.swift in Sources */,
-				9CAC1BB520B1083900A0FE3F /* CardChartView.swift in Sources */,
 				9CB3920F20ABC0560076D600 /* RoundProgress.swift in Sources */,
 				9CF257B920AD85320060C8C6 /* HabitShowTopCard.swift in Sources */,
 				9CB3924920AC27290076D600 /* ColorCell.swift in Sources */,
@@ -910,6 +1047,7 @@
 				9CB3923020ABD5070076D600 /* HabitEditController.swift in Sources */,
 				9CB3921420ABC0560076D600 /* NibLoable.swift in Sources */,
 				9CB391FD20ABC0560076D600 /* Ex_UIColor.swift in Sources */,
+				9C115B9120B3EE72008AB650 /* DaysCardView.swift in Sources */,
 				9C2EA25F20AEB28D0016E035 /* LogEditTopCard.swift in Sources */,
 				9CAC1BBD20B111ED00A0FE3F /* Chart.swift in Sources */,
 				9CB391EF20ABC0560076D600 /* TableViewCell.swift in Sources */,
@@ -917,7 +1055,6 @@
 				9CB3923320ABD6010076D600 /* HabitEditNameCard.swift in Sources */,
 				9CB3922920ABCFF50076D600 /* Log_SQlite.swift in Sources */,
 				9CF257BF20AD85D30060C8C6 /* HabitShowChartCard.swift in Sources */,
-				9CAC1BBA20B10BFF00A0FE3F /* CardChartCollectionCell.swift in Sources */,
 				9CB391F020ABC0560076D600 /* TableViewController.swift in Sources */,
 				9CB391E520ABC0560076D600 /* Button.swift in Sources */,
 				9CE00EC220B258DF007291F1 /* Diary.swift in Sources */,
@@ -933,7 +1070,6 @@
 				9CAC1BC120B1123300A0FE3F /* ChartUnit.swift in Sources */,
 				9CB3923520ABDB6D0076D600 /* HabitEditTopCard.swift in Sources */,
 				9C2EA25120AEB1FA0016E035 /* LogEditController.swift in Sources */,
-				9CB391EA20ABC0560076D600 /* CardTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +1224,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myron.Days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1107,7 +1243,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myron.Days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -54,13 +54,6 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="50" height="208"/>
-            <connections>
-                <outlet property="container_view" destination="PcW-mn-mK8" id="KRS-ta-e6n"/>
-                <outlet property="height_layout" destination="MZx-iL-PZB" id="KXd-MQ-b1g"/>
-                <outlet property="leading_layout" destination="sD9-jN-5xO" id="d37-f9-MBt"/>
-                <outlet property="progress_view" destination="BTD-A2-dSy" id="B9J-MT-0In"/>
-                <outlet property="title_label" destination="DOq-nq-ONc" id="OaA-F9-7MZ"/>
-            </connections>
             <point key="canvasLocation" x="34" y="133"/>
         </collectionViewCell>
     </objects>

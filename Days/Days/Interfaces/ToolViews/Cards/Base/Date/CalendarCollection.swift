@@ -69,7 +69,11 @@ class CalendarCollection: View, UICollectionViewDataSource, UICollectionViewDele
     // MARK: - Collection
     
     /** Collection */
-    @IBOutlet weak var calendar: UICollectionView!
+    @IBOutlet weak var calendar: UICollectionView! {
+        didSet {
+            calendar.register(UINib(nibName: "CalendarCollectionCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
+        }
+    }
     
     /** current select day */
     weak var select_day: CalendarCollectionCell?

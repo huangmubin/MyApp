@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HabitShowDiaryCard: CardView, KeyboardInputDelegate {
+class HabitShowDiaryCard: DaysCardView, KeyboardInputDelegate {
 
     // MARK: - Format
     
