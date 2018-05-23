@@ -175,7 +175,7 @@
                 <outlet property="title" destination="jfy-IA-YfE" id="KFh-bj-PX3"/>
                 <outlet property="year_view" destination="bYL-eF-6OC" id="Y0Z-ii-0sX"/>
             </connections>
-            <point key="canvasLocation" x="-222.5" y="124"/>
+            <point key="canvasLocation" x="-222.5" y="94"/>
         </view>
     </objects>
     <resources>
