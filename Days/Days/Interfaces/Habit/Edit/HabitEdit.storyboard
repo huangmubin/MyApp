@@ -19,8 +19,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nt-UO-PHm" customClass="CardTable" customModule="Days" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Nt-UO-PHm" customClass="CardTable" customModule="Days" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-GZ-yie">
+                                        <rect key="frame" x="195" y="242" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <connections>
                                     <outletCollection property="cards" destination="oeQ-WC-bcU" collectionClass="NSMutableArray" id="lYU-n2-NaZ"/>
                                     <outletCollection property="cards" destination="bqZ-Oj-UpF" collectionClass="NSMutableArray" id="2dk-yb-XIh"/>
